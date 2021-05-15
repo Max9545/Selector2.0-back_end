@@ -10,13 +10,14 @@ class DiscogsService
 
   def self.get_album(album)
     response = conn.get('/database/search') do |f|
-      f.params['key'] = ENV['key']
-      f.params['secret'] = ENV['secret']
+      f.params['key'] = 'AFcwKjXbJFZHYnHlIdje'
+      f.params['secret'] = 'lmOhJlbzEyLbjyrTosVYmRZiSClBZVqT'
       f.params['q'] = album
       f.params['format'] = "album"
     end
     album_q = parse(response)[:results][0][:master_id]
     album_q
+    # require 'pry'; binding.pry
   end
 
   def self.get_album_resource(album)

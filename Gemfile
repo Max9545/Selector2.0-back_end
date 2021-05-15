@@ -35,6 +35,7 @@ gem 'active_model_serializers'
 gem 'securerandom'
 gem 'travis'
 gem 'hirb', '~> 0.7.3'
+gem 'graphql', '1.9.18'
 
 group :development, :test do
   gem 'pry'
@@ -49,6 +50,7 @@ end
 
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'graphiql-rails'
 end
 
 group :test do
