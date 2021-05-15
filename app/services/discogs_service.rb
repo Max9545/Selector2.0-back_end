@@ -1,6 +1,5 @@
 class DiscogsService
   def self.conn
-    # require "pry"; binding.pry
     faraday = Faraday.new(url: 'https://api.discogs.com')
   end
 
@@ -15,15 +14,17 @@ class DiscogsService
       f.params['q'] = album
       f.params['format'] = "album"
     end
-    album_q = parse(response)[:results][0][:master_id]
+    album_q = parse(response)
     album_q
-    # require 'pry'; binding.pry
   end
-
+  
   def self.get_album_resource(album)
-    id = get_album(album).to_s
+    album_resource = get_album(album)
+    id = album_resource[:results][0][:master_id].to_s
     response = Faraday.get("https://api.discogs.com/masters/#{id}")
-    parse(response)
+    parsed_response = parse(response)
+    parsed_response[:cover_image] = album_resource[:results][0][:cover_image]
+    parsed_response
   end
 
   def self.get_album_data(album)
