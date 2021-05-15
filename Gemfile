@@ -36,6 +36,7 @@ gem 'securerandom'
 gem 'travis'
 gem 'hirb', '~> 0.7.3'
 gem 'graphql', '1.9.18'
+gem 'rake'
 
 group :development, :test do
   gem 'pry'
