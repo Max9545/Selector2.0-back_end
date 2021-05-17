@@ -9,15 +9,15 @@ class DiscogsService
 
   def self.get_album(album)
     response = conn.get('/database/search') do |f|
-      f.params['key'] = 'AFcwKjXbJFZHYnHlIdje'
-      f.params['secret'] = 'lmOhJlbzEyLbjyrTosVYmRZiSClBZVqT'
+      f.params['key'] = ENV['discogs_key']
+      f.params['secret'] = ENV['discogs_secret']
       f.params['q'] = album
       f.params['format'] = "album"
     end
     album_q = parse(response)
     album_q
   end
-  
+
   def self.get_album_resource(album)
     album_resource = get_album(album)
     id = album_resource[:results][0][:master_id].to_s
