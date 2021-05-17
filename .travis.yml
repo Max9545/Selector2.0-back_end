@@ -1,0 +1,25 @@
+language: ruby
+rbenv:
+- 2.5.3
+env:
+  global:
+    secure: 
+addons:
+  postgresql: 9.6
+cache: bundler
+before_install:
+- gem install bundler:2.2.16
+- nvm install --lts
+script:
+- bundle exec rails db:{create,migrate} RAILS_ENV=test
+- bundle exec rspec
+deploy:
+  provider: heroku
+  api_key:
+    secure: m17hLWviS6SufivuPjpxDSwBPW8jiPqYfgcdxrZAcGTdWOTjKtgkDIiznWrdMUZOiTTn+3IcRLsp5Wg1YgRQFiR4Mg3fxB5o18DqPBeIRZuBjX+MqZNsJlvXcrGNjzpM2NuBrQhZf6jBP0u/ejbXv9Hzos40x+eumXSRniM9mt//MTRFf+btueQwL0O5e3v8KBiqHEHZNqF0bfZ6Jp10cCXMWYaek5ON6aOrIpWy9PZn45j7TPz+E8bsu0QT5bi8K76B7YfBArSO0aubN2mt1MwKMVZZB8lzX7nunG75Yc+BEBXDcHewyAWel2EHHCACUSh3rFkl2NUC52cJqZODMQ+Z3uKWaCa/5ONS2j6HiX/nRr9NwaIqeETSN6QkAnkRgSyBFObutKinSIrs4945aXBURSrD5YazQXt+oHN033CEpgq+9vN2VdTfHOCdpkQVIjKp4pfhbFPDfbK9gfhxy6lQ6lgUWuFGYgaH6wIXqiNjiZVDKaNYDjs5PqzjZVxFuhqPpFHbQnv828bo6Wnrma8UytcIMRDCofnjECEjajiG8jQJQ/2BuDjPN3TsbCw6ZXpuC4jd2cYw0030xBRJPS+JG0uR92LtbKBKi2C43QAhF5l1BxwT4ctZlZWUH6OepxcBU0FX/sR6y0nVBPwFAgXQprdfqtg5/CWuSbD+d3w=
+  app: tranquil-depths-91575
+  on:
+    repo: selector-turing/back_end
+    branch: main
+  skip_cleanup: 'true'
+  run: rails db:migrate
