@@ -8,6 +8,7 @@ RSpec.describe 'Spotify API request', type: :post do
   # https://accounts.spotify.com/api/token
 
   # SpotifyService.get_token
+  SpotifyService.spotify_album
 
   end
 end
