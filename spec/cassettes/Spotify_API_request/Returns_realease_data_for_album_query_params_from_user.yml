@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://accounts.spotify.com/api/token
+    body:
+      encoding: UTF-8
+      string: grant_type=client_credentials
+    headers:
+      User-Agent:
+      - Faraday v1.4.1
+      Authorization:
+      - Basic Y2Q3ZmE1MDczMjQ0NDI0ODkzMmQ2OWMzNTM5NGNlYzI6NmNmNmJhZDRiMjRjNDlkYzliZjg2N2FkMzA0N2UxMDY=
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 18 May 2021 20:00:36 GMT
+      Content-Type:
+      - application/json
+      Set-Cookie:
+      - __Host-device_id=AQAAqwKRIGWn6MHiVCfYnONdso7QZCxMqyp7wdRG68WI0P1T_wlX7MwflcJVJUQ3ysbrbzzF1YttNexgR61_gOLKEpgjVCbjyK8;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly;SameSite=Lax
+      Sp-Trace-Id:
+      - dbe1f25a9a9ed86d
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Accept-Encoding
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"access_token":"BQBHwWzKtzvrydGvxOjMkOnzX5Z-sYSzQE2C8XlYNU_bJb0NXywJhgAVnShNH0fJLk_DhT5CFeigxU9K6RU","token_type":"Bearer","expires_in":3600}'
+  recorded_at: Tue, 18 May 2021 20:00:36 GMT
+recorded_with: VCR 6.0.0
