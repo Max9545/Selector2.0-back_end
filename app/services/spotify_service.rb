@@ -20,15 +20,14 @@ class SpotifyService
     faraday = Faraday.new(url: 'https://api.spotify.com')
   end
 
-  def self.spotify_album
+  def self.spotify_album_id(album_name)
     token = get_token[:access_token]
     response = conn_2.get('/v1/search') do |f|
-      f.params['q'] = 'The Payback'
-      f.params['type'] = 'album'
+      f.params['q'] = album_name
       f.params['type'] = 'album'
       f.headers['Authorization'] = 'Bearer ' + "#{token}"
     end
     album_q = parse(response)[:albums][:items][0][:id]
-    album_q
+    { id: album_q }
   end
 end
