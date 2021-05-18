@@ -28,13 +28,6 @@ class SpotifyService
       f.headers['Authorization'] = 'Bearer ' + "#{token}"
     end
     album_q = parse(response)[:albums][:items][0][:id]
-    require "pry"; binding.pry
-    album_q
+    { id: album_q }
   end
-
-  # def self.spotify_album(album_name)
-  #   album_id = spotify_album_id(album_name)
-  #   response = Faraday.get("https://open.spotify.com/album/#{album_id}")
-  #   response
-  # end
 end

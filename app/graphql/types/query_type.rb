@@ -11,5 +11,13 @@ module Types
     def album(title)
       DiscogsService.get_album_data(title[:title])
     end
+
+    field :spotify_album_id, Types::AlbumType, null: false do
+      argument :title, String, required: true
+    end
+
+    def spotify_album_id(title)
+      SpotifyService.spotify_album_id(title[:title])
+    end
   end
 end
