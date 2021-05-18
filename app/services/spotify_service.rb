@@ -25,10 +25,10 @@ class SpotifyService
     response = conn_2.get('/v1/search') do |f|
       f.params['q'] = album_name
       f.params['type'] = 'album'
-      f.params['type'] = 'album'
       f.headers['Authorization'] = 'Bearer ' + "#{token}"
     end
     album_q = parse(response)[:albums][:items][0][:id]
+    require "pry"; binding.pry
     album_q
   end
 
