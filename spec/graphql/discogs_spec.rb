@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe 'Spotify API request', type: :post do
-  it 'Returns Album ID for album query params from user', :vcr do
+RSpec.describe 'Discogs API request', type: :post do
+  it 'Returns release data for album query params from user', :vcr do
 
   # post graphql_path, params: {album: "The Payback"}
 
