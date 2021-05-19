@@ -23,13 +23,13 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 19 May 2021 16:40:45 GMT
+      - Wed, 19 May 2021 22:52:24 GMT
       Content-Type:
       - application/json
       Set-Cookie:
-      - __Host-device_id=AQBQ0_Uiy0rTIzstGHwYm0kCs0kwjM_L0e9K1Rm0rusDsuvpX57d5XWZGHA8WxDZz7MaWFqFY4kPThSjgrP9OIQToKQUnt6OxLY;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly;SameSite=Lax
+      - __Host-device_id=AQBX1_W5IOdwvkvVMe7E9FmykBaLm4_DrcIZ6seIDFc3VpuYJUDlUqsJm6C3O0P8DfdA7dFtxc9V4dU0WEpI1RFphK9qhBqHYkY;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly;SameSite=Lax
       Sp-Trace-Id:
-      - fe83a9969a72bea8
+      - a91c6aaf68e9c03c
       Strict-Transport-Security:
       - max-age=31536000
       X-Content-Type-Options:
@@ -46,8 +46,8 @@ http_interactions:
       - chunked
     body:
       encoding: ASCII-8BIT
-      string: '{"access_token":"BQDMeH59vIo3yoaGcoEgRcJgfxBzacNSsOdtvdbcgSrIevs3zsYssUB34suR6ZTCFqfAEFw9Asq_Vwz_KZ8","token_type":"Bearer","expires_in":3600}'
-  recorded_at: Wed, 19 May 2021 16:40:45 GMT
+      string: '{"access_token":"BQCSanQtslDj1-DwcQjcGDrAFp44CnP4HDJec0qgDPor2QogdwzW3zQjTqXBq9jZ5OohugC1-89FZuqc2uA","token_type":"Bearer","expires_in":3600}'
+  recorded_at: Wed, 19 May 2021 22:52:24 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/search?q=%20&type=album
@@ -58,7 +58,7 @@ http_interactions:
       User-Agent:
       - Faraday v1.4.1
       Authorization:
-      - Bearer BQDMeH59vIo3yoaGcoEgRcJgfxBzacNSsOdtvdbcgSrIevs3zsYssUB34suR6ZTCFqfAEFw9Asq_Vwz_KZ8
+      - Bearer BQCSanQtslDj1-DwcQjcGDrAFp44CnP4HDJec0qgDPor2QogdwzW3zQjTqXBq9jZ5OohugC1-89FZuqc2uA
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -90,7 +90,7 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Wed, 19 May 2021 16:40:45 GMT
+      - Wed, 19 May 2021 22:52:24 GMT
       Server:
       - envoy
       Via:
@@ -113,5 +113,5 @@ http_interactions:
             "total" : 0
           }
         }
-  recorded_at: Wed, 19 May 2021 16:40:45 GMT
+  recorded_at: Wed, 19 May 2021 22:52:25 GMT
 recorded_with: VCR 6.0.0

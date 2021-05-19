@@ -76,9 +76,3 @@ RSpec.describe Types::QueryType do
     end
   end
 end
-
-
-
-#   # SpotifyService.get_token
-#   # SpotifyService.spotify_album_id("The Payback")
-#   # SpotifyService.spotify_album("The Payback")
