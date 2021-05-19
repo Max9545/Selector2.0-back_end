@@ -3,6 +3,7 @@ class GraphQL::ExecutionError < GraphQL::Error
   attr_accessor :error, :record
 
   def initialize(error)
+    # require "pry"; binding.pry
     @error = error_tracker(error)
     # @record = error.try(:record)
   end

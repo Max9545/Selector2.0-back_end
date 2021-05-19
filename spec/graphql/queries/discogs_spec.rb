@@ -54,13 +54,39 @@ RSpec.describe 'Discogs API request', type: :post do
     expect(result["data"]["album"]["tracklist"][0]["position"]).to be_a(String)
     expect(result["data"]["album"]["tracklist"][0]["title"]).to be_a(String)
     expect(result["data"]["album"]["tracklist"][0]["duration"]).to be_a(String)
+  end
+  describe 'Sad Paths' do
+    it 'Returns error for blank release data album query params from user', :vcr do
 
-  # post graphql_path, params: {album: "The Payback"}
+      def query
+        <<~GQL
+        {
+          album(title: ""){
+            id
+            title
+            artists {
+              name
+             }
+            year
+            genres
+            coverImage
+            resourceUrl
+            styles
+            year
+            tracklist {
+              position
+              title
+              duration
+             }
+            uri
+          }
+        }
+        GQL
+      end
 
-  # https://accounts.spotify.com/api/token
+      result = SelectorSchema.execute(query).as_json
 
-  # SpotifyService.get_token
-  # SpotifyService.spotify_album_id("The Payback")
-  # SpotifyService.spotify_album("The Payback")
+      expect(result["data"]["album"]["title"]).to eq("The Battle Of Los Angeles")
+    end
   end
 end

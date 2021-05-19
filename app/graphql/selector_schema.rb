@@ -7,4 +7,7 @@ class SelectorSchema < GraphQL::Schema
   rescue_from(NoMethodError) do |err, obj, args, ctx, field|
     raise GraphQL::ExecutionError, err
   end
+  # rescue_from(NoMethodError) do |err, obj, args, ctx, field|
+  #   raise GraphQL::ExecutionError, err
+  # end
 end
