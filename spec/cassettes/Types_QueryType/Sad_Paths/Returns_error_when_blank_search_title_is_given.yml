@@ -1,0 +1,112 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://accounts.spotify.com/api/token
+    body:
+      encoding: UTF-8
+      string: grant_type=client_credentials
+    headers:
+      User-Agent:
+      - Faraday v1.4.1
+      Authorization:
+      - Basic Y2Q3ZmE1MDczMjQ0NDI0ODkzMmQ2OWMzNTM5NGNlYzI6NmNmNmJhZDRiMjRjNDlkYzliZjg2N2FkMzA0N2UxMDY=
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 19 May 2021 16:40:44 GMT
+      Content-Type:
+      - application/json
+      Set-Cookie:
+      - __Host-device_id=AQDYHmD96kNXnvcqztWf8hl0q8h23KDcMiejVsCNod20OA7GNRyeLnDSzEk_yKvCuFS-F7ZBjMz_4HPkyWFpWWOur6xEDIfhagY;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly;SameSite=Lax
+      Sp-Trace-Id:
+      - f5a9194371a0fbe9
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Accept-Encoding
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"access_token":"BQDvB1NZgVXqNJSU7Hyo6NDqkvzhD5QweLakjS1-3VXKMRFehAx9YPlk2r8UD2JjfRC5ZgDukbA2ae4w46Q","token_type":"Bearer","expires_in":3600}'
+  recorded_at: Wed, 19 May 2021 16:40:44 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/search?q=&type=album
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.1
+      Authorization:
+      - Bearer BQDvB1NZgVXqNJSU7Hyo6NDqkvzhD5QweLakjS1-3VXKMRFehAx9YPlk2r8UD2JjfRC5ZgDukbA2ae4w46Q
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - private, max-age=0
+      X-Robots-Tag:
+      - noindex, nofollow
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context, client-token, content-access-token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Wed, 19 May 2021 16:40:44 GMT
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "error" : {
+            "status" : 400,
+            "message" : "No search query"
+          }
+        }
+  recorded_at: Wed, 19 May 2021 16:40:45 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,117 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://accounts.spotify.com/api/token
+    body:
+      encoding: UTF-8
+      string: grant_type=client_credentials
+    headers:
+      User-Agent:
+      - Faraday v1.4.1
+      Authorization:
+      - Basic Y2Q3ZmE1MDczMjQ0NDI0ODkzMmQ2OWMzNTM5NGNlYzI6NmNmNmJhZDRiMjRjNDlkYzliZjg2N2FkMzA0N2UxMDY=
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 19 May 2021 16:40:45 GMT
+      Content-Type:
+      - application/json
+      Set-Cookie:
+      - __Host-device_id=AQBQ0_Uiy0rTIzstGHwYm0kCs0kwjM_L0e9K1Rm0rusDsuvpX57d5XWZGHA8WxDZz7MaWFqFY4kPThSjgrP9OIQToKQUnt6OxLY;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly;SameSite=Lax
+      Sp-Trace-Id:
+      - fe83a9969a72bea8
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Accept-Encoding
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"access_token":"BQDMeH59vIo3yoaGcoEgRcJgfxBzacNSsOdtvdbcgSrIevs3zsYssUB34suR6ZTCFqfAEFw9Asq_Vwz_KZ8","token_type":"Bearer","expires_in":3600}'
+  recorded_at: Wed, 19 May 2021 16:40:45 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/search?q=%20&type=album
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.1
+      Authorization:
+      - Bearer BQDMeH59vIo3yoaGcoEgRcJgfxBzacNSsOdtvdbcgSrIevs3zsYssUB34suR6ZTCFqfAEFw9Asq_Vwz_KZ8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=7200
+      X-Robots-Tag:
+      - noindex, nofollow
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context, client-token, content-access-token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Wed, 19 May 2021 16:40:45 GMT
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "albums" : {
+            "href" : "https://api.spotify.com/v1/search?query=+&type=album&offset=0&limit=20",
+            "items" : [ ],
+            "limit" : 20,
+            "next" : null,
+            "offset" : 0,
+            "previous" : null,
+            "total" : 0
+          }
+        }
+  recorded_at: Wed, 19 May 2021 16:40:45 GMT
+recorded_with: VCR 6.0.0
