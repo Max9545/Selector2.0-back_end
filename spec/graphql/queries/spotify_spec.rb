@@ -1,5 +1,4 @@
 require 'rails_helper'
-
 RSpec.describe Types::QueryType do
   describe 'Spotify API request' do
     it 'Returns Album ID for album query params from user', :vcr do
