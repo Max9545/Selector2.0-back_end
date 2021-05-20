@@ -8,12 +8,17 @@ class DiscogsService
   end
 
   def self.get_album(album)
+    # if album.nil? || album.blank? || album.empty?
+    #   require "pry"; binding.pry
+    #   { message: {error: "It seems your search could use a little refinement." }}.to_json
+    # else
     response = conn.get('/database/search') do |f|
       f.params['key'] = ENV['discogs_key']
       f.params['secret'] = ENV['discogs_secret']
       f.params['q'] = album
       f.params['format'] = "album"
     end
+    # require "pry"; binding.pry
     album_q = parse(response)
     album_q
   end
@@ -28,6 +33,11 @@ class DiscogsService
   end
 
   def self.get_album_data(album)
-    self.get_album_resource(album)
+    if album.nil? || album.blank? || album.empty?
+      album = "The Battle for Los Angeles"
+      self.get_album_resource(album)
+    else
+      self.get_album_resource(album)
+    end
   end
 end

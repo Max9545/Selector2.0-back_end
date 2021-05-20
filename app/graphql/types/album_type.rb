@@ -7,9 +7,9 @@ module Types
     field :genres, [String], null: false
     field :cover_image, String, null: false
     field :resource_url, String, null: false
-    field :images, [Types::ImagesType], null: false
-    field :styles, [String], null: false
+    field :styles, [String], null: true
     field :year, Integer, null: false
     field :tracklist, [Types::TracklistType], null: false
+    field :uri, String, null: false
   end
 end

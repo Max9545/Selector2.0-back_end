@@ -27,6 +27,9 @@ class SpotifyService
       f.params['type'] = 'album'
       f.headers['Authorization'] = 'Bearer ' + "#{token}"
     end
+    # require "pry"; binding.pry
+    # parse(response)[:albums][:items].empty?
+    # album_q = parse(response)
     album_q = parse(response)[:albums][:items][0][:id]
     { id: album_q }
   end
