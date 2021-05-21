@@ -103,7 +103,7 @@ RSpec.describe 'Discogs API request', type: :post do
 
       result = SelectorSchema.execute(query).as_json
       # random = DiscogsService.random_ten_albums
-      require "pry"; binding.pry
+      # require "pry"; binding.pry
     end
   end
   describe 'Sad Paths' do
