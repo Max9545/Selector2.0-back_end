@@ -10,7 +10,6 @@ class DiscogsService
   def self.random_album
     response = Faraday.get("https://api.discogs.com/releases/#{random_release}")
     parsed_response = parse(response)
-
     # until parsed_response[:formats][0][:descriptions].include?("Album")
     #   response = Faraday.get("https://api.discogs.com/releases/#{random_release}")
     #   parsed_response = parse(response)
