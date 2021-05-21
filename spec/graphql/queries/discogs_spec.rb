@@ -56,6 +56,55 @@ RSpec.describe 'Discogs API request', type: :post do
       expect(result["data"]["album"]["tracklist"][0]["title"]).to be_a(String)
       expect(result["data"]["album"]["tracklist"][0]["duration"]).to be_a(String)
     end
+    # it 'Returns release data for a random album', :vcr do
+    #
+    #   def query
+    #     <<~GQL
+    #     {
+    #       randomAlbum {
+    #         randomAlbumUri
+    #       }
+    #     }
+    #     GQL
+    #   end
+    #
+    #   result = SelectorSchema.execute(query).as_json
+    #   require "pry"; binding.pry
+    #   # random = DiscogsService.random_album
+    #   # require "pry"; binding.pry
+    # end
+    it 'Returns release data for 10 random albums', :vcr do
+
+      def query
+        <<~GQL
+        {
+          randomAlbum {
+            id
+            title
+            artists {
+              name
+             }
+            year
+            genres
+            coverImage
+            resourceUrl
+            styles
+            year
+            tracklist {
+              position
+              title
+              duration
+             }
+            uri
+            }
+          }
+        GQL
+      end
+
+      result = SelectorSchema.execute(query).as_json
+      # random = DiscogsService.random_ten_albums
+      # require "pry"; binding.pry
+    end
   end
   describe 'Sad Paths' do
     it 'Returns error for blank release data album query params from user', :vcr do

@@ -1,5 +1,5 @@
 module Types
-  class AlbumType < Types::BaseObject
+  class RandomAlbumType < Types::BaseObject
     field :id, ID, null: true
     field :title, String, null: true
     field :artists, [Types::ArtistType], null: true

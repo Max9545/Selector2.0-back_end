@@ -1,4 +1,29 @@
 class DiscogsService
+
+  def self.random_release
+    response = Faraday.get('https://api.discogs.com')
+    parsed_response = parse(response)
+    total_releases = parsed_response[:statistics][:releases]
+    rand_release = (0..total_releases).to_a.sample
+  end
+
+  def self.random_album
+    response = Faraday.get("https://api.discogs.com/releases/#{random_release}")
+    parsed_response = parse(response)
+    # until parsed_response[:formats][0][:descriptions].include?("Album")
+    #   response = Faraday.get("https://api.discogs.com/releases/#{random_release}")
+    #   parsed_response = parse(response)
+    # end
+  end
+
+  def self.random_ten_albums
+    random_album_array = []
+    10.times do
+      random_album_array << random_album
+    end
+    random_album_array
+  end
+
   def self.conn
     faraday = Faraday.new(url: 'https://api.discogs.com')
   end
@@ -8,17 +33,12 @@ class DiscogsService
   end
 
   def self.get_album(album)
-    # if album.nil? || album.blank? || album.empty?
-    #   require "pry"; binding.pry
-    #   { message: {error: "It seems your search could use a little refinement." }}.to_json
-    # else
     response = conn.get('/database/search') do |f|
       f.params['key'] = ENV['discogs_key']
       f.params['secret'] = ENV['discogs_secret']
       f.params['q'] = album
       f.params['format'] = "album"
     end
-    # require "pry"; binding.pry
     album_q = parse(response)
     album_q
   end
