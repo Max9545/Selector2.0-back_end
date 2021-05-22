@@ -59,7 +59,6 @@ class DiscogsService
 
   def self.get_album_resource(album)
     album_resource = get_album(album)
-    require "pry"; binding.pry
     id = album_resource[:results][0][:master_id].to_s
     response = Faraday.get("https://api.discogs.com/masters/#{id}")
     parsed_response = parse(response)

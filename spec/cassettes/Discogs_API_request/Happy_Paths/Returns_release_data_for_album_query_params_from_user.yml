@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.discogs.com/database/search?format=album&key&q=The%20Payback&secret
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Date:
+      - Sat, 22 May 2021 22:36:01 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '84'
+      Connection:
+      - keep-alive
+      X-Discogs-Ratelimit:
+      - '25'
+      X-Discogs-Ratelimit-Remaining:
+      - '25'
+      X-Discogs-Ratelimit-Used:
+      - '0'
+      Etag:
+      - '"60a821cb-54"'
+      Strict-Transport-Security:
+      - max-age=15724800
+    body:
+      encoding: UTF-8
+      string: '{"message":"The Discogs API is undergoing maintenance. We''ll be back
+        in a moment."}
+
+'
+  recorded_at: Sat, 22 May 2021 22:36:00 GMT
+recorded_with: VCR 6.0.0
