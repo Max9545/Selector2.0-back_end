@@ -10,19 +10,33 @@ class DiscogsService
   def self.random_album
     response = Faraday.get("https://api.discogs.com/releases/#{random_release}")
     parsed_response = parse(response)
-    # until parsed_response[:formats][0][:descriptions].include?("Album")
-    #   response = Faraday.get("https://api.discogs.com/releases/#{random_release}")
-    #   parsed_response = parse(response)
-    # end
+    until parsed_response[:formats][0][:descriptions].present? && parsed_response[:formats][0][:descriptions].include?("Album")
+      response = Faraday.get("https://api.discogs.com/releases/#{random_release}")
+      parsed_response = parse(response)
+    end
+    # require "pry"; binding.pry
+    parsed_interpolated = "#{ parsed_response[:title] }" + ' ' + "#{ parsed_response[:name] }" + ' ' + "#{ parsed_response[:artists][0][:name] }" + ' ' + "#{ parsed_response[:artists_sort] }"
+    SpotifyService.spotify_album_id(parsed_interpolated)
   end
 
-  def self.random_ten_albums
-    random_album_array = []
-    10.times do
-      random_album_array << random_album
-    end
-    random_album_array
-  end
+  # def self.random_ten_albums
+    # require "pry"; binding.pry
+    # random_album_array = []
+    # require "pry"; binding.pry
+    # 5.times do
+      # random_album_array << random_album
+    # end
+    # until random_album_array.count == 5
+    #   rand = random_album
+    #   # require "pry"; binding.pry
+    #   if (!rand.nil?) &&
+    #     (!rand[:formats].nil?) && (!rand[:formats][0].nil?) && (!rand[:formats][0][:descriptions].nil?) && (rand != {:message=>"Release not found."}) && (rand[:formats][0][:descriptions].include?("Album" || "LP"))
+    #     random_album_array << rand
+    #   end
+    # end
+    # require "pry"; binding.pry
+    # random_album_array
+  # end
 
   def self.conn
     faraday = Faraday.new(url: 'https://api.discogs.com')
@@ -45,6 +59,7 @@ class DiscogsService
 
   def self.get_album_resource(album)
     album_resource = get_album(album)
+    require "pry"; binding.pry
     id = album_resource[:results][0][:master_id].to_s
     response = Faraday.get("https://api.discogs.com/masters/#{id}")
     parsed_response = parse(response)
