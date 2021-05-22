@@ -57,6 +57,30 @@ class DiscogsService
     album_q
   end
 
+  def self.get_artist_id(artist)
+    response = conn.get('/database/search') do |f|
+      f.params['key'] = ENV['discogs_key']
+      f.params['secret'] = ENV['discogs_secret']
+      f.params['q'] = artist
+      # f.params['format'] = "artist"
+    end
+    artist_q = parse(response)
+    artist_id = artist_q[:results][0][:id]
+    # require "pry"; binding.pry
+    artist_id
+  end
+
+  def self.get_artist_albums(artist)
+    artist_id = get_artist_id(artist)
+    response = conn.get("/artists/#{artist_id}/releases") do |f|
+      # f.params['artist_id']
+      f.params['format'] = "album"
+    end
+    require "pry"; binding.pry
+    artist_q = parse(response)
+    artist_q
+  end
+
   def self.get_album_resource(album)
     album_resource = get_album(album)
     require "pry"; binding.pry
