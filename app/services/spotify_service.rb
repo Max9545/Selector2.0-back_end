@@ -31,13 +31,12 @@ class SpotifyService
     # parse(response)[:albums][:items].empty?
     # album_q = parse(response)
     # if parse(response)[:albums][:items][0][:id]
-      album_q = parse(response)[:albums][:items][0][:id]
-    # else 
+    album_q = parse(response)[:albums][:items][0][:id]
+    # else
 
-    end
     { id: album_q }
   end
+end
 
   # def self.
   # end
-end
