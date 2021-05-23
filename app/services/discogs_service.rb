@@ -18,7 +18,7 @@ class DiscogsService
         end
       end
     end
-    require "pry"; binding.pry
+    # require "pry"; binding.pry
     parsed_interpolated = "#{ parsed_response[:title] }" + ' ' + "#{ parsed_response[:name] }" + ' ' + "#{ parsed_response[:artists][0][:name] }" + ' ' + "#{ parsed_response[:artists_sort] }"
     SpotifyService.spotify_album_id(parsed_interpolated)
   end
