@@ -73,36 +73,37 @@ RSpec.describe 'Discogs API request', type: :post do
     #   # random = DiscogsService.random_album
     #   # require "pry"; binding.pry
     # end
-    it 'Returns release data for 10 random albums', :vcr do
+    it 'Returns release data for 10 random albums' do
 
-      def query
-        <<~GQL
-        {
-          randomAlbum {
-            id
-            title
-            artists {
-              name
-             }
-            year
-            genres
-            coverImage
-            resourceUrl
-            styles
-            year
-            tracklist {
-              position
-              title
-              duration
-             }
-            uri
-            }
-          }
-        GQL
-      end
+      # def query
+      #   <<~GQL
+      #   {
+      #     randomAlbum {
+      #       id
+      #       title
+      #       artists {
+      #         name
+      #        }
+      #       year
+      #       genres
+      #       coverImage
+      #       resourceUrl
+      #       styles
+      #       year
+      #       tracklist {
+      #         position
+      #         title
+      #         duration
+      #        }
+      #       uri
+      #       }
+      #     }
+      #   GQL
+      # end
 
-      result = SelectorSchema.execute(query).as_json
-      # random = DiscogsService.random_ten_albums
+      # result = SelectorSchema.execute(query).as_json
+      random = DiscogsService.random_album
+      # random = SpotifyService.spotify_album_id('The Supremes in and out of love')
       # require "pry"; binding.pry
     end
   end
