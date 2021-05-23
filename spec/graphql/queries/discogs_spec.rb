@@ -109,7 +109,39 @@ RSpec.describe 'Discogs API request', type: :post do
       # random = SpotifyService.spotify_album_id('The Supremes in and out of love')
       # require "pry"; binding.pry
     end
+
+    it 'Returns artist and the first 10 of their albums' do
+
+      def query
+        <<~GQL
+        {
+          artistAlbums(artist: "James Brown"){
+          artist
+          title
+          id
+          }
+        }
+        GQL
+      end
+
+      result = SelectorSchema.execute(query).as_json
+
+      expect(result).to be_a(Hash)
+      expect(result.length).to eq(1)
+      expect(result.keys).to match_array(["data"])
+      expect(result["data"].keys).to match_array(["artistAlbums"])
+      expect(result["data"]["artistAlbums"]).to be_an(Array)
+      expect(result["data"]["artistAlbums"].length).to be <= 10
+
+      result["data"]["artistAlbums"].each do |a|
+        expect(a.keys).to match_array(["artist", "title", "id"])
+        expect(a["artist"]).to be_a(String)
+        expect(a["title"]).to be_a(String)
+        expect(a["id"]).to be_an(Integer)
+      end
+    end
   end
+
   describe 'Sad Paths' do
     it 'Returns error for blank release data album query params from user', :vcr do
 

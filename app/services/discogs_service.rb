@@ -12,7 +12,7 @@ class DiscogsService
     parsed_response = parse(response)
     if !parsed_response[:formats][0][:descriptions].nil?
       until parsed_response[:formats][0][:descriptions].include?("Album")
-        if parsed_response[:formats][0][:descriptions]
+        if !parsed_response[:formats][0][:descriptions].nil?
           response = Faraday.get("https://api.discogs.com/releases/#{random_release}")
           parsed_response = parse(response)
         end
@@ -70,7 +70,6 @@ class DiscogsService
     end
     artist_q = parse(response)
     artist_id = artist_q[:results][0][:id]
-    # require "pry"; binding.pry
     artist_id
   end
 
@@ -80,9 +79,8 @@ class DiscogsService
       # f.params['artist_id']
       f.params['format'] = "album"
     end
-    require "pry"; binding.pry
     artist_q = parse(response)
-    artist_q
+    artist_q[:releases][0..9]
   end
 
   def self.get_album_resource(album)
