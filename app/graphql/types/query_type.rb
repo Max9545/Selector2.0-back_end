@@ -25,5 +25,13 @@ module Types
     def random_album
       DiscogsService.random_ten_albums
     end
+
+    field :artist_albums, [Types::ArtistAlbumsType], null: false do
+      argument :artist, String, required: true
+    end
+
+    def artist_albums(artist)
+      DiscogsService.get_artist_albums(artist[:artist])
+    end
   end
 end
