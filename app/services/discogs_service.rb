@@ -10,10 +10,14 @@ class DiscogsService
   def self.random_album
     response = Faraday.get("https://api.discogs.com/releases/#{random_release}")
     parsed_response = parse(response)
-    until parsed_response[:formats][0][:descriptions].present? && parsed_response[:formats][0][:descriptions].include?("Album")
-      response = Faraday.get("https://api.discogs.com/releases/#{random_release}")
-      parsed_response = parse(response)
-    end
+    if parsed_response[:formats][0][:descriptions]
+      until parsed_response[:formats][0][:descriptions].include?("Album")
+        if parsed_response[:formats][0][:descriptions]
+          response = Faraday.get("https://api.discogs.com/releases/#{random_release}")
+          parsed_response = parse(response)
+        end
+      end
+    end 
     # require "pry"; binding.pry
     parsed_interpolated = "#{ parsed_response[:title] }" + ' ' + "#{ parsed_response[:name] }" + ' ' + "#{ parsed_response[:artists][0][:name] }" + ' ' + "#{ parsed_response[:artists_sort] }"
     SpotifyService.spotify_album_id(parsed_interpolated)
@@ -83,7 +87,7 @@ class DiscogsService
 
   def self.get_album_resource(album)
     album_resource = get_album(album)
-    require "pry"; binding.pry
+    # require "pry"; binding.pry
     id = album_resource[:results][0][:master_id].to_s
     response = Faraday.get("https://api.discogs.com/masters/#{id}")
     parsed_response = parse(response)
