@@ -171,7 +171,7 @@ describe 'Discogs Service API' do
       # expect(albums).to be_a(Hash)
     end
 
-    it '::rand_release' do
+    xit '::random_release' do
       range = DiscogsService.random_release
 
       expect(range).to be_an(Integer)
