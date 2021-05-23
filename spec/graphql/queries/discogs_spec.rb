@@ -102,7 +102,10 @@ RSpec.describe 'Discogs API request', type: :post do
       # end
 
       # result = SelectorSchema.execute(query).as_json
-      random = DiscogsService.random_album
+      # random = DiscogsService.random_album
+      # random = DiscogsService.get_artist_id('minus the bear')
+      # require "pry"; binding.pry
+      # random = DiscogsService.get_artist_albums('minus the bear')
       # random = SpotifyService.spotify_album_id('The Supremes in and out of love')
       # require "pry"; binding.pry
     end

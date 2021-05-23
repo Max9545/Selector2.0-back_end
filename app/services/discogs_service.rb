@@ -10,10 +10,14 @@ class DiscogsService
   def self.random_album
     response = Faraday.get("https://api.discogs.com/releases/#{random_release}")
     parsed_response = parse(response)
-    until parsed_response[:formats][0][:descriptions].present? && parsed_response[:formats][0][:descriptions].include?("Album")
-      response = Faraday.get("https://api.discogs.com/releases/#{random_release}")
-      parsed_response = parse(response)
-    end
+    if parsed_response[:formats][0][:descriptions]
+      until parsed_response[:formats][0][:descriptions].include?("Album")
+        if parsed_response[:formats][0][:descriptions]
+          response = Faraday.get("https://api.discogs.com/releases/#{random_release}")
+          parsed_response = parse(response)
+        end
+      end
+    end 
     # require "pry"; binding.pry
     parsed_interpolated = "#{ parsed_response[:title] }" + ' ' + "#{ parsed_response[:name] }" + ' ' + "#{ parsed_response[:artists][0][:name] }" + ' ' + "#{ parsed_response[:artists_sort] }"
     SpotifyService.spotify_album_id(parsed_interpolated)
@@ -55,6 +59,30 @@ class DiscogsService
     end
     album_q = parse(response)
     album_q
+  end
+
+  def self.get_artist_id(artist)
+    response = conn.get('/database/search') do |f|
+      f.params['key'] = ENV['discogs_key']
+      f.params['secret'] = ENV['discogs_secret']
+      f.params['q'] = artist
+      # f.params['format'] = "artist"
+    end
+    artist_q = parse(response)
+    artist_id = artist_q[:results][0][:id]
+    # require "pry"; binding.pry
+    artist_id
+  end
+
+  def self.get_artist_albums(artist)
+    artist_id = get_artist_id(artist)
+    response = conn.get("/artists/#{artist_id}/releases") do |f|
+      # f.params['artist_id']
+      f.params['format'] = "album"
+    end
+    require "pry"; binding.pry
+    artist_q = parse(response)
+    artist_q
   end
 
   def self.get_album_resource(album)
