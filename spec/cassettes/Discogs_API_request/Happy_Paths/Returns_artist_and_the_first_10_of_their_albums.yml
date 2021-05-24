@@ -1,0 +1,1852 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.discogs.com/database/search?key=ENV[discogs_key]&q=James%20Brown&secret=ENV[discogs_secret]
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 24 May 2021 17:56:18 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Discogs-Ratelimit:
+      - '60'
+      X-Discogs-Ratelimit-Remaining:
+      - '60'
+      X-Discogs-Ratelimit-Used:
+      - '0'
+      Access-Control-Allow-Headers:
+      - Content-Type, authorization, User-Agent, Private-Auth-Secret, Discogs-UID
+      Access-Control-Allow-Methods:
+      - HEAD,OPTIONS,GET,OPTIONS
+      Access-Control-Expose-Headers:
+      - Location
+      Content-Language:
+      - en
+      X-Discogs-Media-Type:
+      - discogs.v2
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - public, must-revalidate
+      Strict-Transport-Security:
+      - max-age=15724800
+    body:
+      encoding: ASCII-8BIT
+      string: '{"pagination": {"page": 1, "pages": 200, "per_page": 50, "items": 108124,
+        "urls": {"last": "https://api.discogs.com/database/search?key=ENV[discogs_key]&q=James+Brown&secret=ENV[discogs_secret]&page=200&per_page=50",
+        "next": "https://api.discogs.com/database/search?key=ENV[discogs_key]&q=James+Brown&secret=ENV[discogs_secret]&page=2&per_page=50"}},
+        "results": [{"id": 12596, "type": "artist", "master_id": null, "master_url":
+        null, "uri": "/artist/12596-James-Brown", "title": "James Brown", "thumb":
+        "https://img.discogs.com/wcD5QViPvggOaC3T_D5ql1rHY_E=/150x150/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/A-12596-1565996731-5432.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/9YPKJQIgjrSZwDZ05afIVvR0L6c=/600x479/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-12596-1565996731-5432.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/artists/12596"}, {"country": "US",
+        "year": "1963", "format": ["Vinyl", "LP", "Album", "Stereo"], "label": ["King
+        Records"], "type": "master", "genre": ["Funk / Soul"], "style": ["Rhythm &
+        Blues", "Soul"], "id": 65036, "barcode": [], "master_id": 65036, "master_url":
+        "https://api.discogs.com/masters/65036", "uri": "/James-Brown-James-Brown-Live-At-The-Apollo/master/65036",
+        "catno": "K-826", "title": "James Brown - James Brown Live At The Apollo",
+        "thumb": "https://img.discogs.com/azhUepa8ZDadIuMd7dxAIG7Zq14=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-6300716-1446639448-9442.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/8tgictMeetEqVCwTLy8VgytqJfg=/fit-in/388x388/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6300716-1446639448-9442.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/masters/65036", "community": {"want":
+        20002, "have": 15128}}, {"id": 71291, "type": "artist", "master_id": null,
+        "master_url": null, "uri": "/artist/71291-James-Brown-2", "title": "James
+        Brown (2)", "thumb": "https://img.discogs.com/Vr82uC26Vwrz3hdI75OeKjq6868=/150x150/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/A-71291-1184853916.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/0uVfm4eAnFeE9PABC_rSfX1cqo8=/200x306/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-71291-1184853916.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/artists/71291"}, {"country": "Belgium",
+        "year": "1991", "format": ["Vinyl", "12\"", "33 \u2153 RPM", "Stereo"], "label":
+        ["Decadance Records", "Foon"], "type": "master", "genre": ["Electronic"],
+        "style": ["Hardcore", "Techno"], "id": 41832, "barcode": ["D 9005-A1 \u00a0
+        FOON MASTERING", "D 9005-B1", "SABAM TM"], "master_id": 41832, "master_url":
+        "https://api.discogs.com/masters/41832", "uri": "/LA-Style-James-Brown-Is-Dead/master/41832",
+        "catno": "DEC 9005", "title": "L.A. Style - James Brown Is Dead", "thumb":
+        "https://img.discogs.com/9iCqx4wmgEOyKqkYftADMvMG5ks=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-104667-1218292794.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/MDZmHZ7tXNO3xthnooKmoX59skc=/fit-in/595x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-104667-1218292794.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/masters/41832", "community": {"want":
+        4492, "have": 8954}}, {"country": "US", "year": "1965", "format": ["Vinyl",
+        "LP", "Album", "Mono"], "label": ["Smash Records"], "type": "master", "genre":
+        ["Funk / Soul"], "style": ["Funk", "Rhythm & Blues", "Soul"], "id": 375115,
+        "barcode": [], "master_id": 375115, "master_url": "https://api.discogs.com/masters/375115",
+        "uri": "/James-Brown-James-Brown-Plays-James-Brown-Today-Yesterday-James-Brown-At-The-Organ/master/375115",
+        "catno": "MGS 27072", "title": "James Brown - James Brown Plays James Brown
+        - Today & Yesterday - James Brown At The Organ", "thumb": "https://img.discogs.com/YryrBrPtyBS97P2XBSTMZGJVw2s=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1425385-1346187646-7203.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/MG5PKEtKNBRUxQubx2TNXp0fRN8=/fit-in/598x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1425385-1346187646-7203.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/masters/375115", "community": {"want":
+        702, "have": 1916}}, {"country": "US", "year": "1972", "format": ["Vinyl",
+        "LP", "Compilation"], "label": ["Polydor"], "type": "master", "genre": ["Funk
+        / Soul"], "style": ["Funk"], "id": 187391, "barcode": [], "master_id": 187391,
+        "master_url": "https://api.discogs.com/masters/187391", "uri": "/James-Brown-James-Brown-Soul-Classics/master/187391",
+        "catno": "2391 037", "title": "James Brown - James Brown Soul Classics", "thumb":
+        "https://img.discogs.com/ijkNcZ7Cg6gjVGOQv1EolfBzJgY=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-641746-1189158703.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/SL3d-k7Fi5_Hhfz8OHeiyO11-rA=/fit-in/280x280/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-641746-1189158703.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/masters/187391", "community": {"want":
+        1113, "have": 1944}}, {"country": "Benelux", "genre": ["Funk / Soul"], "format":
+        ["Vinyl", "LP", "Compilation"], "style": ["Soul", "Funk"], "id": 105611, "label":
+        ["Polydor", "Quality Sound Series"], "type": "master", "barcode": ["SABAM",
+        "2929 022 1Y 670S", "2929 022 2Y 670S", "2929 023 1Y 670S", "2929 023 2Y 670S",
+        "2929 022", "2929 023", "MadeinGermany"], "master_id": 105611, "master_url":
+        "https://api.discogs.com/masters/105611", "uri": "/James-Brown-James-Brown/master/105611",
+        "catno": "2670 151", "title": "James Brown - James Brown", "thumb": "https://img.discogs.com/J1qYxEgdNgKluA_mtGr6KXcUfDU=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1132061-1386514038-9868.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/9X1s2DKS88bP4KOomCXxNWT2RdM=/fit-in/397x394/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1132061-1386514038-9868.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/masters/105611", "community": {"want":
+        105, "have": 815}}, {"id": 343802, "type": "artist", "master_id": null, "master_url":
+        null, "uri": "/artist/343802-James-Brown-3", "title": "James Brown (3)", "thumb":
+        "", "cover_image": "https://img.discogs.com/9eeb67629582016edad5eef62db2a4f304ff9857/images/spacer.gif",
+        "resource_url": "https://api.discogs.com/artists/343802"}, {"country": "Italy",
+        "year": "1981", "format": ["Vinyl", "LP", "Compilation"], "label": ["Curcio",
+        "La Grande Storia Del Rock", "Phonogram International B.V.", "Polygram, Tribiano"],
+        "type": "master", "genre": ["Funk / Soul"], "style": ["Soul", "Funk"], "id":
+        853742, "barcode": ["SIAE", "GSR 8 A 520 481 \u24c51981", "GSR 8 B 520 "],
+        "master_id": 853742, "master_url": "https://api.discogs.com/masters/853742",
+        "uri": "/James-Brown-James-Brown/master/853742", "catno": "GSR - 8", "title":
+        "James Brown - James Brown", "thumb": "https://img.discogs.com/Y16wG0mn1e9OfJV3hDM_Yz4asD8=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1488035-1446686574-7163.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/6SFmE6zEdj8PTLq8Cfvxm6Ykvtk=/fit-in/600x598/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1488035-1446686574-7163.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/masters/853742", "community": {"want":
+        58, "have": 889}}, {"country": "Germany", "year": "1981", "format": ["Vinyl",
+        "LP", "Compilation"], "label": ["Polydor", "Polydor Incorporated", "Deutsche
+        Grammophon GmbH", "PRS Hannover", "PRS Hannover", "PRS Hannover"], "type":
+        "master", "genre": ["Funk / Soul"], "style": ["Soul"], "id": 288740, "barcode":
+        ["LC 0309", "GEMA", "2499 052 S1=2 320 AC", "2499 052 S2=2 320 V", "2499 052
+        S1=2 320 AC", "2499 052 S2=2 320 Z1"], "master_id": 288740, "master_url":
+        "https://api.discogs.com/masters/288740", "uri": "/James-Brown-The-Best-Of-James-Brown/master/288740",
+        "catno": "2499 052", "title": "James Brown - The Best Of James Brown", "thumb":
+        "https://img.discogs.com/Zprp_yatZKeBNRGVvMBjMKLK4KI=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-535420-1339255748-8330.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/cppa4B-NfCvTyC2IZ5KKV81eSwY=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-535420-1339255748-8330.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/masters/288740", "community": {"want":
+        402, "have": 2712}}, {"country": "UK", "year": "1972", "format": ["Vinyl",
+        "LP", "Compilation"], "label": ["Polydor", "Polydor Incorporated", "Intersong",
+        "Lark Music", "Carlin", "E.J. Day Group"], "type": "master", "genre": ["Funk
+        / Soul"], "style": ["Funk"], "id": 190186, "barcode": ["2391 057 A//1 \u25bd
+        420 1 1 6", "2391 057 B//1 \u25bd 420 1 1 1 4", "Super"], "master_id": 190186,
+        "master_url": "https://api.discogs.com/masters/190186", "uri": "/James-Brown-James-Brown-Soul-Classics/master/190186",
+        "catno": "2391 057", "title": "James Brown - James Brown Soul Classics", "thumb":
+        "https://img.discogs.com/ifSnAd_z9xfsjZTAFy7u2rXZHoY=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-7611305-1540890771-6429.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/dZXyClu-8Rk08kef3e2c74Be6Os=/fit-in/600x588/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-7611305-1540890771-6429.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/masters/190186", "community": {"want":
+        470, "have": 1447}}, {"country": "France", "genre": ["Funk / Soul"], "format":
+        ["Vinyl", "LP", "Compilation"], "style": ["Soul", "Funk"], "id": 1058459,
+        "label": ["Polydor", "2 Disques"], "type": "release", "barcode": ["1 B", "NPO
+        PYR 2929022 A", "NPO PYR 2929022 B", "NPO PYR 2929023 A", "NPO PYR 2929023
+        B YD", "2929 022", "2929 023"], "master_id": 105611, "master_url": "https://api.discogs.com/masters/105611",
+        "uri": "/James-Brown-James-Brown/release/1058459", "catno": "2664 123", "title":
+        "James Brown - James Brown", "thumb": "https://img.discogs.com/zp2X-s8TaJioEu3WJ4HJLAaKiEQ=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1058459-1331149000.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/1VQgdklXgq8YYCKxGd9v6JwVf-g=/fit-in/519x528/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1058459-1331149000.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/1058459", "community": {"want":
+        64, "have": 648}, "format_quantity": 2, "formats": [{"name": "Vinyl", "qty":
+        "2", "descriptions": ["LP", "Compilation"]}]}, {"country": "US", "year": "1965",
+        "format": ["Vinyl", "LP", "Album", "Mono"], "label": ["Smash Records"], "type":
+        "release", "genre": ["Funk / Soul"], "style": ["Funk", "Rhythm & Blues", "Soul"],
+        "id": 1425385, "barcode": [], "master_id": 375115, "master_url": "https://api.discogs.com/masters/375115",
+        "uri": "/James-Brown-James-Brown-Plays-James-Brown-Today-Yesterday-James-Brown-At-The-Organ/release/1425385",
+        "catno": "MGS 27072", "title": "James Brown - James Brown Plays James Brown
+        - Today & Yesterday - James Brown At The Organ", "thumb": "https://img.discogs.com/YryrBrPtyBS97P2XBSTMZGJVw2s=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1425385-1346187646-7203.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/MG5PKEtKNBRUxQubx2TNXp0fRN8=/fit-in/598x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1425385-1346187646-7203.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/1425385", "community": {"want":
+        134, "have": 658}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["LP", "Album", "Mono"]}]}, {"country": "Germany", "year":
+        "1980", "format": ["Vinyl", "LP", "Compilation", "Stereo"], "label": ["Polydor",
+        "Deutsche Grammophon GmbH", "Polydor International GmbH", "T.K. Productions,
+        Inc.", "PRS Hannover", "PRS Hannover", "Gerhard Kaiser GmbH", "Dynatone Publishing
+        Co.", "Muscle Shoals Sound Pub. Co., Inc.", "Third World Pub."], "type": "master",
+        "genre": ["Funk / Soul"], "style": ["Funk", "Disco"], "id": 105601, "barcode":
+        ["GEMA", "LC 0309", "2417 351 S 1 3 20", "2417 351 S 2 = 2 320", "2417 351
+        S 1 3 20 1 G", "2417 351 S 2 3 20 1 E", "2417 351 S 1 3 20 1 P", "2417 351
+        S 2 = 2 320 W A 1", "2417 351 S 1 111 3 20 V3 2", "2417 351 S 2 = 2 112 320
+        V3 2"], "master_id": 105601, "master_url": "https://api.discogs.com/masters/105601",
+        "uri": "/James-Brown-The-James-Brown-Special/master/105601", "catno": "2417
+        351", "title": "James Brown - The James Brown Special", "thumb": "https://img.discogs.com/DH7SX6NN5C7T4WfoJHCNIv1eZW0=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2307589-1404599079-3492.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/HxJ_0dpQ4p29n-GpNcV3zmOhFNg=/fit-in/600x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2307589-1404599079-3492.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/masters/105601", "community": {"want":
+        104, "have": 1371}}, {"country": "UK", "year": "1987", "format": ["Vinyl",
+        "LP", "Compilation"], "label": ["K-Tel", "K-Tel International (UK) Ltd.",
+        "K-Tel International (UK) Ltd.", "Polygram Record Operations Ltd.", "Scotti
+        Brothers", "Intersong Music Ltd.", "Tro Essex Music Ltd.", "SBK Songs"], "type":
+        "master", "genre": ["Funk / Soul"], "style": ["Soul", "Funk"], "id": 188140,
+        "barcode": ["5 012206 137614", "NE-1376+A  ORLAKE ( etched )", "NE-1376-B    DAMONT   MT  (
+        etched )"], "master_id": 188140, "master_url": "https://api.discogs.com/masters/188140",
+        "uri": "/James-Brown-The-Best-Of-James-Brown/master/188140", "catno": "NE
+        1376", "title": "James Brown - The Best Of James Brown", "thumb": "https://img.discogs.com/YPNVHT100SfeQ4bAc8Ff26ThMZE=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-685815-1399226395-9337.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/4-BdIs3bFlWVrd0ewI1ugaSF2SI=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-685815-1399226395-9337.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/masters/188140", "community": {"want":
+        242, "have": 1693}}, {"id": 712722, "type": "label", "master_id": null, "master_url":
+        null, "uri": "/label/712722-James-Brown-Productions", "title": "James Brown
+        Productions", "thumb": "https://img.discogs.com/ycLUry6KeMcTv9kGzN7xq9lbc1A=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/L-712722-1614068006-7542.png.jpg",
+        "cover_image": "https://img.discogs.com/-IIeoYOQoNj6LwosgiDkjJEizKE=/fit-in/346x185/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/L-712722-1614068006-7542.png.jpg",
+        "resource_url": "https://api.discogs.com/labels/712722"}, {"country": "UK",
+        "year": "1987", "format": ["Vinyl", "LP", "Compilation"], "label": ["K-Tel",
+        "K-Tel International (UK) Ltd.", "K-Tel International (UK) Ltd.", "Polygram
+        Record Operations Ltd.", "Scotti Brothers", "Intersong Music Ltd.", "Tro Essex
+        Music Ltd.", "SBK Songs"], "type": "release", "genre": ["Funk / Soul"], "style":
+        ["Soul", "Funk"], "id": 685815, "barcode": ["5 012206 137614", "NE-1376+A  ORLAKE
+        ( etched )", "NE-1376-B    DAMONT   MT  ( etched )"], "master_id": 188140,
+        "master_url": "https://api.discogs.com/masters/188140", "uri": "/James-Brown-The-Best-Of-James-Brown/release/685815",
+        "catno": "NE 1376", "title": "James Brown - The Best Of James Brown", "thumb":
+        "https://img.discogs.com/YPNVHT100SfeQ4bAc8Ff26ThMZE=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-685815-1399226395-9337.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/4-BdIs3bFlWVrd0ewI1ugaSF2SI=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-685815-1399226395-9337.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/685815", "community": {"want":
+        200, "have": 1522}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["LP", "Compilation"]}]}, {"country": "US", "year": "1962",
+        "format": ["Vinyl", "LP", "Album", "Mono"], "label": ["King Records", "King
+        Records, Inc."], "type": "master", "genre": ["Funk / Soul"], "style": ["Soul",
+        "Twist"], "id": 485934, "barcode": [], "master_id": 485934, "master_url":
+        "https://api.discogs.com/masters/485934", "uri": "/James-Brown-Good-Good-Twistin-With-James-Brown/master/485934",
+        "catno": "780", "title": "James Brown - Good, Good, Twistin'' With James Brown",
+        "thumb": "https://img.discogs.com/rdJ_woC9hAnqRPtsklvqfzfvH70=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2517153-1367784363-9215.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/v4nF_Y7L9J8AtRshWkLe9Sv566A=/fit-in/594x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2517153-1367784363-9215.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/masters/485934", "community": {"want":
+        1043, "have": 1146}}, {"country": "Germany", "year": "1981", "format": ["Vinyl",
+        "LP", "Compilation"], "label": ["Polydor", "Polydor Incorporated", "Deutsche
+        Grammophon GmbH", "PRS Hannover", "PRS Hannover", "PRS Hannover"], "type":
+        "release", "genre": ["Funk / Soul"], "style": ["Soul"], "id": 535420, "barcode":
+        ["LC 0309", "GEMA", "2499 052 S1=2 320 AC", "2499 052 S2=2 320 V", "2499 052
+        S1=2 320 AC", "2499 052 S2=2 320 Z1"], "master_id": 288740, "master_url":
+        "https://api.discogs.com/masters/288740", "uri": "/James-Brown-The-Best-Of-James-Brown/release/535420",
+        "catno": "2499 052", "title": "James Brown - The Best Of James Brown", "thumb":
+        "https://img.discogs.com/Zprp_yatZKeBNRGVvMBjMKLK4KI=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-535420-1339255748-8330.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/cppa4B-NfCvTyC2IZ5KKV81eSwY=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-535420-1339255748-8330.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/535420", "community": {"want":
+        144, "have": 1392}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["LP", "Compilation"]}]}, {"country": "US", "year": "1961",
+        "format": ["Vinyl", "LP", "Album", "Mono"], "label": ["King Records"], "type":
+        "master", "genre": ["Funk / Soul"], "style": ["Soul"], "id": 451713, "barcode":
+        [], "master_id": 451713, "master_url": "https://api.discogs.com/masters/451713",
+        "uri": "/James-Brown-The-Famous-Flames-The-Amazing-James-Brown/master/451713",
+        "catno": "743", "title": "James Brown & The Famous Flames - The Amazing James
+        Brown", "thumb": "https://img.discogs.com/J_NUZBSWwrN9KB1WzpviGzYMVJc=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3812950-1345400860-1551.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/nvT6KaP4q5PrK-TYcZVrC2VgGTM=/fit-in/500x500/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3812950-1345400860-1551.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/masters/451713", "community": {"want":
+        693, "have": 886}}, {"country": "UK", "year": "1984", "format": ["Vinyl",
+        "12\"", "45 RPM", "Single"], "label": ["Virgin", "Some Bizzare", "Virgin Records
+        Ltd.", "Virgin Records Ltd.", "EMI Records", "Island Music Ltd."], "type":
+        "master", "genre": ["Electronic"], "style": ["Electro", "Industrial"], "id":
+        2747, "barcode": ["CVS 412 A-1U-1-1-  A PORKY PRIME CUT.   WE TOIL TO THE
+        BOIL.", "CVS 412 B-1U-1-1-  A PORKY PRIME CUT. WHAT''S IN YOUR MIND?"], "master_id":
+        2747, "master_url": "https://api.discogs.com/masters/2747", "uri": "/Cabaret-Voltaire-James-Brown/master/2747",
+        "catno": "CVS4 12", "title": "Cabaret Voltaire - James Brown", "thumb": "https://img.discogs.com/MUk37tyy_DFif7VNL4Yjom24qQY=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-45527-1291810091.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/Ao83yUIIAwbrbSipfzj_F4SuKyM=/fit-in/200x200/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-45527-1291810091.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/masters/2747", "community": {"want":
+        293, "have": 1108}}, {"country": "US", "year": "1965", "format": ["Vinyl",
+        "LP", "Album", "Stereo"], "label": ["Smash Records"], "type": "release", "genre":
+        ["Funk / Soul"], "style": ["Soul"], "id": 2952257, "barcode": [], "master_id":
+        375115, "master_url": "https://api.discogs.com/masters/375115", "uri": "/James-Brown-James-Brown-Plays-James-Brown-Today-Yesterday-James-Brown-At-The-Organ/release/2952257",
+        "catno": "SRS-67072", "title": "James Brown - James Brown Plays James Brown
+        - Today & Yesterday - James Brown At The Organ", "thumb": "https://img.discogs.com/VlYfElulK_ZKJdckQgA7qHuZUSw=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2952257-1368708826-2364.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/iW6gpO_uN_8kKDKEsAQcJD9tIT4=/fit-in/519x520/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2952257-1368708826-2364.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/2952257", "community": {"want":
+        94, "have": 478}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["LP", "Album", "Stereo"]}]}, {"country": "Germany",
+        "year": "1980", "format": ["Vinyl", "LP", "Compilation", "Stereo"], "label":
+        ["Polydor", "Deutsche Grammophon GmbH", "Polydor International GmbH", "T.K.
+        Productions, Inc.", "PRS Hannover", "PRS Hannover", "Gerhard Kaiser GmbH",
+        "Dynatone Publishing Co.", "Muscle Shoals Sound Pub. Co., Inc.", "Third World
+        Pub."], "type": "release", "genre": ["Funk / Soul"], "style": ["Funk", "Disco"],
+        "id": 2307589, "barcode": ["GEMA", "LC 0309", "2417 351 S 1 3 20", "2417 351
+        S 2 = 2 320", "2417 351 S 1 3 20 1 G", "2417 351 S 2 3 20 1 E", "2417 351
+        S 1 3 20 1 P", "2417 351 S 2 = 2 320 W A 1", "2417 351 S 1 111 3 20 V3 2",
+        "2417 351 S 2 = 2 112 320 V3 2"], "master_id": 105601, "master_url": "https://api.discogs.com/masters/105601",
+        "uri": "/James-Brown-The-James-Brown-Special/release/2307589", "catno": "2417
+        351", "title": "James Brown - The James Brown Special", "thumb": "https://img.discogs.com/DH7SX6NN5C7T4WfoJHCNIv1eZW0=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2307589-1404599079-3492.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/HxJ_0dpQ4p29n-GpNcV3zmOhFNg=/fit-in/600x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2307589-1404599079-3492.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/2307589", "community": {"want":
+        48, "have": 941}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["LP", "Compilation", "Stereo"]}]}, {"country": "US",
+        "year": "1963", "format": ["Vinyl", "LP", "Album", "Stereo"], "label": ["King
+        Records"], "type": "release", "genre": ["Funk / Soul"], "style": ["Rhythm
+        & Blues", "Soul"], "id": 6300716, "barcode": [], "master_id": 65036, "master_url":
+        "https://api.discogs.com/masters/65036", "uri": "/James-Brown-James-Brown-Live-At-The-Apollo/release/6300716",
+        "catno": "K-826", "title": "James Brown - James Brown Live At The Apollo",
+        "thumb": "https://img.discogs.com/azhUepa8ZDadIuMd7dxAIG7Zq14=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-6300716-1446639448-9442.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/8tgictMeetEqVCwTLy8VgytqJfg=/fit-in/388x388/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6300716-1446639448-9442.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/6300716", "community": {"want":
+        1562, "have": 548}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["LP", "Album", "Stereo"]}]}, {"country": "Italy", "year":
+        "1981", "format": ["Vinyl", "LP", "Compilation"], "label": ["Curcio", "La
+        Grande Storia Del Rock", "Phonogram International B.V.", "Polygram, Tribiano"],
+        "type": "release", "genre": ["Funk / Soul"], "style": ["Soul", "Funk"], "id":
+        1488035, "barcode": ["SIAE", "GSR 8 A 520 481 \u24c51981", "GSR 8 B 520 "],
+        "master_id": 853742, "master_url": "https://api.discogs.com/masters/853742",
+        "uri": "/James-Brown-James-Brown/release/1488035", "catno": "GSR - 8", "title":
+        "James Brown - James Brown", "thumb": "https://img.discogs.com/Y16wG0mn1e9OfJV3hDM_Yz4asD8=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1488035-1446686574-7163.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/6SFmE6zEdj8PTLq8Cfvxm6Ykvtk=/fit-in/600x598/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1488035-1446686574-7163.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/1488035", "community": {"want":
+        26, "have": 445}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["LP", "Compilation"]}]}, {"country": "UK", "year": "1984",
+        "format": ["Vinyl", "12\"", "45 RPM", "Single"], "label": ["Virgin", "Some
+        Bizzare", "Virgin Records Ltd.", "Virgin Records Ltd.", "EMI Records", "Island
+        Music Ltd."], "type": "release", "genre": ["Electronic"], "style": ["Electro",
+        "Industrial"], "id": 45527, "barcode": ["CVS 412 A-1U-1-1-  A PORKY PRIME
+        CUT.   WE TOIL TO THE BOIL.", "CVS 412 B-1U-1-1-  A PORKY PRIME CUT. WHAT''S
+        IN YOUR MIND?"], "master_id": 2747, "master_url": "https://api.discogs.com/masters/2747",
+        "uri": "/Cabaret-Voltaire-James-Brown/release/45527", "catno": "CVS4 12",
+        "title": "Cabaret Voltaire - James Brown", "thumb": "https://img.discogs.com/MUk37tyy_DFif7VNL4Yjom24qQY=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-45527-1291810091.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/Ao83yUIIAwbrbSipfzj_F4SuKyM=/fit-in/200x200/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-45527-1291810091.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/45527", "community": {"want":
+        140, "have": 743}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["12\"", "45 RPM", "Single"]}]}, {"country": "US", "year":
+        "1981", "format": ["Vinyl", "LP", "Compilation"], "label": ["Polydor", "Masterdisk"],
+        "type": "master", "genre": ["Funk / Soul"], "style": ["Rhythm & Blues", "Funk"],
+        "id": 188130, "barcode": ["PD-1-6340-AS-PRC-C-2-1 [MASTERDISK] HW", "PD-1-6340-BS-PRC-C-1-1-11
+        [MASTERDISK]", "PD-1-6340-AS-PRC-C-1-1 [MASTERDISK] HW"], "master_id": 188130,
+        "master_url": "https://api.discogs.com/masters/188130", "uri": "/James-Brown-The-Best-Of-James-Brown/master/188130",
+        "catno": "PD-1-6340", "title": "James Brown - The Best Of James Brown", "thumb":
+        "https://img.discogs.com/eCOcjzOi5aT-L74A0Qa12g32fW8=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-676600-1577740931-5241.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/fku5N2gHg5TTV5E1c3fK4eMar6c=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-676600-1577740931-5241.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/masters/188130", "community": {"want":
+        189, "have": 1254}}, {"country": "US", "year": "1986", "format": ["Vinyl",
+        "LP", "Compilation"], "label": ["Polydor", "Polydor", "James Brown''s Funky
+        People", "PolyGram Records, Inc.", "PolyGram Records, Inc.", "PolyGram Records,
+        Inc.", "PolyGram Records, Inc.", "Unichappell Music, Inc.", "Dynatone Publishing
+        Co.", "PolyGram Studios", "Hauppauge Record Manufacturing Ltd.", "Frankford/Wayne
+        Mastering Labs"], "type": "master", "genre": ["Funk / Soul"], "style": ["Funk"],
+        "id": 150330, "barcode": ["0 422-829417-1 8", "042282941718", "0042282941718",
+        "422-829 417-1-AS HRM MASTERING BY FRANKFORD/WAYNE NEW YORK HERbiE JR :^)
+        A- \u25b7", "422-829 417-1-BS HRM F/W HERbiE JR :^) A- \u25b7", "422-829 417-1-AS
+        HRM HERbiE JR :^) A-", "422-829 417-1-BS HRM F/W HERbiE JR :^) A-", "MASTERING
+        BY FRANKFORD/WAYNE NEW YORK \u25b7", "\u25b7", "BMI"], "master_id": 150330,
+        "master_url": "https://api.discogs.com/masters/150330", "uri": "/Various-James-Browns-Funky-People/master/150330",
+        "catno": "422-829-417-1 Y-1", "title": "Various - James Brown''s Funky People",
+        "thumb": "https://img.discogs.com/LT6IXJ_VeF9Vhpx5-aus9wKlU8s=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-591230-1599770422-7476.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/-_b0d3Br8kKJS5QH4y3adTiYiVc=/fit-in/600x597/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-591230-1599770422-7476.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/masters/150330", "community": {"want":
+        1540, "have": 2778}}, {"country": "Europe", "genre": ["Funk / Soul"], "format":
+        ["CD", "Compilation"], "style": ["Rhythm & Blues", "Funk", "Soul"], "id":
+        105594, "label": ["Polydor", "PolyGram Records, Inc.", "Polydor Ltd. (UK)",
+        "PMDC, France"], "type": "master", "barcode": ["0 42284 58282 7", "BIEM STEMRA",
+        "LC 0309", "845 828-2 00A L7", "POL 900"], "master_id": 105594, "master_url":
+        "https://api.discogs.com/masters/105594", "uri": "/James-Brown-Sex-Machine-The-Very-Best-Of-James-Brown/master/105594",
+        "catno": "845 828-2", "title": "James Brown - Sex Machine: The Very Best Of
+        James Brown", "thumb": "https://img.discogs.com/cp3EESPL_IqRzFa7p_3jXWDEFnU=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-578839-1141691345.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/99RJzIKgFOB620pjPwWfO4VsVC8=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-578839-1141691345.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/masters/105594", "community": {"want":
+        473, "have": 2392}}, {"country": "Europe", "year": "1991", "format": ["Vinyl",
+        "12\"", "45 RPM", "Maxi-Single"], "label": ["ARS", "ARS/Hithouse Productions",
+        "Sony Music", "ARS Productions", "ARS/Hithouse Productions", "Sony/CBS, Haarlem"],
+        "type": "master", "genre": ["Electronic"], "style": ["Hardcore", "Techno"],
+        "id": 73195, "barcode": ["5 099765 760361", "01 657603 20 1A1", "01 657603
+        20 1B1", "BIEM/STEMRA", "LC 6341", "CB 181", "TA"], "master_id": 73195, "master_url":
+        "https://api.discogs.com/masters/73195", "uri": "/Holy-Noise-Featuring-The-Global-Insert-Project-James-Brown-Is-Still-Alive/master/73195",
+        "catno": "657603 6", "title": "Holy Noise Featuring The Global Insert Project
+        - James Brown Is Still Alive!!", "thumb": "https://img.discogs.com/_ffgeDMqi-61BVseXJ7_lByaqHQ=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-199377-1556443487-9056.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/dV_adeLqzkCO9H4Wgwe2bNxW1-E=/fit-in/600x597/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-199377-1556443487-9056.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/masters/73195", "community": {"want":
+        633, "have": 2094}}, {"id": 479438, "type": "artist", "master_id": null, "master_url":
+        null, "uri": "/artist/479438-James-Brown-6", "title": "James Brown (6)", "thumb":
+        "", "cover_image": "https://img.discogs.com/9eeb67629582016edad5eef62db2a4f304ff9857/images/spacer.gif",
+        "resource_url": "https://api.discogs.com/artists/479438"}, {"country": "UK
+        & Europe", "year": "1991", "format": ["Vinyl", "12\"", "45 RPM"], "label":
+        ["ZYX Records", "Orfa Music", "Hi-Tension", "SST Br\u00fcggemann GmbH", "Bernhard
+        Mikulski Schallplatten-Vertriebs-GmbH", "Bernhard Mikulski Schallplatten-Vertriebs-GmbH",
+        "Hess/Borgers", "RM-Schallplattenpresswerk GmbH"], "type": "release", "genre":
+        ["Electronic"], "style": ["Hardcore", "Techno"], "id": 25699, "barcode": ["090204
+        022021", "LC 6350", "GEMA", "43", "42", "ZYX 6586 - 12 A SST", "ZYX 6586 -
+        12 B SST"], "master_id": 41832, "master_url": "https://api.discogs.com/masters/41832",
+        "uri": "/LA-Style-James-Brown-Is-Dead/release/25699", "catno": "ZYX 6586-12",
+        "title": "L.A. Style - James Brown Is Dead", "thumb": "https://img.discogs.com/_P1r3TbZyRi8zXEg93vait_f0LA=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-25699-1167562874.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/cx8NKn1PKyTA6JvhsWMGWnuG5TA=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-25699-1167562874.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/25699", "community": {"want":
+        247, "have": 1351}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["12\"", "45 RPM"]}]}, {"country": "Netherlands", "year":
+        "1971", "format": ["Vinyl", "LP", "Compilation"], "label": ["Polydor", "Polydor
+        Special"], "type": "master", "genre": ["Funk / Soul"], "style": ["Soul", "Funk"],
+        "id": 194150, "barcode": [], "master_id": 194150, "master_url": "https://api.discogs.com/masters/194150",
+        "uri": "/James-Brown-Portrait-Of-James-Brown/master/194150", "catno": "2343
+        036", "title": "James Brown - Portrait Of James Brown", "thumb": "https://img.discogs.com/igGnbTW-UwO4S0EANnaEh0BsV3Y=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-606668-1379765154-2163.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/uZx3XWWUt_gUBVxgtm6MUo6i-t0=/fit-in/400x400/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-606668-1379765154-2163.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/masters/194150", "community": {"want":
+        150, "have": 784}}, {"country": "Germany", "year": "1966", "format": ["Vinyl",
+        "LP", "Compilation", "Stereo"], "label": ["International Polydor Production",
+        "Deutsche Grammophon Hamburg"], "type": "master", "genre": ["Funk / Soul"],
+        "style": ["Soul", "Funk"], "id": 384562, "barcode": ["623 017 A", "623 017
+        B", "GEMA"], "master_id": 384562, "master_url": "https://api.discogs.com/masters/384562",
+        "uri": "/James-Brown-And-His-Famous-Flames-James-Browns-Greatest-Hits/master/384562",
+        "catno": "623 017", "title": "James Brown And His Famous Flames* - James Brown''s
+        Greatest Hits", "thumb": "https://img.discogs.com/oo9gngEiOixQ1sHdy7N0_sR8I-Q=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3401163-1578426918-2393.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/hd8YBb1VWa5Bk0w_zTGipjPFtnY=/fit-in/600x589/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3401163-1578426918-2393.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/masters/384562", "community": {"want":
+        241, "have": 1059}}, {"country": "Italy", "year": "1982", "format": ["Vinyl",
+        "LP", "Compilation"], "label": ["SuperStar", "Armando Curcio Editore", "OFSA",
+        "Polygram Dischi S.p.A.", "Polygram, Tribiano"], "type": "release", "genre":
+        ["Funk / Soul"], "style": ["Funk", "Soul"], "id": 447079, "barcode": ["SIAE",
+        "SU-1025 A 520 1182 \u2117 1982", "SU 1025 B 520"], "master_id": 0, "master_url":
+        null, "uri": "/James-Brown-James-Brown/release/447079", "catno": "SU-1025",
+        "title": "James Brown - James Brown", "thumb": "https://img.discogs.com/pecJbzG9es9sv3o9WzrL_vIemss=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-447079-1203258764.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/0NzfUnZHYTJzrijhTJoN4wpHB1g=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-447079-1203258764.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/447079", "community": {"want":
+        29, "have": 336}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["LP", "Compilation"]}]}, {"country": "US", "year": "1985",
+        "format": ["Vinyl", "LP", "Compilation"], "label": ["Rhino Records"], "type":
+        "release", "genre": ["Funk / Soul"], "style": ["Soul", "Funk"], "id": 1220288,
+        "barcode": ["081227021917"], "master_id": 1115437, "master_url": "https://api.discogs.com/masters/1115437",
+        "uri": "/James-Brown-James-Browns-Greatest-Hits/release/1220288", "catno":
+        "RNLP 219", "title": "James Brown - James Brown''s Greatest Hits", "thumb":
+        "https://img.discogs.com/Gfdl6o9Ft5EXZItvk4eALWql158=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1220288-1201629338.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/eHc_dT5NK2EqMv8b2SOK1sOE-Ns=/fit-in/434x437/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1220288-1201629338.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/1220288", "community": {"want":
+        91, "have": 620}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["LP", "Compilation"]}]}, {"country": "US", "year": "1967",
+        "format": ["Vinyl", "LP", "Album", "Stereo"], "label": ["Smash Records", "Smash
+        Records", "Mercury Record Corporation"], "type": "master", "genre": ["Funk
+        / Soul"], "style": ["Rhythm & Blues", "Funk"], "id": 562014, "barcode": [],
+        "master_id": 562014, "master_url": "https://api.discogs.com/masters/562014",
+        "uri": "/James-Brown-James-Brown-Plays-The-Real-Thing/master/562014", "catno":
+        "SRS 67093", "title": "James Brown - James Brown Plays The Real Thing", "thumb":
+        "https://img.discogs.com/Z738YUecNW92sNNg5uqSd0KQ-xk=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2731589-1368906911-1213.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/OQMscGxNK9W_A0uGJQsQlBhlUqo=/fit-in/518x520/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2731589-1368906911-1213.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/masters/562014", "community": {"want":
+        607, "have": 668}}, {"id": 639525, "type": "artist", "master_id": null, "master_url":
+        null, "uri": "/artist/639525-James-Brown-9", "title": "James Brown (9)", "thumb":
+        "", "cover_image": "https://img.discogs.com/9eeb67629582016edad5eef62db2a4f304ff9857/images/spacer.gif",
+        "resource_url": "https://api.discogs.com/artists/639525"}, {"country": "UK",
+        "year": "2006", "format": ["CD", "Compilation"], "label": ["Mojo Magazine",
+        "VTV Optical Discs"], "type": "release", "genre": ["Funk / Soul"], "style":
+        ["Soul", "Funk"], "id": 730649, "barcode": ["MCPS", "MOJOJAMESBROWNAUG06 -
+        SP", "IFPI LK46", "IFPI 5M06", "IFPI 5M02"], "master_id": 0, "master_url":
+        null, "uri": "/Various-James-Browns-Funky-Summer/release/730649", "catno":
+        "August 2006", "title": "Various - James Brown''s Funky Summer", "thumb":
+        "https://img.discogs.com/kz17XFur0cOMlEylGILrBdydFoM=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-730649-1335687978.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/r940c6L-mtdHeoO0y70dQoSmA3k=/fit-in/600x597/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-730649-1335687978.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/730649", "community": {"want":
+        39, "have": 745}, "format_quantity": 1, "formats": [{"name": "CD", "qty":
+        "1", "descriptions": ["Compilation"]}]}, {"country": "US", "year": "1966",
+        "format": ["Vinyl", "LP", "Album", "Reissue"], "label": ["King Records"],
+        "type": "release", "genre": ["Funk / Soul"], "style": ["Rhythm & Blues", "Soul"],
+        "id": 868749, "barcode": [], "master_id": 65036, "master_url": "https://api.discogs.com/masters/65036",
+        "uri": "/James-Brown-James-Brown-Live-At-The-Apollo/release/868749", "catno":
+        "K-826", "title": "James Brown - James Brown Live At The Apollo", "thumb":
+        "https://img.discogs.com/WlC9oMEaAI2UikRyQTFeYUe5qQw=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-868749-1368630786-2919.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/BqBbkyvs1MgM9eaHqr9UNkmv5_w=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-868749-1368630786-2919.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/868749", "community": {"want":
+        797, "have": 399}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["LP", "Album", "Reissue"]}]}, {"id": 748178, "type":
+        "artist", "master_id": null, "master_url": null, "uri": "/artist/748178-James-Brown-13",
+        "title": "James Brown (13)", "thumb": "https://img.discogs.com/ipVgT6vlZtKQOGC85VOF5nFr9qw=/150x150/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/A-748178-1542144435-7543.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/UzgoGBw6VDsYBJWZ2MYvaomBh3A=/162x178/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-748178-1542144435-7543.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/artists/748178"}, {"id": 567258,
+        "type": "label", "master_id": null, "master_url": null, "uri": "/label/567258-James-Brown-Sons",
+        "title": "James Brown & Sons", "thumb": "", "cover_image": "https://img.discogs.com/9eeb67629582016edad5eef62db2a4f304ff9857/images/spacer.gif",
+        "resource_url": "https://api.discogs.com/labels/567258"}, {"id": 744231, "type":
+        "label", "master_id": null, "master_url": null, "uri": "/label/744231-James-Brown-The-Singles",
+        "title": "James Brown: The Singles", "thumb": "", "cover_image": "https://img.discogs.com/9eeb67629582016edad5eef62db2a4f304ff9857/images/spacer.gif",
+        "resource_url": "https://api.discogs.com/labels/744231"}, {"country": "US",
+        "year": "1963", "format": ["Vinyl", "LP", "Album", "Mono"], "label": ["King
+        Records"], "type": "release", "genre": ["Funk / Soul"], "style": ["Rhythm
+        & Blues", "Soul"], "id": 2585867, "barcode": ["K-12-826-A-X3", "K-12-826-B-X3"],
+        "master_id": 65036, "master_url": "https://api.discogs.com/masters/65036",
+        "uri": "/James-Brown-James-Brown-Live-At-The-Apollo/release/2585867", "catno":
+        "826", "title": "James Brown - James Brown Live At The Apollo", "thumb": "https://img.discogs.com/IpMPTojZdaUUuC3ov3lQz7loYHY=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2585867-1291802250.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/6Tt0YlAJ5bTOMbnTXb5uA1zX3vs=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2585867-1291802250.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/2585867", "community": {"want":
+        690, "have": 468}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["LP", "Album", "Mono"]}]}, {"country": "US", "year":
+        "1985", "format": ["Vinyl", "LP", "Compilation"], "label": ["Rhino Records"],
+        "type": "master", "genre": ["Funk / Soul"], "style": ["Soul", "Funk"], "id":
+        1115437, "barcode": ["081227021917"], "master_id": 1115437, "master_url":
+        "https://api.discogs.com/masters/1115437", "uri": "/James-Brown-James-Browns-Greatest-Hits/master/1115437",
+        "catno": "RNLP 219", "title": "James Brown - James Brown''s Greatest Hits",
+        "thumb": "https://img.discogs.com/Gfdl6o9Ft5EXZItvk4eALWql158=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1220288-1201629338.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/eHc_dT5NK2EqMv8b2SOK1sOE-Ns=/fit-in/434x437/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1220288-1201629338.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/masters/1115437", "community": {"want":
+        95, "have": 649}}, {"country": "Netherlands", "year": "1971", "format": ["Vinyl",
+        "LP", "Compilation"], "label": ["Polydor", "Polydor Special"], "type": "release",
+        "genre": ["Funk / Soul"], "style": ["Soul", "Funk"], "id": 606668, "barcode":
+        [], "master_id": 194150, "master_url": "https://api.discogs.com/masters/194150",
+        "uri": "/James-Brown-Portrait-Of-James-Brown/release/606668", "catno": "2343
+        036", "title": "James Brown - Portrait Of James Brown", "thumb": "https://img.discogs.com/igGnbTW-UwO4S0EANnaEh0BsV3Y=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-606668-1379765154-2163.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/uZx3XWWUt_gUBVxgtm6MUo6i-t0=/fit-in/400x400/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-606668-1379765154-2163.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/606668", "community": {"want":
+        48, "have": 550}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["LP", "Compilation"]}]}, {"country": "US", "year": "1991",
+        "format": ["Vinyl", "12\"", "33 \u2153 RPM"], "label": ["Watts Music", "Hi-Tension
+        Records B.V.B.A.", "Orfa Music", "Hi-Tension", "Watts Music, Inc.", "Watts
+        Music, Inc.", "Watts Music, Inc.", "Watts Music, Inc."], "type": "release",
+        "genre": ["Electronic"], "style": ["Hardcore", "Techno"], "id": 85430, "barcode":
+        ["WR-714 A DMS eg", "WR-714 B"], "master_id": 41832, "master_url": "https://api.discogs.com/masters/41832",
+        "uri": "/LA-Style-James-Brown-Is-Dead/release/85430", "catno": "WR714", "title":
+        "L.A. Style - James Brown Is Dead", "thumb": "https://img.discogs.com/nU47OxYK6CDKpmo82JHW5tNRanY=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-85430-1108312988.jpg.jpg",
+        "cover_image": "https://img.discogs.com/qWxvXgY1WK6dxueUl2oPgd2DZYE=/fit-in/450x450/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-85430-1108312988.jpg.jpg",
+        "resource_url": "https://api.discogs.com/releases/85430", "community": {"want":
+        188, "have": 800}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["12\"", "33 \u2153 RPM"]}]}, {"country": "Spain", "year":
+        "1982", "format": ["Vinyl", "LP", "Compilation"], "label": ["Polydor", "Historia
+        De La Musica Rock", "Polydor, S.A.", "COFASA", "Polydor Inc. New York", "Orbis"],
+        "type": "release", "genre": ["Funk / Soul"], "style": ["Funk", "Soul"], "id":
+        4301598, "barcode": ["M. 14150-1982", "SGAE"], "master_id": 288740, "master_url":
+        "https://api.discogs.com/masters/288740", "uri": "/James-Brown-James-Brown/release/4301598",
+        "catno": "2861 296", "title": "James Brown - James Brown", "thumb": "https://img.discogs.com/by65yRRFgykGclihcaIYVLQtGsY=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-4301598-1610963658-8718.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/w9mnHGnZzswbXWpBBWoFC6C5zr4=/fit-in/600x604/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-4301598-1610963658-8718.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/4301598", "community": {"want":
+        41, "have": 241}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["LP", "Compilation"]}]}, {"country": "US", "year": "1972",
+        "format": ["Vinyl", "LP", "Compilation"], "label": ["Polydor"], "type": "release",
+        "genre": ["Funk / Soul"], "style": ["Funk"], "id": 641746, "barcode": [],
+        "master_id": 187391, "master_url": "https://api.discogs.com/masters/187391",
+        "uri": "/James-Brown-James-Brown-Soul-Classics/release/641746", "catno": "2391
+        037", "title": "James Brown - James Brown Soul Classics", "thumb": "https://img.discogs.com/ijkNcZ7Cg6gjVGOQv1EolfBzJgY=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-641746-1189158703.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/SL3d-k7Fi5_Hhfz8OHeiyO11-rA=/fit-in/280x280/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-641746-1189158703.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/641746", "community": {"want":
+        167, "have": 400}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["LP", "Compilation"]}]}, {"country": "Italy", "genre":
+        ["Funk / Soul"], "format": ["Vinyl", "LP", "Compilation", "Reissue", "Stereo"],
+        "style": ["Funk"], "id": 1257082, "label": ["Polydor", "Successo", "Polygram
+        Dischi S.p.A.", "Polydor Incorporated"], "type": "release", "barcode": ["2391
+        057.1", "2391 057.2", "S.I.A.E."], "master_id": 190186, "master_url": "https://api.discogs.com/masters/190186",
+        "uri": "/James-Brown-James-Brown-Soul-Classics/release/1257082", "catno":
+        "2486 233", "title": "James Brown - James Brown Soul Classics", "thumb": "https://img.discogs.com/AX2oePwZMVp-oQj0SDYz-tFULzI=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1257082-1304705860.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/cGIFp100aNPkE6RaHs7OOSsbPUs=/fit-in/595x598/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1257082-1304705860.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/1257082", "community": {"want":
+        48, "have": 483}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["LP", "Compilation", "Reissue", "Stereo"]}]}]}'
+  recorded_at: Mon, 24 May 2021 17:56:18 GMT
+- request:
+    method: get
+    uri: https://api.discogs.com/artists/12596/releases?format=album
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 24 May 2021 17:56:18 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Discogs-Ratelimit:
+      - '25'
+      X-Discogs-Ratelimit-Remaining:
+      - '24'
+      X-Discogs-Ratelimit-Used:
+      - '1'
+      Access-Control-Allow-Headers:
+      - Content-Type, authorization, User-Agent, Private-Auth-Secret, Discogs-UID
+      Access-Control-Allow-Methods:
+      - HEAD,OPTIONS,GET,OPTIONS
+      Access-Control-Expose-Headers:
+      - Location
+      Content-Language:
+      - en
+      X-Discogs-Media-Type:
+      - discogs.v2
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - public, must-revalidate
+      Strict-Transport-Security:
+      - max-age=15724800
+    body:
+      encoding: ASCII-8BIT
+      string: '{"pagination": {"page": 1, "pages": 195, "per_page": 50, "items": 9745,
+        "urls": {"last": "https://api.discogs.com/artists/12596/releases?format=album&page=195&per_page=50",
+        "next": "https://api.discogs.com/artists/12596/releases?format=album&page=2&per_page=50"}},
+        "releases": [{"id": 1727194, "title": "Chonnie-On-Chon / I Won''t Plead No
+        More", "type": "master", "main_release": 2182057, "artist": "James Brown /
+        James Brown And The Famous Flames*", "role": "Main", "resource_url": "https://api.discogs.com/masters/1727194",
+        "year": 1956, "thumb": "", "stats": {"community": {"in_wantlist": 118, "in_collection":
+        35}}}, {"id": 1660179, "title": "Love Or A Game ", "type": "master", "main_release":
+        2182082, "artist": "James Brown", "role": "Main", "resource_url": "https://api.discogs.com/masters/1660179",
+        "year": 1957, "thumb": "", "stats": {"community": {"in_wantlist": 69, "in_collection":
+        11}}}, {"id": 1503311, "title": "Po'' Mary / Now Darling ", "type": "master",
+        "main_release": 13230719, "artist": "John Littleton And The Capistranos featuring
+        James Brown, Alex Sample & Orchestra", "role": "Main", "resource_url": "https://api.discogs.com/masters/1503311",
+        "year": 1958, "thumb": "", "stats": {"community": {"in_wantlist": 5, "in_collection":
+        0}}}, {"id": 1155639, "title": "The Bells ", "type": "master", "main_release":
+        1727385, "artist": "James Brown", "role": "Main", "resource_url": "https://api.discogs.com/masters/1155639",
+        "year": 1960, "thumb": "", "stats": {"community": {"in_wantlist": 66, "in_collection":
+        44}}}, {"id": 1061972, "title": "Suds / Sticky", "type": "master", "main_release":
+        3120579, "artist": "James Brown Presents His Band*", "role": "Main", "resource_url":
+        "https://api.discogs.com/masters/1061972", "year": 1961, "thumb": "", "stats":
+        {"community": {"in_wantlist": 59, "in_collection": 35}}}, {"id": 416043, "title":
+        "Night Train", "type": "master", "main_release": 2755052, "artist": "James
+        Brown Presents His Band*", "role": "Main", "resource_url": "https://api.discogs.com/masters/416043",
+        "year": 1961, "thumb": "", "stats": {"community": {"in_wantlist": 316, "in_collection":
+        73}}}, {"id": 5928323, "status": "Accepted", "type": "release", "format":
+        "7\", EP", "label": "Discophon", "title": "Sticky / Perdido Street", "resource_url":
+        "https://api.discogs.com/releases/5928323", "role": "Main", "artist": "James
+        Brown, Herb Hardesty", "year": 1962, "thumb": "", "stats": {"community": {"in_wantlist":
+        71, "in_collection": 6}}}, {"id": 485934, "title": "Good, Good, Twistin''
+        With James Brown", "type": "master", "main_release": 2517153, "artist": "James
+        Brown", "role": "Main", "resource_url": "https://api.discogs.com/masters/485934",
+        "year": 1962, "thumb": "", "stats": {"community": {"in_wantlist": 297, "in_collection":
+        73}}}, {"id": 98793, "title": "Prisoner Of Love", "type": "master", "main_release":
+        1200950, "artist": "James Brown", "role": "Main", "resource_url": "https://api.discogs.com/masters/98793",
+        "year": 1963, "thumb": "", "stats": {"community": {"in_wantlist": 298, "in_collection":
+        453}}}, {"id": 497452, "title": "Live At The Apollo", "type": "master", "main_release":
+        3329937, "artist": "James Brown", "role": "Main", "resource_url": "https://api.discogs.com/masters/497452",
+        "year": 1963, "thumb": "", "stats": {"community": {"in_wantlist": 38, "in_collection":
+        17}}}, {"id": 65036, "title": "James Brown Live At The Apollo", "type": "master",
+        "main_release": 6300716, "artist": "James Brown", "role": "Main", "resource_url":
+        "https://api.discogs.com/masters/65036", "year": 1963, "thumb": "", "stats":
+        {"community": {"in_wantlist": 1562, "in_collection": 548}}}, {"id": 3945253,
+        "status": "Accepted", "type": "release", "format": "7\", EP, Promo", "label":
+        "Smash Records (4)", "title": "Out Of Sight", "resource_url": "https://api.discogs.com/releases/3945253",
+        "role": "Main", "artist": "James Brown", "year": 1964, "thumb": "", "stats":
+        {"community": {"in_wantlist": 37, "in_collection": 17}}}, {"id": 7391820,
+        "status": "Accepted", "type": "release", "format": "7\", EP", "label": "Polydor",
+        "title": "Oh Baby Don''t You Weep", "resource_url": "https://api.discogs.com/releases/7391820",
+        "role": "Main", "artist": "James Brown", "year": 1964, "thumb": "", "stats":
+        {"community": {"in_wantlist": 29, "in_collection": 13}}}, {"id": 15091821,
+        "status": "Accepted", "type": "release", "format": "7\", EP", "label": "Philips",
+        "title": "Happenin''", "resource_url": "https://api.discogs.com/releases/15091821",
+        "role": "Main", "artist": "James Brown", "year": 1964, "thumb": "", "stats":
+        {"community": {"in_wantlist": 6, "in_collection": 5}}}, {"id": 222529, "title":
+        "Out Of Sight / Maybe The Last Time", "type": "master", "main_release": 2836545,
+        "artist": "James Brown", "role": "Main", "resource_url": "https://api.discogs.com/masters/222529",
+        "year": 1964, "thumb": "", "stats": {"community": {"in_wantlist": 28, "in_collection":
+        31}}}, {"id": 1427220, "title": "So Long", "type": "master", "main_release":
+        5584488, "artist": "James Brown", "role": "Main", "resource_url": "https://api.discogs.com/masters/1427220",
+        "year": 1964, "thumb": "", "stats": {"community": {"in_wantlist": 19, "in_collection":
+        6}}}, {"id": 52599, "title": "Pure Dynamite! Live At The Royal", "type": "master",
+        "main_release": 1636573, "artist": "James Brown", "role": "Main", "resource_url":
+        "https://api.discogs.com/masters/52599", "year": 1964, "thumb": "", "stats":
+        {"community": {"in_wantlist": 180, "in_collection": 324}}}, {"id": 406090,
+        "title": "Caldonia / Evil", "type": "master", "main_release": 603197, "artist":
+        "James Brown", "role": "Main", "resource_url": "https://api.discogs.com/masters/406090",
+        "year": 1964, "thumb": "", "stats": {"community": {"in_wantlist": 53, "in_collection":
+        114}}}, {"id": 244707, "title": "Grits & Soul", "type": "master", "main_release":
+        1134640, "artist": "James Brown", "role": "Main", "resource_url": "https://api.discogs.com/masters/244707",
+        "year": 1964, "thumb": "", "stats": {"community": {"in_wantlist": 205, "in_collection":
+        181}}}, {"id": 244708, "title": "Showtime", "type": "master", "main_release":
+        2237140, "artist": "James Brown", "role": "Main", "resource_url": "https://api.discogs.com/masters/244708",
+        "year": 1964, "thumb": "", "stats": {"community": {"in_wantlist": 200, "in_collection":
+        437}}}, {"id": 5393732, "status": "Accepted", "type": "release", "format":
+        "7\", Jukebox", "label": "Smash Records (4)", "title": "Grits & Soul", "resource_url":
+        "https://api.discogs.com/releases/5393732", "role": "Main", "artist": "James
+        Brown", "year": 1965, "thumb": "", "stats": {"community": {"in_wantlist":
+        5, "in_collection": 5}}}, {"id": 11039014, "status": "Accepted", "type": "release",
+        "format": "7\", EP", "label": "Ember Records", "title": "I Do Just What I
+        Want", "resource_url": "https://api.discogs.com/releases/11039014", "role":
+        "Main", "artist": "James Brown", "year": 1965, "thumb": "", "stats": {"community":
+        {"in_wantlist": 22, "in_collection": 5}}}, {"id": 16047019, "status": "Accepted",
+        "type": "release", "format": "7\", EP, Mono", "label": "International Polydor
+        Production", "title": "I Got You (I Feel Good)", "resource_url": "https://api.discogs.com/releases/16047019",
+        "role": "Main", "artist": "James Brown", "year": 1965, "thumb": "", "stats":
+        {"community": {"in_wantlist": 9, "in_collection": 1}}}, {"id": 590522, "title":
+        "Try Me ", "type": "master", "main_release": 919684, "artist": "James Brown",
+        "role": "Main", "resource_url": "https://api.discogs.com/masters/590522",
+        "year": 1965, "thumb": "", "stats": {"community": {"in_wantlist": 110, "in_collection":
+        174}}}, {"id": 215280, "title": "I Got You (And I Feel Good)  ", "type": "master",
+        "main_release": 12248420, "artist": "James Brown", "role": "Main", "resource_url":
+        "https://api.discogs.com/masters/215280", "year": 1965, "thumb": "", "stats":
+        {"community": {"in_wantlist": 30, "in_collection": 1}}}, {"id": 375115, "title":
+        "James Brown Plays James Brown - Today & Yesterday - James Brown At The Organ",
+        "type": "master", "main_release": 1425385, "artist": "James Brown", "role":
+        "Main", "resource_url": "https://api.discogs.com/masters/375115", "year":
+        1965, "thumb": "", "stats": {"community": {"in_wantlist": 134, "in_collection":
+        658}}}, {"id": 211806, "title": "Out Of Sight", "type": "master", "main_release":
+        2237105, "artist": "James Brown", "role": "Main", "resource_url": "https://api.discogs.com/masters/211806",
+        "year": 1965, "thumb": "", "stats": {"community": {"in_wantlist": 288, "in_collection":
+        77}}}, {"id": 286362, "title": "Papa''s Got A Brand New Bag", "type": "master",
+        "main_release": 2626360, "artist": "James Brown", "role": "Main", "resource_url":
+        "https://api.discogs.com/masters/286362", "year": 1965, "thumb": "", "stats":
+        {"community": {"in_wantlist": 454, "in_collection": 988}}}, {"id": 2288941,
+        "status": "Accepted", "type": "release", "format": "LP, Comp", "label": "Philips",
+        "title": "James Brown Plays Rhythm And Blues", "resource_url": "https://api.discogs.com/releases/2288941",
+        "role": "Main", "artist": "James Brown", "year": 1966, "thumb": "", "stats":
+        {"community": {"in_wantlist": 27, "in_collection": 35}}}, {"id": 2306183,
+        "status": "Accepted", "type": "release", "format": "7\", EP", "label": "Pye
+        International", "title": "I''ll Go Crazy", "resource_url": "https://api.discogs.com/releases/2306183",
+        "role": "Main", "artist": "James Brown", "year": 1966, "thumb": "", "stats":
+        {"community": {"in_wantlist": 33, "in_collection": 20}}}, {"id": 2817068,
+        "status": "Accepted", "type": "release", "format": "7\", EP", "label": "International
+        Polydor Production, Polydor", "title": "Money Won''t Change You", "resource_url":
+        "https://api.discogs.com/releases/2817068", "role": "Main", "artist": "James
+        Brown", "year": 1966, "thumb": "", "stats": {"community": {"in_wantlist":
+        31, "in_collection": 77}}}, {"id": 3601847, "status": "Accepted", "type":
+        "release", "format": "LP, Comp, Promo", "label": "Smash Records (4), Smash
+        Records (4)", "title": "The Return Of Roger Miller / James Brown Plays New
+        Breed (The Boo-Ga-Loo)", "resource_url": "https://api.discogs.com/releases/3601847",
+        "role": "Main", "artist": "Roger Miller / James Brown", "year": 1966, "thumb":
+        "", "stats": {"community": {"in_wantlist": 14, "in_collection": 3}}}, {"id":
+        3936506, "status": "Accepted", "type": "release", "format": "7\", EP", "label":
+        "International Polydor Production", "title": "Sweet Little Baby Boy", "resource_url":
+        "https://api.discogs.com/releases/3936506", "role": "Main", "artist": "James
+        Brown", "year": 1966, "thumb": "", "stats": {"community": {"in_wantlist":
+        17, "in_collection": 33}}}, {"id": 4022726, "status": "Accepted", "type":
+        "release", "format": "7\", EP", "label": "International Polydor Production",
+        "title": "Ain''t That A Groove", "resource_url": "https://api.discogs.com/releases/4022726",
+        "role": "Main", "artist": "James Brown", "year": 1966, "thumb": "", "stats":
+        {"community": {"in_wantlist": 34, "in_collection": 70}}}, {"id": 6818340,
+        "status": "Accepted", "type": "release", "format": "7\", EP", "label": "Pye
+        International", "title": "Prisoner Of Love", "resource_url": "https://api.discogs.com/releases/6818340",
+        "role": "Main", "artist": "James Brown", "year": 1966, "thumb": "", "stats":
+        {"community": {"in_wantlist": 18, "in_collection": 7}}}, {"id": 7595247, "status":
+        "Accepted", "type": "release", "format": "7\", EP", "label": "Pye International",
+        "title": "I Got You", "resource_url": "https://api.discogs.com/releases/7595247",
+        "role": "Main", "artist": "James Brown", "year": 1966, "thumb": "", "stats":
+        {"community": {"in_wantlist": 22, "in_collection": 13}}}, {"id": 15218178,
+        "status": "Accepted", "type": "release", "format": "Acetate, 7\", Advance",
+        "label": "Smash Records (4)", "title": "Lost In A Mood Of Changes ", "resource_url":
+        "https://api.discogs.com/releases/15218178", "role": "Main", "artist": "James
+        Brown", "year": 1966, "thumb": "", "stats": {"community": {"in_wantlist":
+        8, "in_collection": 1}}}, {"id": 223309, "title": "Plays New Breed (The Boo-Ga-Loo)",
+        "type": "master", "main_release": 1852385, "artist": "James Brown", "role":
+        "Main", "resource_url": "https://api.discogs.com/masters/223309", "year":
+        1966, "thumb": "", "stats": {"community": {"in_wantlist": 162, "in_collection":
+        456}}}, {"id": 346674, "title": "Mighty Instrumentals - Night Train", "type":
+        "master", "main_release": 3317663, "artist": "James Brown", "role": "Main",
+        "resource_url": "https://api.discogs.com/masters/346674", "year": 1966, "thumb":
+        "", "stats": {"community": {"in_wantlist": 108, "in_collection": 59}}}, {"id":
+        338870, "title": "James Brown Sings Christmas Songs", "type": "master", "main_release":
+        2428886, "artist": "James Brown", "role": "Main", "resource_url": "https://api.discogs.com/masters/338870",
+        "year": 1966, "thumb": "", "stats": {"community": {"in_wantlist": 134, "in_collection":
+        20}}}, {"id": 577013, "title": "James Brown''s Boo-Ga-Loo", "type": "master",
+        "main_release": 558489, "artist": "James Brown", "role": "Main", "resource_url":
+        "https://api.discogs.com/masters/577013", "year": 1966, "thumb": "", "stats":
+        {"community": {"in_wantlist": 80, "in_collection": 120}}}, {"id": 306690,
+        "title": "Let Yourself Go / Good Rockin'' Tonight", "type": "master", "main_release":
+        4257219, "artist": "James Brown", "role": "Main", "resource_url": "https://api.discogs.com/masters/306690",
+        "year": 1966, "thumb": "", "stats": {"community": {"in_wantlist": 21, "in_collection":
+        23}}}, {"id": 986752, "title": "I Got You", "type": "master", "main_release":
+        5260773, "artist": "James Brown", "role": "Main", "resource_url": "https://api.discogs.com/masters/986752",
+        "year": 1966, "thumb": "", "stats": {"community": {"in_wantlist": 58, "in_collection":
+        38}}}, {"id": 209110, "title": "It''s A Man''s Man''s Man''s World", "type":
+        "master", "main_release": 1268676, "artist": "James Brown", "role": "Main",
+        "resource_url": "https://api.discogs.com/masters/209110", "year": 1966, "thumb":
+        "", "stats": {"community": {"in_wantlist": 122, "in_collection": 369}}}, {"id":
+        274846, "title": "Handful Of Soul", "type": "master", "main_release": 2267334,
+        "artist": "James Brown", "role": "Main", "resource_url": "https://api.discogs.com/masters/274846",
+        "year": 1966, "thumb": "", "stats": {"community": {"in_wantlist": 150, "in_collection":
+        320}}}, {"id": 668193, "title": "Papa''s Got A Brand New Bag", "type": "master",
+        "main_release": 4689613, "artist": "James Brown", "role": "Main", "resource_url":
+        "https://api.discogs.com/masters/668193", "year": 1966, "thumb": "", "stats":
+        {"community": {"in_wantlist": 86, "in_collection": 121}}}, {"id": 283175,
+        "title": "New Breed", "type": "master", "main_release": 5987554, "artist":
+        "James Brown", "role": "Main", "resource_url": "https://api.discogs.com/masters/283175",
+        "year": 1966, "thumb": "", "stats": {"community": {"in_wantlist": 27, "in_collection":
+        26}}}, {"id": 226243, "title": "Money Won''t Change You", "type": "master",
+        "main_release": 8106640, "artist": "James Brown", "role": "Main", "resource_url":
+        "https://api.discogs.com/masters/226243", "year": 1966, "thumb": "", "stats":
+        {"community": {"in_wantlist": 15, "in_collection": 16}}}, {"id": 497445, "title":
+        "I''ll Go Crazy / Lost Someone", "type": "master", "main_release": 10631685,
+        "artist": "James Brown", "role": "Main", "resource_url": "https://api.discogs.com/masters/497445",
+        "year": 1966, "thumb": "", "stats": {"community": {"in_wantlist": 17, "in_collection":
+        4}}}, {"id": 849803, "title": "Papa''s Got A Brand New Bag ", "type": "master",
+        "main_release": 10966714, "artist": "James Brown", "role": "Main", "resource_url":
+        "https://api.discogs.com/masters/849803", "year": 1966, "thumb": "", "stats":
+        {"community": {"in_wantlist": 21, "in_collection": 12}}}]}'
+  recorded_at: Mon, 24 May 2021 17:56:18 GMT
+- request:
+    method: get
+    uri: https://api.discogs.com/database/search?artist=James%20Brown%20/%20James%20Brown%20And%20The%20Famous%20Flames*&key=ENV[discogs_key]&release_title=Chonnie-On-Chon%20/%20I%20Won%27t%20Plead%20No%20More&secret=ENV[discogs_secret]&year=1956
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 24 May 2021 17:56:19 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Discogs-Ratelimit:
+      - '60'
+      X-Discogs-Ratelimit-Remaining:
+      - '58'
+      X-Discogs-Ratelimit-Used:
+      - '2'
+      Access-Control-Allow-Headers:
+      - Content-Type, authorization, User-Agent, Private-Auth-Secret, Discogs-UID
+      Access-Control-Allow-Methods:
+      - HEAD,OPTIONS,GET,OPTIONS
+      Access-Control-Expose-Headers:
+      - Location
+      Content-Language:
+      - en
+      X-Discogs-Media-Type:
+      - discogs.v2
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - public, must-revalidate
+      Strict-Transport-Security:
+      - max-age=15724800
+    body:
+      encoding: ASCII-8BIT
+      string: '{"pagination": {"page": 1, "pages": 1, "per_page": 50, "items": 1,
+        "urls": {}}, "results": [{"country": "US", "year": "1956", "format": ["Vinyl",
+        "7\"", "45 RPM", "Single", "Test Pressing"], "label": ["Federal"], "type":
+        "release", "genre": ["Funk / Soul"], "style": ["Rhythm & Blues", "Soul"],
+        "id": 15204772, "barcode": ["F535", "F536"], "master_id": 1727194, "master_url":
+        "https://api.discogs.com/masters/1727194", "uri": "/James-Brown-James-Brown-With-The-Famous-Flames-Chonnie-On-Chon-I-Wont-Plead-No-More/release/15204772",
+        "catno": "12290", "title": "James Brown / James Brown With The Famous Flames*
+        - Chonnie-On-Chon / I Won''t Plead No More", "thumb": "https://img.discogs.com/u9GU73-Fc7twgHrc51nQfVl-g1s=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-15204772-1588075509-4006.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/9ozfmXXpmHC9nrOTWCUxDPA-ST4=/fit-in/600x611/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-15204772-1588075509-4006.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/15204772", "community":
+        {"want": 15, "have": 0}, "format_quantity": 1, "formats": [{"name": "Vinyl",
+        "qty": "1", "descriptions": ["7\"", "45 RPM", "Single", "Test Pressing"]}]}]}'
+  recorded_at: Mon, 24 May 2021 17:56:19 GMT
+- request:
+    method: get
+    uri: https://api.discogs.com/database/search?artist=James%20Brown&key=ENV[discogs_key]&release_title=Love%20Or%20A%20Game%20&secret=ENV[discogs_secret]&year=1957
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 24 May 2021 17:56:19 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Discogs-Ratelimit:
+      - '60'
+      X-Discogs-Ratelimit-Remaining:
+      - '57'
+      X-Discogs-Ratelimit-Used:
+      - '3'
+      Access-Control-Allow-Headers:
+      - Content-Type, authorization, User-Agent, Private-Auth-Secret, Discogs-UID
+      Access-Control-Allow-Methods:
+      - HEAD,OPTIONS,GET,OPTIONS
+      Access-Control-Expose-Headers:
+      - Location
+      Content-Language:
+      - en
+      X-Discogs-Media-Type:
+      - discogs.v2
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - public, must-revalidate
+      Strict-Transport-Security:
+      - max-age=15724800
+    body:
+      encoding: ASCII-8BIT
+      string: '{"pagination": {"page": 1, "pages": 1, "per_page": 50, "items": 3,
+        "urls": {}}, "results": [{"country": "US", "year": "1957", "format": ["Vinyl",
+        "7\"", "45 RPM", "Single"], "label": ["Federal", "Armo"], "type": "release",
+        "genre": ["Funk / Soul"], "style": ["Rhythm & Blues", "Soul"], "id": 2182082,
+        "barcode": ["BMI"], "master_id": 1660179, "master_url": "https://api.discogs.com/masters/1660179",
+        "uri": "/James-Brown-Love-Or-A-Game-/release/2182082", "catno": "45-12295",
+        "title": "James Brown - Love Or A Game ", "thumb": "https://img.discogs.com/pcdBxCwy2Y6F9YqcPwZ6SedLEtw=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2182082-1268434659.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/8Qnmhbw-VP_2Mgc10x7YfJSuDZQ=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2182082-1268434659.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/2182082", "community": {"want":
+        69, "have": 11}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["7\"", "45 RPM", "Single"]}]}, {"country": "US", "year":
+        "1957", "format": ["Vinyl", "7\"", "45 RPM", "Single", "Promo"], "label":
+        ["Federal"], "type": "release", "genre": ["Funk / Soul"], "style": ["Rhythm
+        & Blues", "Soul"], "id": 14471476, "barcode": [], "master_id": 1660179, "master_url":
+        "https://api.discogs.com/masters/1660179", "uri": "/James-Brown-Love-Or-A-Game-/release/14471476",
+        "catno": "12295", "title": "James Brown - Love Or A Game ", "thumb": "https://img.discogs.com/xzrjo-e0IMjKjV72fnCrMud3XuA=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-14471476-1575210577-1087.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/s6N4mK551zqEb5urgFcO1x7gMbY=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-14471476-1575210577-1087.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/14471476", "community":
+        {"want": 9, "have": 1}, "format_quantity": 1, "formats": [{"name": "Vinyl",
+        "qty": "1", "descriptions": ["7\"", "45 RPM", "Single", "Promo"]}]}, {"country":
+        "US", "year": "1957", "format": ["Vinyl", "7\"", "45 RPM", "Single"], "label":
+        ["Federal", "Armo"], "type": "master", "genre": ["Funk / Soul"], "style":
+        ["Rhythm & Blues", "Soul"], "id": 1660179, "barcode": ["BMI"], "master_id":
+        1660179, "master_url": "https://api.discogs.com/masters/1660179", "uri": "/James-Brown-Love-Or-A-Game-/master/1660179",
+        "catno": "45-12295", "title": "James Brown - Love Or A Game ", "thumb": "https://img.discogs.com/pcdBxCwy2Y6F9YqcPwZ6SedLEtw=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2182082-1268434659.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/8Qnmhbw-VP_2Mgc10x7YfJSuDZQ=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2182082-1268434659.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/masters/1660179", "community": {"want":
+        78, "have": 12}}]}'
+  recorded_at: Mon, 24 May 2021 17:56:19 GMT
+- request:
+    method: get
+    uri: https://api.discogs.com/database/search?artist=John%20Littleton%20And%20The%20Capistranos%20featuring%20James%20Brown,%20Alex%20Sample%20%26%20Orchestra&key=ENV[discogs_key]&release_title=Po%27%20Mary%20/%20Now%20Darling%20&secret=ENV[discogs_secret]&year=1958
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 24 May 2021 17:56:19 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Discogs-Ratelimit:
+      - '60'
+      X-Discogs-Ratelimit-Remaining:
+      - '56'
+      X-Discogs-Ratelimit-Used:
+      - '4'
+      Access-Control-Allow-Headers:
+      - Content-Type, authorization, User-Agent, Private-Auth-Secret, Discogs-UID
+      Access-Control-Allow-Methods:
+      - HEAD,OPTIONS,GET,OPTIONS
+      Access-Control-Expose-Headers:
+      - Location
+      Content-Language:
+      - en
+      X-Discogs-Media-Type:
+      - discogs.v2
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - public, must-revalidate
+      Strict-Transport-Security:
+      - max-age=15724800
+    body:
+      encoding: ASCII-8BIT
+      string: '{"pagination": {"page": 1, "pages": 1, "per_page": 50, "items": 0,
+        "urls": {}}, "results": []}'
+  recorded_at: Mon, 24 May 2021 17:56:19 GMT
+- request:
+    method: get
+    uri: https://api.discogs.com/database/search?artist=James%20Brown&key=ENV[discogs_key]&release_title=The%20Bells%20&secret=ENV[discogs_secret]&year=1960
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 24 May 2021 17:56:20 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Discogs-Ratelimit:
+      - '60'
+      X-Discogs-Ratelimit-Remaining:
+      - '55'
+      X-Discogs-Ratelimit-Used:
+      - '5'
+      Access-Control-Allow-Headers:
+      - Content-Type, authorization, User-Agent, Private-Auth-Secret, Discogs-UID
+      Access-Control-Allow-Methods:
+      - HEAD,OPTIONS,GET,OPTIONS
+      Access-Control-Expose-Headers:
+      - Location
+      Content-Language:
+      - en
+      X-Discogs-Media-Type:
+      - discogs.v2
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - public, must-revalidate
+      Strict-Transport-Security:
+      - max-age=15724800
+    body:
+      encoding: ASCII-8BIT
+      string: '{"pagination": {"page": 1, "pages": 1, "per_page": 50, "items": 5,
+        "urls": {}}, "results": [{"country": "US", "year": "1960", "format": ["Vinyl",
+        "7\"", "45 RPM", "Single"], "label": ["King Records"], "type": "release",
+        "genre": ["Funk / Soul"], "style": ["Soul"], "id": 1727385, "barcode": [],
+        "master_id": 1155639, "master_url": "https://api.discogs.com/masters/1155639",
+        "uri": "/James-Brown-The-Bells-/release/1727385", "catno": "45-5423", "title":
+        "James Brown - The Bells ", "thumb": "https://img.discogs.com/np8nePZE7A4rNACxdLWp2D5hDpQ=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1727385-1462978446-4664.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/ONhPYqHD13yp9_n-hD9coAvMLh4=/fit-in/576x576/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1727385-1462978446-4664.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/1727385", "community": {"want":
+        66, "have": 44}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["7\"", "45 RPM", "Single"]}]}, {"country": "Canada",
+        "year": "1960", "format": ["Vinyl", "7\"", "45 RPM", "Single"], "label": ["Delta",
+        "Phonodisc Limited"], "type": "release", "genre": ["Funk / Soul"], "style":
+        ["Soul"], "id": 12531410, "barcode": [], "master_id": 1155639, "master_url":
+        "https://api.discogs.com/masters/1155639", "uri": "/James-Brown-The-Bells-/release/12531410",
+        "catno": "D-3114", "title": "James Brown - The Bells ", "thumb": "https://img.discogs.com/OqueD2FaVNIk0cplTPEyblAUC6Y=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-12531410-1612575074-3795.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/tnnfLbflx152cm_JLhhQMNTuGwY=/fit-in/600x526/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-12531410-1612575074-3795.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/12531410", "community":
+        {"want": 9, "have": 1}, "format_quantity": 1, "formats": [{"name": "Vinyl",
+        "qty": "1", "descriptions": ["7\"", "45 RPM", "Single"]}]}, {"country": "US",
+        "year": "1960", "format": ["Vinyl", "7\"", "45 RPM", "Single", "Promo"], "label":
+        ["King Records"], "type": "release", "genre": ["Funk / Soul"], "style": ["Soul"],
+        "id": 10024270, "barcode": [], "master_id": 1155639, "master_url": "https://api.discogs.com/masters/1155639",
+        "uri": "/James-Brown-The-Bells-/release/10024270", "catno": "45-5423", "title":
+        "James Brown - The Bells ", "thumb": "https://img.discogs.com/F5yMoK0Tt7e6jQPxOBFmvhK1XkQ=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-10024270-1492909984-6724.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/bohMtImfTmC31qYkwRaiUDuTTGM=/fit-in/600x449/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-10024270-1492909984-6724.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/10024270", "community":
+        {"want": 12, "have": 6}, "format_quantity": 1, "formats": [{"name": "Vinyl",
+        "qty": "1", "descriptions": ["7\"", "45 RPM", "Single", "Promo"]}]}, {"country":
+        "US", "year": "1960", "format": ["Vinyl", "7\"", "45 RPM", "Single"], "label":
+        ["King Records"], "type": "master", "genre": ["Funk / Soul"], "style": ["Soul"],
+        "id": 1155639, "barcode": [], "master_id": 1155639, "master_url": "https://api.discogs.com/masters/1155639",
+        "uri": "/James-Brown-The-Bells-/master/1155639", "catno": "45-5423", "title":
+        "James Brown - The Bells ", "thumb": "https://img.discogs.com/np8nePZE7A4rNACxdLWp2D5hDpQ=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1727385-1462978446-4664.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/ONhPYqHD13yp9_n-hD9coAvMLh4=/fit-in/576x576/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1727385-1462978446-4664.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/masters/1155639", "community": {"want":
+        89, "have": 52}}, {"country": "US", "year": "1960", "format": ["Vinyl", "7\"",
+        "45 RPM", "Single"], "label": ["King Records", "Billy Ward Music Co.", "Wisto"],
+        "type": "release", "genre": ["Funk / Soul", "Blues"], "style": ["Soul", "Rhythm
+        & Blues"], "id": 15933528, "barcode": ["K-45-4945-1", "K-45-4936-1", "BMI"],
+        "master_id": 1155639, "master_url": "https://api.discogs.com/masters/1155639",
+        "uri": "/James-Brown-The-Bells-/release/15933528", "catno": "45-5423", "title":
+        "James Brown - The Bells ", "thumb": "https://img.discogs.com/QfECLSTrV7VxmgvznQx2Aegti60=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-15933528-1600460115-6544.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/utdDSJfyQH0bA_Btw-tM4DHqNy0=/fit-in/600x603/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-15933528-1600460115-6544.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/15933528", "community":
+        {"want": 2, "have": 1}, "format_quantity": 1, "formats": [{"name": "Vinyl",
+        "qty": "1", "descriptions": ["7\"", "45 RPM", "Single"]}]}]}'
+  recorded_at: Mon, 24 May 2021 17:56:20 GMT
+- request:
+    method: get
+    uri: https://api.discogs.com/database/search?artist=James%20Brown%20Presents%20His%20Band*&key=ENV[discogs_key]&release_title=Suds%20/%20Sticky&secret=ENV[discogs_secret]&year=1961
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 24 May 2021 17:56:20 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Discogs-Ratelimit:
+      - '60'
+      X-Discogs-Ratelimit-Remaining:
+      - '54'
+      X-Discogs-Ratelimit-Used:
+      - '6'
+      Access-Control-Allow-Headers:
+      - Content-Type, authorization, User-Agent, Private-Auth-Secret, Discogs-UID
+      Access-Control-Allow-Methods:
+      - HEAD,OPTIONS,GET,OPTIONS
+      Access-Control-Expose-Headers:
+      - Location
+      Content-Language:
+      - en
+      X-Discogs-Media-Type:
+      - discogs.v2
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - public, must-revalidate
+      Strict-Transport-Security:
+      - max-age=15724800
+    body:
+      encoding: ASCII-8BIT
+      string: '{"pagination": {"page": 1, "pages": 1, "per_page": 50, "items": 0,
+        "urls": {}}, "results": []}'
+  recorded_at: Mon, 24 May 2021 17:56:20 GMT
+- request:
+    method: get
+    uri: https://api.discogs.com/database/search?artist=James%20Brown%20Presents%20His%20Band*&key=ENV[discogs_key]&release_title=Night%20Train&secret=ENV[discogs_secret]&year=1961
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 24 May 2021 17:56:20 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Discogs-Ratelimit:
+      - '60'
+      X-Discogs-Ratelimit-Remaining:
+      - '53'
+      X-Discogs-Ratelimit-Used:
+      - '7'
+      Access-Control-Allow-Headers:
+      - Content-Type, authorization, User-Agent, Private-Auth-Secret, Discogs-UID
+      Access-Control-Allow-Methods:
+      - HEAD,OPTIONS,GET,OPTIONS
+      Access-Control-Expose-Headers:
+      - Location
+      Content-Language:
+      - en
+      X-Discogs-Media-Type:
+      - discogs.v2
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - public, must-revalidate
+      Strict-Transport-Security:
+      - max-age=15724800
+    body:
+      encoding: ASCII-8BIT
+      string: '{"pagination": {"page": 1, "pages": 1, "per_page": 50, "items": 0,
+        "urls": {}}, "results": []}'
+  recorded_at: Mon, 24 May 2021 17:56:20 GMT
+- request:
+    method: get
+    uri: https://api.discogs.com/database/search?artist=James%20Brown,%20Herb%20Hardesty&key=ENV[discogs_key]&release_title=Sticky%20/%20Perdido%20Street&secret=ENV[discogs_secret]&year=1962
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 24 May 2021 17:56:21 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Discogs-Ratelimit:
+      - '60'
+      X-Discogs-Ratelimit-Remaining:
+      - '52'
+      X-Discogs-Ratelimit-Used:
+      - '8'
+      Access-Control-Allow-Headers:
+      - Content-Type, authorization, User-Agent, Private-Auth-Secret, Discogs-UID
+      Access-Control-Allow-Methods:
+      - HEAD,OPTIONS,GET,OPTIONS
+      Access-Control-Expose-Headers:
+      - Location
+      Content-Language:
+      - en
+      X-Discogs-Media-Type:
+      - discogs.v2
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - public, must-revalidate
+      Strict-Transport-Security:
+      - max-age=15724800
+    body:
+      encoding: ASCII-8BIT
+      string: '{"pagination": {"page": 1, "pages": 1, "per_page": 50, "items": 1,
+        "urls": {}}, "results": [{"country": "Spain", "year": "1962", "format": ["Vinyl",
+        "7\"", "EP"], "label": ["Discophon"], "type": "release", "genre": ["Rock",
+        "Pop"], "style": [], "id": 5928323, "barcode": [], "master_id": 0, "master_url":
+        null, "uri": "/James-Brown-Herb-Hardesty-Sticky-Perdido-Street/release/5928323",
+        "catno": "17.193", "title": "James Brown, Herb Hardesty - Sticky / Perdido
+        Street", "thumb": "https://img.discogs.com/eucPFy-vpO_hoLa0nUCIeUCO1r8=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-5928323-1427713910-8664.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/Ol54MvA570IfBVc1npH2BUdmLYY=/fit-in/495x476/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-5928323-1427713910-8664.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/5928323", "community": {"want":
+        71, "have": 6}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["7\"", "EP"]}]}]}'
+  recorded_at: Mon, 24 May 2021 17:56:21 GMT
+- request:
+    method: get
+    uri: https://api.discogs.com/database/search?artist=James%20Brown&key=ENV[discogs_key]&release_title=Good,%20Good,%20Twistin%27%20With%20James%20Brown&secret=ENV[discogs_secret]&year=1962
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 24 May 2021 17:56:21 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Discogs-Ratelimit:
+      - '60'
+      X-Discogs-Ratelimit-Remaining:
+      - '51'
+      X-Discogs-Ratelimit-Used:
+      - '9'
+      Access-Control-Allow-Headers:
+      - Content-Type, authorization, User-Agent, Private-Auth-Secret, Discogs-UID
+      Access-Control-Allow-Methods:
+      - HEAD,OPTIONS,GET,OPTIONS
+      Access-Control-Expose-Headers:
+      - Location
+      Content-Language:
+      - en
+      X-Discogs-Media-Type:
+      - discogs.v2
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - public, must-revalidate
+      Strict-Transport-Security:
+      - max-age=15724800
+    body:
+      encoding: ASCII-8BIT
+      string: '{"pagination": {"page": 1, "pages": 1, "per_page": 50, "items": 3,
+        "urls": {}}, "results": [{"country": "US", "year": "1962", "format": ["Vinyl",
+        "LP", "Album", "Mono"], "label": ["King Records", "King Records, Inc."], "type":
+        "master", "genre": ["Funk / Soul"], "style": ["Soul", "Twist"], "id": 485934,
+        "barcode": [], "master_id": 485934, "master_url": "https://api.discogs.com/masters/485934",
+        "uri": "/James-Brown-Good-Good-Twistin-With-James-Brown/master/485934", "catno":
+        "780", "title": "James Brown - Good, Good, Twistin'' With James Brown", "thumb":
+        "https://img.discogs.com/rdJ_woC9hAnqRPtsklvqfzfvH70=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2517153-1367784363-9215.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/v4nF_Y7L9J8AtRshWkLe9Sv566A=/fit-in/594x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2517153-1367784363-9215.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/masters/485934", "community": {"want":
+        1043, "have": 1146}}, {"country": "US", "year": "1962", "format": ["Vinyl",
+        "LP", "Album", "Mono"], "label": ["King Records", "King Records, Inc."], "type":
+        "release", "genre": ["Funk / Soul"], "style": ["Soul", "Twist"], "id": 2517153,
+        "barcode": [], "master_id": 485934, "master_url": "https://api.discogs.com/masters/485934",
+        "uri": "/James-Brown-Good-Good-Twistin-With-James-Brown/release/2517153",
+        "catno": "780", "title": "James Brown - Good, Good, Twistin'' With James Brown",
+        "thumb": "https://img.discogs.com/rdJ_woC9hAnqRPtsklvqfzfvH70=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2517153-1367784363-9215.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/v4nF_Y7L9J8AtRshWkLe9Sv566A=/fit-in/594x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2517153-1367784363-9215.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/2517153", "community": {"want":
+        297, "have": 73}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["LP", "Album", "Mono"]}]}, {"country": "Canada", "year":
+        "1962", "format": ["Vinyl", "LP", "Album", "Mono"], "label": ["Regency", "King
+        Records"], "type": "release", "genre": ["Funk / Soul"], "style": ["Twist"],
+        "id": 7282113, "barcode": [], "master_id": 485934, "master_url": "https://api.discogs.com/masters/485934",
+        "uri": "/James-Brown-Good-Good-Twistin-With-James-Brown/release/7282113",
+        "catno": "LP-780", "title": "James Brown - Good, Good, Twistin'' With James
+        Brown", "thumb": "https://img.discogs.com/s4npQnjNRMbao1cSdyeqPKrxgGE=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-7282113-1520208493-5305.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/NKVsgo5yagqfaEnXSDvLMp0_KkA=/fit-in/600x602/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-7282113-1520208493-5305.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/7282113", "community": {"want":
+        64, "have": 12}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["LP", "Album", "Mono"]}]}]}'
+  recorded_at: Mon, 24 May 2021 17:56:21 GMT
+- request:
+    method: get
+    uri: https://api.discogs.com/database/search?artist=James%20Brown&key=ENV[discogs_key]&release_title=Prisoner%20Of%20Love&secret=ENV[discogs_secret]&year=1963
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 24 May 2021 17:56:21 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Discogs-Ratelimit:
+      - '60'
+      X-Discogs-Ratelimit-Remaining:
+      - '50'
+      X-Discogs-Ratelimit-Used:
+      - '10'
+      Access-Control-Allow-Headers:
+      - Content-Type, authorization, User-Agent, Private-Auth-Secret, Discogs-UID
+      Access-Control-Allow-Methods:
+      - HEAD,OPTIONS,GET,OPTIONS
+      Access-Control-Expose-Headers:
+      - Location
+      Content-Language:
+      - en
+      X-Discogs-Media-Type:
+      - discogs.v2
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - public, must-revalidate
+      Strict-Transport-Security:
+      - max-age=15724800
+    body:
+      encoding: ASCII-8BIT
+      string: '{"pagination": {"page": 1, "pages": 1, "per_page": 50, "items": 21,
+        "urls": {}}, "results": [{"country": "Canada", "year": "1963", "format": ["Vinyl",
+        "LP", "Album", "Mono"], "label": ["Regency", "King Records", "King Series"],
+        "type": "release", "genre": ["Funk / Soul"], "style": ["Soul"], "id": 7778137,
+        "barcode": [], "master_id": 98793, "master_url": "https://api.discogs.com/masters/98793",
+        "uri": "/James-Brown-Prisoner-Of-Love/release/7778137", "catno": "LP-851",
+        "title": "James Brown - Prisoner Of Love", "thumb": "https://img.discogs.com/GLPaCgfaI7Iykqo3Y2ektG97L8U=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-7778137-1448568925-4182.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/NM_D70LgzbJ5sdefCd2HYUVXPa4=/fit-in/385x387/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-7778137-1448568925-4182.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/7778137", "community": {"want":
+        38, "have": 20}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["LP", "Album", "Mono"]}]}, {"country": "Canada", "year":
+        "1963", "format": ["Vinyl", "LP", "Album", "Mono"], "label": ["King Records",
+        "Regency"], "type": "release", "genre": ["Funk / Soul"], "style": ["Rhythm
+        & Blues", "Soul"], "id": 7282237, "barcode": [], "master_id": 98793, "master_url":
+        "https://api.discogs.com/masters/98793", "uri": "/James-Brown-Prisoner-Of-Love/release/7282237",
+        "catno": "851", "title": "James Brown - Prisoner Of Love", "thumb": "https://img.discogs.com/GGNN5oxuFj00eiiCeBjiPY4OnuY=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-7282237-1457175582-6073.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/dBb4Rr4vbh2hDhBKQet7DPafQ0M=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-7282237-1457175582-6073.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/7282237", "community": {"want":
+        43, "have": 16}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "text": "1st", "descriptions": ["LP", "Album", "Mono"]}]}, {"country":
+        "Australia", "year": "1963", "format": ["Vinyl", "LP", "Album", "Mono"], "label":
+        ["Festival Records"], "type": "release", "genre": ["Funk / Soul"], "style":
+        ["Rhythm & Blues", "Soul"], "id": 12888679, "barcode": [], "master_id": 98793,
+        "master_url": "https://api.discogs.com/masters/98793", "uri": "/James-Brown-Prisoner-Of-Love/release/12888679",
+        "catno": "FL-32,018", "title": "James Brown - Prisoner Of Love", "thumb":
+        "", "cover_image": "https://img.discogs.com/dd48ba3721f34f9d56f82669540c56799386dec1/images/spacer.gif",
+        "resource_url": "https://api.discogs.com/releases/12888679", "community":
+        {"want": 25, "have": 6}, "format_quantity": 1, "formats": [{"name": "Vinyl",
+        "qty": "1", "descriptions": ["LP", "Album", "Mono"]}]}, {"country": "US",
+        "year": "1963", "format": ["Vinyl", "LP", "Album", "Stereo"], "label": ["King
+        Records"], "type": "release", "genre": ["Funk / Soul"], "style": ["Rhythm
+        & Blues", "Soul"], "id": 7781941, "barcode": [], "master_id": 98793, "master_url":
+        "https://api.discogs.com/masters/98793", "uri": "/James-Brown-Prisoner-Of-Love-/release/7781941",
+        "catno": "851", "title": "James Brown - Prisoner Of Love ", "thumb": "https://img.discogs.com/W-WWweFbF7pjPouiK1V9jScXAWs=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-7781941-1448657159-9134.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/XL1tu4_eXaM-dangasmfOoTLqts=/fit-in/384x389/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-7781941-1448657159-9134.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/7781941", "community": {"want":
+        107, "have": 54}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["LP", "Album", "Stereo"]}]}, {"country": "US", "year":
+        "1963", "format": ["Vinyl", "LP", "Album", "Stereo"], "label": ["King Records"],
+        "type": "release", "genre": ["Funk / Soul"], "style": ["Rhythm & Blues", "Soul"],
+        "id": 4846187, "barcode": [], "master_id": 98793, "master_url": "https://api.discogs.com/masters/98793",
+        "uri": "/James-Brown-Prisoner-Of-Love-/release/4846187", "catno": "851", "title":
+        "James Brown - Prisoner Of Love ", "thumb": "https://img.discogs.com/GxTrDDDvnMHFprgO_nnRxwRd6JU=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-4846187-1507750095-4254.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/xaGiioL-9t4OKDum3z6FR8P2kWg=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-4846187-1507750095-4254.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/4846187", "community": {"want":
+        119, "have": 40}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["LP", "Album", "Stereo"]}]}, {"country": "Canada", "year":
+        "1963", "format": ["Vinyl", "LP", "Album", "Mono"], "label": ["King Records"],
+        "type": "release", "genre": ["Rock", "Funk / Soul"], "style": [], "id": 3479491,
+        "barcode": [], "master_id": 98793, "master_url": "https://api.discogs.com/masters/98793",
+        "uri": "/James-Brown-Prisoner-Of-Love/release/3479491", "catno": "851", "title":
+        "James Brown - Prisoner Of Love", "thumb": "https://img.discogs.com/28anvuwdiXUzdNZhCTC6YKmvu0U=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3479491-1368566690-2348.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/XKDeBnUUZlLSp-p2izDZy6myqH4=/fit-in/585x588/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3479491-1368566690-2348.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/3479491", "community": {"want":
+        76, "have": 30}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["LP", "Album", "Mono"]}]}, {"country": "Canada", "year":
+        "1963", "format": ["Vinyl", "LP", "Album", "Mono"], "label": ["King Records",
+        "Regency"], "type": "release", "genre": ["Funk / Soul"], "style": ["Rhythm
+        & Blues", "Soul"], "id": 7210304, "barcode": [], "master_id": 98793, "master_url":
+        "https://api.discogs.com/masters/98793", "uri": "/James-Brown-Prisoner-Of-Love/release/7210304",
+        "catno": "851", "title": "James Brown - Prisoner Of Love", "thumb": "https://img.discogs.com/iQvTGpJn2m-1-lSEWrzM5n0rxtw=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-7210304-1436242471-4313.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/qUjH5GGp4IfV6orv3HN4jWRwxSQ=/fit-in/600x588/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-7210304-1436242471-4313.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/7210304", "community": {"want":
+        43, "have": 18}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["LP", "Album", "Mono"]}]}, {"country": "US", "year":
+        "1963", "format": ["Vinyl", "LP", "Album", "Mono"], "label": ["King Records"],
+        "type": "release", "genre": ["Funk / Soul"], "style": ["Rhythm & Blues", "Soul"],
+        "id": 1200950, "barcode": ["K-12-851-A", "K-12-851-B", "K-12-851-A-1", "K-12-851-B-1
+        \u0336C\u0336-\u03361\u0336"], "master_id": 98793, "master_url": "https://api.discogs.com/masters/98793",
+        "uri": "/James-Brown-Prisoner-Of-Love/release/1200950", "catno": "851", "title":
+        "James Brown - Prisoner Of Love", "thumb": "https://img.discogs.com/tdtXmmlR_rNFAyXMm3a2gcQ1sRc=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1200950-1368565924-2417.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/x5MH3ky0pho7oK8SYkubuTkBhPM=/fit-in/599x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1200950-1368565924-2417.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/1200950", "community": {"want":
+        298, "have": 453}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["LP", "Album", "Mono"]}]}, {"country": "US", "year":
+        "1963", "format": ["Vinyl", "LP", "Album", "Mono"], "label": ["King Records"],
+        "type": "master", "genre": ["Funk / Soul"], "style": ["Rhythm & Blues", "Soul"],
+        "id": 98793, "barcode": ["K-12-851-A", "K-12-851-B", "K-12-851-A-1", "K-12-851-B-1
+        \u0336C\u0336-\u03361\u0336"], "master_id": 98793, "master_url": "https://api.discogs.com/masters/98793",
+        "uri": "/James-Brown-Prisoner-Of-Love/master/98793", "catno": "851", "title":
+        "James Brown - Prisoner Of Love", "thumb": "https://img.discogs.com/tdtXmmlR_rNFAyXMm3a2gcQ1sRc=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1200950-1368565924-2417.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/x5MH3ky0pho7oK8SYkubuTkBhPM=/fit-in/599x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1200950-1368565924-2417.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/masters/98793", "community": {"want":
+        1196, "have": 1303}}, {"country": "US", "year": "1963", "format": ["Vinyl",
+        "7\"", "45 RPM", "Promo"], "label": ["King Records"], "type": "release", "genre":
+        ["Funk / Soul", "Non-Music"], "style": ["Rhythm & Blues", "Soul", "Promotional"],
+        "id": 5644722, "barcode": ["45-K11424", "DJ-K11424", "K-45-11424-2", "DJK-45-11424-2"],
+        "master_id": 407293, "master_url": "https://api.discogs.com/masters/407293",
+        "uri": "/James-Brown-The-Famous-Flames-Prisoner-Of-Love/release/5644722",
+        "catno": "45-5739", "title": "James Brown & The Famous Flames - Prisoner Of
+        Love", "thumb": "https://img.discogs.com/89yUPnxrPsHG9M0Xf-d7ADEPqa4=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-5644722-1398801753-1122.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/fX5YMqeQsxIw9hESEjEvgPOk1Cw=/fit-in/600x601/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-5644722-1398801753-1122.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/5644722", "community": {"want":
+        16, "have": 7}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["7\"", "45 RPM", "Promo"]}]}, {"country": "US", "year":
+        "1963", "format": ["Vinyl", "7\"", "Single", "45 RPM"], "label": ["King Records",
+        "Lois"], "type": "master", "genre": ["Funk / Soul"], "style": ["Rhythm & Blues",
+        "Soul"], "id": 407293, "barcode": ["BMI", "45-K11424", "45-K11269", "K-45-11424-1",
+        "K-45-11269-1", "K-45-11424-2", "K-45-11269-2"], "master_id": 407293, "master_url":
+        "https://api.discogs.com/masters/407293", "uri": "/James-Brown-The-Famous-Flames-Prisoner-Of-Love-Choo-Choo/master/407293",
+        "catno": "45-5739", "title": "James Brown & The Famous Flames - Prisoner Of
+        Love / Choo-Choo", "thumb": "https://img.discogs.com/k3-2GJkYpYDMc_T7u7pkQvTdNlk=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2207263-1519923868-5705.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/OMkVqshyi44pfIpffdxXxMx2e5w=/fit-in/600x601/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2207263-1519923868-5705.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/masters/407293", "community": {"want":
+        231, "have": 464}}, {"country": "US", "year": "1963", "format": ["Vinyl",
+        "7\"", "Single", "45 RPM"], "label": ["King Records"], "type": "release",
+        "genre": ["Funk / Soul"], "style": ["Rhythm & Blues", "Soul"], "id": 9862696,
+        "barcode": ["45-K11424", "45-K11269"], "master_id": 407293, "master_url":
+        "https://api.discogs.com/masters/407293", "uri": "/James-Brown-The-Famous-Flames-Prisoner-Of-Love-Choo-Choo/release/9862696",
+        "catno": "45-5739", "title": "James Brown & The Famous Flames - Prisoner Of
+        Love / Choo-Choo", "thumb": "https://img.discogs.com/JayXxv5COZ7lgaWNVANS39Z5_WI=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-9862696-1487555026-8002.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/gFhIIFoanVGLsomvutqUlQbGtgQ=/fit-in/600x602/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-9862696-1487555026-8002.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/9862696", "community": {"want":
+        15, "have": 12}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["7\"", "Single", "45 RPM"]}]}, {"country": "UK", "year":
+        "1963", "format": ["Vinyl", "7\"", "45 RPM"], "label": ["London Records",
+        "London American Recordings", "King Records"], "type": "release", "genre":
+        ["Funk / Soul"], "style": ["Rhythm & Blues", "Soul"], "id": 3388734, "barcode":
+        [], "master_id": 407293, "master_url": "https://api.discogs.com/masters/407293",
+        "uri": "/James-Brown-The-Famous-Flames-Prisoner-Of-Love-Choo-Choo/release/3388734",
+        "catno": "HL 9730", "title": "James Brown & The Famous Flames - Prisoner Of
+        Love / Choo-Choo", "thumb": "https://img.discogs.com/VqBeiNPKfjaaDKjB2_GHMZ5E4sk=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3388734-1331443671.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/_oYxS2L1tDpMbItMeIPRIJNdJvQ=/fit-in/600x598/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3388734-1331443671.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/3388734", "community": {"want":
+        22, "have": 12}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["7\"", "45 RPM"]}]}, {"country": "US", "year": "1963",
+        "format": ["Vinyl", "7\"", "45 RPM"], "label": ["King Records"], "type": "release",
+        "genre": ["Funk / Soul"], "style": [], "id": 10712342, "barcode": [], "master_id":
+        407293, "master_url": "https://api.discogs.com/masters/407293", "uri": "/James-Brown-The-Famous-Flames-Prisoner-Of-Love-Choo-Choo/release/10712342",
+        "catno": "45-5739", "title": "James Brown & The Famous Flames - Prisoner Of
+        Love / Choo Choo", "thumb": "https://img.discogs.com/Nl0_p7m_EHi_nonL7fR1j5QOnFo=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-10712342-1502893510-3459.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/bDXvVrxiyVptEfo2eETFOava7Ts=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-10712342-1502893510-3459.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/10712342", "community":
+        {"want": 13, "have": 8}, "format_quantity": 1, "formats": [{"name": "Vinyl",
+        "qty": "1", "descriptions": ["7\"", "45 RPM"]}]}, {"country": "Canada", "year":
+        "1963", "format": ["Vinyl", "7\"", "45 RPM", "Single"], "label": ["Delta"],
+        "type": "release", "genre": ["Funk / Soul"], "style": ["Rhythm & Blues", "Soul"],
+        "id": 6525865, "barcode": [], "master_id": 407293, "master_url": "https://api.discogs.com/masters/407293",
+        "uri": "/James-Brown-The-Famous-Flames-Prisoner-Of-Love-Choo-Choo/release/6525865",
+        "catno": "D 3196", "title": "James Brown & The Famous Flames - Prisoner Of
+        Love / Choo-Choo", "thumb": "https://img.discogs.com/VR8Eu5AtTlzqMNvL7j1iYl-xZeQ=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-6525865-1566826965-4845.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/vbFda2APBbWfb6rRG3W1bF0wpx8=/fit-in/600x596/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6525865-1566826965-4845.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/6525865", "community": {"want":
+        13, "have": 14}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["7\"", "45 RPM", "Single"]}]}, {"country": "US", "year":
+        "1963", "format": ["Vinyl", "7\"", "Single", "45 RPM"], "label": ["King Records",
+        "Lois"], "type": "release", "genre": ["Funk / Soul"], "style": ["Rhythm &
+        Blues", "Soul"], "id": 2207263, "barcode": ["BMI", "45-K11424", "45-K11269",
+        "K-45-11424-1", "K-45-11269-1", "K-45-11424-2", "K-45-11269-2"], "master_id":
+        407293, "master_url": "https://api.discogs.com/masters/407293", "uri": "/James-Brown-The-Famous-Flames-Prisoner-Of-Love-Choo-Choo/release/2207263",
+        "catno": "45-5739", "title": "James Brown & The Famous Flames - Prisoner Of
+        Love / Choo-Choo", "thumb": "https://img.discogs.com/k3-2GJkYpYDMc_T7u7pkQvTdNlk=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2207263-1519923868-5705.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/OMkVqshyi44pfIpffdxXxMx2e5w=/fit-in/600x601/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2207263-1519923868-5705.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/2207263", "community": {"want":
+        51, "have": 348}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["7\"", "Single", "45 RPM"]}]}, {"country": "US", "year":
+        "1963", "format": ["Vinyl", "7\"", "Single", "45 RPM"], "label": ["King Records",
+        "Lois"], "type": "release", "genre": ["Funk / Soul"], "style": ["Rhythm &
+        Blues", "Soul"], "id": 15471111, "barcode": ["45-K11424", "45-K11269", "K-45-11424-1",
+        "K-45-11269-1", "BMI"], "master_id": 407293, "master_url": "https://api.discogs.com/masters/407293",
+        "uri": "/James-Brown-The-Famous-Flames-Prisoner-Of-Love-Choo-Choo/release/15471111",
+        "catno": "45-5739", "title": "James Brown & The Famous Flames - Prisoner Of
+        Love / Choo-Choo", "thumb": "https://img.discogs.com/uW-p-k26oHqqH3VLMNTwx5-r2CA=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-15471111-1592075285-6699.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/CptgkB3HpiJUUjgfYNleycaqTcY=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-15471111-1592075285-6699.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/15471111", "community":
+        {"want": 5, "have": 3}, "format_quantity": 1, "formats": [{"name": "Vinyl",
+        "qty": "1", "descriptions": ["7\"", "Single", "45 RPM"]}]}, {"country": "Australia",
+        "year": "1963", "format": ["Vinyl", "7\"", "45 RPM", "Single"], "label": ["Parlophone"],
+        "type": "release", "genre": ["Funk / Soul"], "style": ["Rhythm & Blues", "Soul"],
+        "id": 8499889, "barcode": ["45-K11424 7AXPA564", "45-K11269 7AXPA565"], "master_id":
+        407293, "master_url": "https://api.discogs.com/masters/407293", "uri": "/James-Brown-And-The-Famous-Flames-Prisoner-Of-Love-Choo-Choo/release/8499889",
+        "catno": "A8086", "title": "James Brown And The Famous Flames* - Prisoner
+        Of Love / Choo-Choo", "thumb": "https://img.discogs.com/t8Ck8PX5z20pcEdAguT4QGe9Rfo=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-8499889-1552133768-4668.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/VNm6mb8BIfVxgK7KR_R37EsHSZ0=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-8499889-1552133768-4668.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/8499889", "community": {"want":
+        14, "have": 12}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["7\"", "45 RPM", "Single"]}]}, {"country": "New Zealand",
+        "year": "1963", "format": ["Vinyl", "7\"", "Single", "45 RPM"], "label": ["King
+        Records"], "type": "release", "genre": ["Funk / Soul"], "style": ["Rhythm
+        & Blues", "Soul"], "id": 11367189, "barcode": ["45-K11424", "45-K11269"],
+        "master_id": 407293, "master_url": "https://api.discogs.com/masters/407293",
+        "uri": "/James-Brown-The-Famous-Flames-Prisoner-Of-Love-Choo-Choo/release/11367189",
+        "catno": "45-5739", "title": "James Brown & The Famous Flames - Prisoner Of
+        Love / Choo-Choo", "thumb": "", "cover_image": "https://img.discogs.com/dd48ba3721f34f9d56f82669540c56799386dec1/images/spacer.gif",
+        "resource_url": "https://api.discogs.com/releases/11367189", "community":
+        {"want": 8, "have": 1}, "format_quantity": 1, "formats": [{"name": "Vinyl",
+        "qty": "1", "descriptions": ["7\"", "Single", "45 RPM"]}]}, {"country": "New
+        Zealand", "year": "1963", "format": ["Vinyl", "7\"", "Single", "45 RPM"],
+        "label": ["King Records"], "type": "release", "genre": ["Funk / Soul"], "style":
+        ["Rhythm & Blues", "Soul"], "id": 11794346, "barcode": ["5739.A", "5739.B"],
+        "master_id": 407293, "master_url": "https://api.discogs.com/masters/407293",
+        "uri": "/James-Brown-The-Famous-Flames-Prisoner-Of-Love-Choo-Choo/release/11794346",
+        "catno": "45/5739", "title": "James Brown & The Famous Flames - Prisoner Of
+        Love / Choo-Choo", "thumb": "https://img.discogs.com/Q-oLBRDn0tx6PZHpcBVnnrkXp7s=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-11794346-1522523960-1148.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/TE3jtuNlJciVyd-552o_zWiIRbQ=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-11794346-1522523960-1148.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/11794346", "community":
+        {"want": 11, "have": 3}, "format_quantity": 1, "formats": [{"name": "Vinyl",
+        "qty": "1", "descriptions": ["7\"", "Single", "45 RPM"]}]}, {"country": "UK",
+        "year": "1963", "format": ["Vinyl", "7\"", "Promo"], "label": ["London Records",
+        "King Records"], "type": "release", "genre": ["Funk / Soul"], "style": ["Rhythm
+        & Blues", "Soul"], "id": 4047486, "barcode": [], "master_id": 407293, "master_url":
+        "https://api.discogs.com/masters/407293", "uri": "/James-Brown-The-Famous-Flames-Prisoner-Of-Love-Choo-Choo/release/4047486",
+        "catno": "HL 9730", "title": "James Brown & The Famous Flames - Prisoner Of
+        Love / Choo-Choo", "thumb": "https://img.discogs.com/d4y2HFhl9ZeVEsxlottXEKPAa0E=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-4047486-1353488199-7490.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/X6vHEYdW9elAGmZBdkLkX2eUzDk=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-4047486-1353488199-7490.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/4047486", "community": {"want":
+        19, "have": 1}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["7\"", "Promo"]}]}]}'
+  recorded_at: Mon, 24 May 2021 17:56:22 GMT
+- request:
+    method: get
+    uri: https://api.discogs.com/database/search?artist=James%20Brown&key=ENV[discogs_key]&release_title=Live%20At%20The%20Apollo&secret=ENV[discogs_secret]&year=1963
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 24 May 2021 17:56:22 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Discogs-Ratelimit:
+      - '60'
+      X-Discogs-Ratelimit-Remaining:
+      - '49'
+      X-Discogs-Ratelimit-Used:
+      - '11'
+      Access-Control-Allow-Headers:
+      - Content-Type, authorization, User-Agent, Private-Auth-Secret, Discogs-UID
+      Access-Control-Allow-Methods:
+      - HEAD,OPTIONS,GET,OPTIONS
+      Access-Control-Expose-Headers:
+      - Location
+      Content-Language:
+      - en
+      X-Discogs-Media-Type:
+      - discogs.v2
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - public, must-revalidate
+      Strict-Transport-Security:
+      - max-age=15724800
+    body:
+      encoding: ASCII-8BIT
+      string: '{"pagination": {"page": 1, "pages": 1, "per_page": 50, "items": 14,
+        "urls": {}}, "results": [{"country": "US", "year": "1963", "format": ["Vinyl",
+        "7\"", "EP", "Promo"], "label": ["King Records"], "type": "master", "genre":
+        ["Funk / Soul"], "style": ["Rhythm & Blues", "Soul"], "id": 497452, "barcode":
+        ["DJK-45-826-A", "DJK-45-826-B"], "master_id": 497452, "master_url": "https://api.discogs.com/masters/497452",
+        "uri": "/James-Brown-Live-At-The-Apollo/master/497452", "catno": "DJK-45-826",
+        "title": "James Brown - Live At The Apollo", "thumb": "https://img.discogs.com/-YoC5FUg50R2Wgubh0aLMHsoCbI=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3329937-1614047240-4039.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/vDp_RnnSBu3a41D1mwkl75PF75g=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3329937-1614047240-4039.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/masters/497452", "community": {"want":
+        80, "have": 53}}, {"country": "Canada", "year": "1963", "format": ["Vinyl",
+        "LP", "Album", "Mono"], "label": ["King Records", "Regency", "Phonodisc Limited",
+        "King Records"], "type": "release", "genre": ["Funk / Soul"], "style": ["Rhythm
+        & Blues", "Soul"], "id": 4596652, "barcode": ["K-12-826-A-X1", "K-12-826-B-X2",
+        "K-12-826-A-X4"], "master_id": 65036, "master_url": "https://api.discogs.com/masters/65036",
+        "uri": "/James-Brown-Live-At-The-Apollo-/release/4596652", "catno": "826",
+        "title": "James Brown - Live At The Apollo ", "thumb": "https://img.discogs.com/OY7KSIKOXARUVR9vXKB1smD4NiI=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-4596652-1369484237-5254.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/Pl8b6U2u_YdlEIp6Wv8PZNQ-NCg=/fit-in/598x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-4596652-1369484237-5254.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/4596652", "community": {"want":
+        335, "have": 114}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["LP", "Album", "Mono"]}]}, {"country": "US", "year":
+        "1963", "format": ["Vinyl", "7\"", "EP", "Promo"], "label": ["King Records"],
+        "type": "release", "genre": ["Funk / Soul"], "style": ["Rhythm & Blues", "Soul"],
+        "id": 3329937, "barcode": ["DJK-45-826-A", "DJK-45-826-B"], "master_id": 497452,
+        "master_url": "https://api.discogs.com/masters/497452", "uri": "/James-Brown-Live-At-The-Apollo/release/3329937",
+        "catno": "DJK-45-826", "title": "James Brown - Live At The Apollo", "thumb":
+        "https://img.discogs.com/-YoC5FUg50R2Wgubh0aLMHsoCbI=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3329937-1614047240-4039.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/vDp_RnnSBu3a41D1mwkl75PF75g=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3329937-1614047240-4039.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/3329937", "community": {"want":
+        38, "have": 17}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["7\"", "EP", "Promo"]}]}, {"country": "US", "year":
+        "1963", "format": ["Vinyl", "7\"", "EP", "Jukebox"], "label": ["King Records"],
+        "type": "release", "genre": ["Funk / Soul"], "style": [], "id": 1332703, "barcode":
+        [], "master_id": 497452, "master_url": "https://api.discogs.com/masters/497452",
+        "uri": "/James-Brown-Live-At-The-Apollo/release/1332703", "catno": "K-EP-826",
+        "title": "James Brown - Live At The Apollo", "thumb": "https://img.discogs.com/rw3JBG7jx6_wP7jt331rhDMDncA=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1332703-1210411723.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/ZyblMAucRAMS-fUbACd4942kZG8=/fit-in/528x525/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1332703-1210411723.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/1332703", "community": {"want":
+        42, "have": 36}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["7\"", "EP", "Jukebox"]}]}, {"country": "US", "year":
+        "1963", "format": ["Vinyl", "LP", "Album", "Stereo"], "label": ["King Records"],
+        "type": "master", "genre": ["Funk / Soul"], "style": ["Rhythm & Blues", "Soul"],
+        "id": 65036, "barcode": [], "master_id": 65036, "master_url": "https://api.discogs.com/masters/65036",
+        "uri": "/James-Brown-James-Brown-Live-At-The-Apollo/master/65036", "catno":
+        "K-826", "title": "James Brown - James Brown Live At The Apollo", "thumb":
+        "https://img.discogs.com/azhUepa8ZDadIuMd7dxAIG7Zq14=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-6300716-1446639448-9442.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/8tgictMeetEqVCwTLy8VgytqJfg=/fit-in/388x388/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6300716-1446639448-9442.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/masters/65036", "community": {"want":
+        20002, "have": 15128}}, {"country": "Canada", "year": "1963", "format": ["Vinyl",
+        "LP", "Album", "Mono"], "label": ["King Records", "Regency", "King Series",
+        "Apollo Theater-New York City", "Phonodisc Limited"], "type": "release", "genre":
+        ["Funk / Soul"], "style": ["Rhythm & Blues", "Soul"], "id": 7282147, "barcode":
+        ["K-12-826-A", "K-12-826-B", "K-12-826-A-X1", "K-12-826-B-X2"], "master_id":
+        65036, "master_url": "https://api.discogs.com/masters/65036", "uri": "/James-Brown-James-Brown-Live-At-The-Apollo/release/7282147",
+        "catno": "826", "title": "James Brown - James Brown Live At The Apollo", "thumb":
+        "https://img.discogs.com/PaFOYPaA6YPRgnSqPaZg0bSX2m4=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-7282147-1445295595-5003.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/2DKW4xoAO5458CP4BgLysLOhxjU=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-7282147-1445295595-5003.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/7282147", "community": {"want":
+        296, "have": 66}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["LP", "Album", "Mono"]}]}, {"country": "US", "year":
+        "1963", "format": ["Vinyl", "LP", "Album", "Mono"], "label": ["King Records",
+        "King Records", "Apollo Theater-New York City", "King Records, Inc."], "type":
+        "release", "genre": ["Funk / Soul"], "style": ["Rhythm & Blues", "Soul"],
+        "id": 15769430, "barcode": ["K-12-826-A", "K-12-826-B", "K-12-826-A-X4", "K-12-826-B-1"],
+        "master_id": 65036, "master_url": "https://api.discogs.com/masters/65036",
+        "uri": "/James-Brown-James-Brown-Live-At-The-Apollo/release/15769430", "catno":
+        "826", "title": "James Brown - James Brown Live At The Apollo", "thumb": "https://img.discogs.com/rxznhJMffj1HG6Wc2_mdBhYXmsI=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-15769430-1597459796-7372.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/hGbbA4Bw1OI_hySzmzj-9XFAaxo=/fit-in/600x592/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-15769430-1597459796-7372.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/15769430", "community":
+        {"want": 90, "have": 37}, "format_quantity": 1, "formats": [{"name": "Vinyl",
+        "qty": "1", "descriptions": ["LP", "Album", "Mono"]}]}, {"country": "US",
+        "year": "1963", "format": ["Vinyl", "LP", "Album", "Mono"], "label": ["King
+        Records"], "type": "release", "genre": ["Funk / Soul"], "style": ["Rhythm
+        & Blues", "Soul"], "id": 18002869, "barcode": ["K-12-826-A-1", "K-12-826-B-1",
+        "K-12-826-A", "K-12-826-B"], "master_id": 65036, "master_url": "https://api.discogs.com/masters/65036",
+        "uri": "/James-Brown-James-Brown-Live-At-The-Apollo/release/18002869", "catno":
+        "826", "title": "James Brown - James Brown Live At The Apollo", "thumb": "https://img.discogs.com/jY__Zls8hE4HfAh3rc8YXkZyTr4=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-18002869-1616678859-5914.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/G-r3bsSxZRbZ5blewuDK6npoXUk=/fit-in/600x598/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-18002869-1616678859-5914.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/18002869", "community":
+        {"want": 24, "have": 12}, "format_quantity": 1, "formats": [{"name": "Vinyl",
+        "qty": "1", "descriptions": ["LP", "Album", "Mono"]}]}, {"country": "US",
+        "year": "1963", "format": ["Vinyl", "LP", "Album", "Mono", "Misprint"], "label":
+        ["King Records", "Apollo Theater-New York City"], "type": "release", "genre":
+        ["Funk / Soul"], "style": ["Rhythm & Blues", "Soul"], "id": 3557537, "barcode":
+        ["K-12-826-A", "K-12-826-B", "K-12-826-A-1", "K-12-826-A"], "master_id": 65036,
+        "master_url": "https://api.discogs.com/masters/65036", "uri": "/James-Brown-James-Brown-Live-At-The-Apollo/release/3557537",
+        "catno": "826", "title": "James Brown - James Brown Live At The Apollo", "thumb":
+        "https://img.discogs.com/V3eI0GGIpmX2IDY6zLR3-a-8Qwo=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3557537-1574349741-3434.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/SRB-L-6l1-NcTju6OmFBD186vcU=/fit-in/600x611/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3557537-1574349741-3434.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/3557537", "community": {"want":
+        396, "have": 40}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["LP", "Album", "Mono", "Misprint"]}]}, {"country": "US",
+        "year": "1963", "format": ["Vinyl", "LP", "Album", "Stereo"], "label": ["King
+        Records"], "type": "release", "genre": ["Funk / Soul"], "style": ["Rhythm
+        & Blues", "Soul"], "id": 6300716, "barcode": [], "master_id": 65036, "master_url":
+        "https://api.discogs.com/masters/65036", "uri": "/James-Brown-James-Brown-Live-At-The-Apollo/release/6300716",
+        "catno": "K-826", "title": "James Brown - James Brown Live At The Apollo",
+        "thumb": "https://img.discogs.com/azhUepa8ZDadIuMd7dxAIG7Zq14=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-6300716-1446639448-9442.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/8tgictMeetEqVCwTLy8VgytqJfg=/fit-in/388x388/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6300716-1446639448-9442.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/6300716", "community": {"want":
+        1562, "have": 548}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["LP", "Album", "Stereo"]}]}, {"country": "US", "year":
+        "1963", "format": ["Vinyl", "LP", "Album", "Misprint", "Mono"], "label": ["King
+        Records", "Apollo Theater-New York City"], "type": "release", "genre": ["Funk
+        / Soul"], "style": ["Rhythm & Blues", "Soul"], "id": 6755698, "barcode": ["K-12-826-A",
+        "K-12-826-B", "K-12-826-A-1", "K-12-826-B-1"], "master_id": 65036, "master_url":
+        "https://api.discogs.com/masters/65036", "uri": "/James-Brown-James-Brown-Live-At-The-Apollo/release/6755698",
+        "catno": "K-826", "title": "James Brown - James Brown Live At The Apollo",
+        "thumb": "https://img.discogs.com/VjFxftKMS6oF4NLndyH-G2uYzBw=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-6755698-1502913771-1444.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/KXat-wBXFfr3jDQVeiOlp171R8E=/fit-in/600x598/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6755698-1502913771-1444.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/6755698", "community": {"want":
+        334, "have": 72}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["LP", "Album", "Misprint", "Mono"]}]}, {"country": "US",
+        "year": "1963", "format": ["Vinyl", "LP", "Album", "Mono"], "label": ["King
+        Records"], "type": "release", "genre": ["Funk / Soul"], "style": ["Rhythm
+        & Blues", "Soul"], "id": 2585867, "barcode": ["K-12-826-A-X3", "K-12-826-B-X3"],
+        "master_id": 65036, "master_url": "https://api.discogs.com/masters/65036",
+        "uri": "/James-Brown-James-Brown-Live-At-The-Apollo/release/2585867", "catno":
+        "826", "title": "James Brown - James Brown Live At The Apollo", "thumb": "https://img.discogs.com/IpMPTojZdaUUuC3ov3lQz7loYHY=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2585867-1291802250.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/6Tt0YlAJ5bTOMbnTXb5uA1zX3vs=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2585867-1291802250.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/2585867", "community": {"want":
+        690, "have": 468}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["LP", "Album", "Mono"]}]}, {"country": "US", "year":
+        "1963", "format": ["Vinyl", "LP", "Album", "Promo", "Transcription", "Mono"],
+        "label": ["King Records", "Apollo Theater-New York City", "Wisto", "Armo",
+        "Lois", "Frederick Music", "King Records"], "type": "release", "genre": ["Funk
+        / Soul"], "style": ["Rhythm & Blues", "Soul"], "id": 3328837, "barcode": ["DJK-12-826-A",
+        "DJK-12-826-B", "DJK-12-826-A", "DJK-12-826-B", "K-826", "BMI"], "master_id":
+        65036, "master_url": "https://api.discogs.com/masters/65036", "uri": "/The-Apollo-Theatre-Presents-In-Person-James-Brown-The-James-Brown-Show-Live-At-The-Apollo/release/3328837",
+        "catno": "826", "title": "The Apollo Theatre* Presents In Person! James Brown
+        - The James Brown Show (Live At The Apollo)", "thumb": "https://img.discogs.com/kqeoq8WryLycYUCRZ6P1nUNBqmo=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3328837-1368639048-4104.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/6OfkNAcFKaXmrRYX-U1CkZmf-7Y=/fit-in/600x598/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3328837-1368639048-4104.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/3328837", "community": {"want":
+        366, "have": 42}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["LP", "Album", "Promo", "Transcription", "Mono"]}]},
+        {"country": "US", "year": "1963", "format": ["Vinyl", "LP", "Album", "Misprint",
+        "Mono"], "label": ["King Records", "Apollo Theater-New York City", "King Records"],
+        "type": "release", "genre": ["Funk / Soul"], "style": ["Rhythm & Blues", "Soul"],
+        "id": 5338188, "barcode": ["K-12-826-A", "K-12-826-B", "K-12-826-A-1", "K-12-826-B-1"],
+        "master_id": 65036, "master_url": "https://api.discogs.com/masters/65036",
+        "uri": "/The-Apollo-Theatre-Presents-In-Person-James-Brown-The-James-Brown-Show-Live-At-The-Apollo/release/5338188",
+        "catno": "826", "title": "The Apollo Theatre* Presents In Person! James Brown
+        - The James Brown Show (Live At The Apollo)", "thumb": "https://img.discogs.com/ufeiijQIBruFetDWJXpktyR3rJ4=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-5338188-1588158970-9627.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/z8fXZPCQZMqVCPCUpt0niD-Xj_w=/fit-in/600x611/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-5338188-1588158970-9627.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/5338188", "community": {"want":
+        538, "have": 479}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["LP", "Album", "Misprint", "Mono"]}]}]}'
+  recorded_at: Mon, 24 May 2021 17:56:22 GMT
+recorded_with: VCR 6.0.0

@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 23 May 2021 23:56:21 GMT
+      - Mon, 24 May 2021 17:57:03 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -31,9 +31,9 @@ http_interactions:
       X-Discogs-Ratelimit:
       - '60'
       X-Discogs-Ratelimit-Remaining:
-      - '46'
+      - '47'
       X-Discogs-Ratelimit-Used:
-      - '14'
+      - '13'
       Access-Control-Allow-Headers:
       - Content-Type, authorization, User-Agent, Private-Auth-Secret, Discogs-UID
       Access-Control-Allow-Methods:
@@ -95,7 +95,7 @@ http_interactions:
         Los Angeles", "thumb": "https://img.discogs.com/oeOevLbk9V4RyaB7A86bUK0klIE=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3684444-1340273814-2003.jpeg.jpg",
         "cover_image": "https://img.discogs.com/WEm3XrQZs23Frf43EehTgkeuS6U=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3684444-1340273814-2003.jpeg.jpg",
         "resource_url": "https://api.discogs.com/releases/3684444", "community": {"want":
-        1070, "have": 535}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        1071, "have": 535}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
         "1", "text": "Blue Viagra, 180 gr.", "descriptions": ["LP", "Album", "Limited
         Edition", "Numbered", "Reissue", "Repress"]}]}, {"country": "Japan", "year":
         "1999", "format": ["CD", "Album"], "label": ["SME Records", "Sony Music Entertainment
@@ -176,7 +176,7 @@ http_interactions:
         LK15 1121-CD-0006"], "master_id": 7963, "master_url": "https://api.discogs.com/masters/7963",
         "uri": "/Rage-Against-The-Machine-The-Battle-Of-Los-Angeles/release/2718225",
         "catno": "none", "title": "Rage Against The Machine - The Battle Of Los Angeles",
-        "thumb": "", "cover_image": "https://img.discogs.com/a7df4739aad10ba90e6769b72812b4b483c36553/images/spacer.gif",
+        "thumb": "", "cover_image": "https://img.discogs.com/dd48ba3721f34f9d56f82669540c56799386dec1/images/spacer.gif",
         "resource_url": "https://api.discogs.com/releases/2718225", "community": {"want":
         109, "have": 10}, "format_quantity": 1, "formats": [{"name": "CD", "qty":
         "1", "descriptions": ["Album", "Promo"]}]}, {"country": "Russia", "year":
@@ -417,9 +417,20 @@ http_interactions:
         "catno": "9362-45700-1", "title": "Prince - Come", "thumb": "https://img.discogs.com/wC8WZUyfjh_s7oRnZePi2w_T6SE=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-984693-1411457339-5401.jpeg.jpg",
         "cover_image": "https://img.discogs.com/y10AVv3OdjcD11vopAv00pW3SiI=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-984693-1411457339-5401.jpeg.jpg",
         "resource_url": "https://api.discogs.com/masters/22440", "community": {"want":
-        3528, "have": 5928}}, {"country": "Europe", "year": "2020", "format": ["Vinyl",
-        "LP", "Album"], "label": ["Lucasfilm Ltd.", "Walt Disney Records", "Sony Pictures
-        Studios", "Bernie Grundman Mastering", "Utapau Music", "Lucasfilm Ltd.", "Lucasfilm
+        3529, "have": 5930}}, {"country": "Germany", "year": "2010", "format": ["CD",
+        "Album", "Limited Edition"], "label": ["No Colours Records", "The Dungeon
+        Studios, Los Angeles", "A.C. Studios"], "type": "release", "genre": ["Rock"],
+        "style": ["Black Metal"], "id": 2658945, "barcode": ["03581AA3"], "master_id":
+        304045, "master_url": "https://api.discogs.com/masters/304045", "uri": "/Inquisition-Ominous-Doctrines-Of-The-Perpetual-Mystical-Macrocosm/release/2658945",
+        "catno": "NC 160", "title": "Inquisition - Ominous Doctrines Of The Perpetual
+        Mystical Macrocosm", "thumb": "https://img.discogs.com/wcgHgDHuj7ePpW2AlKNzY92p3ik=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2658945-1295366363.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/K1ryTx-cHBDwFHmR2NCS1_AmAjY=/fit-in/300x428/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2658945-1295366363.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/2658945", "community": {"want":
+        81, "have": 188}, "format_quantity": 1, "formats": [{"name": "CD", "qty":
+        "1", "text": "A5 Digipak", "descriptions": ["Album", "Limited Edition"]}]},
+        {"country": "Europe", "year": "2020", "format": ["Vinyl", "LP", "Album"],
+        "label": ["Lucasfilm Ltd.", "Walt Disney Records", "Sony Pictures Studios",
+        "Bernie Grundman Mastering", "Utapau Music", "Lucasfilm Ltd.", "Lucasfilm
         Ltd.", "Universal International Music B.V."], "type": "release", "genre":
         ["Stage & Screen"], "style": ["Soundtrack"], "id": 14998310, "barcode": ["0
         50087 43492 2", "LC10025"], "master_id": 1655465, "master_url": "https://api.discogs.com/masters/1655465",
@@ -430,22 +441,10 @@ http_interactions:
         "resource_url": "https://api.discogs.com/releases/14998310", "community":
         {"want": 91, "have": 386}, "format_quantity": 2, "formats": [{"name": "Vinyl",
         "qty": "2", "descriptions": ["LP", "Album"]}]}, {"country": "Germany", "year":
-        "2010", "format": ["CD", "Album", "Limited Edition"], "label": ["No Colours
-        Records", "The Dungeon Studios, Los Angeles", "A.C. Studios"], "type": "release",
-        "genre": ["Rock"], "style": ["Black Metal"], "id": 2658945, "barcode": ["03581AA3"],
-        "master_id": 304045, "master_url": "https://api.discogs.com/masters/304045",
-        "uri": "/Inquisition-Ominous-Doctrines-Of-The-Perpetual-Mystical-Macrocosm/release/2658945",
-        "catno": "NC 160", "title": "Inquisition - Ominous Doctrines Of The Perpetual
-        Mystical Macrocosm", "thumb": "https://img.discogs.com/wcgHgDHuj7ePpW2AlKNzY92p3ik=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2658945-1295366363.jpeg.jpg",
-        "cover_image": "https://img.discogs.com/K1ryTx-cHBDwFHmR2NCS1_AmAjY=/fit-in/300x428/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2658945-1295366363.jpeg.jpg",
-        "resource_url": "https://api.discogs.com/releases/2658945", "community": {"want":
-        81, "have": 188}, "format_quantity": 1, "formats": [{"name": "CD", "qty":
-        "1", "text": "A5 Digipak", "descriptions": ["Album", "Limited Edition"]}]},
-        {"country": "Germany", "year": "2010", "format": ["Vinyl", "LP", "Album"],
-        "label": ["No Colours Records"], "type": "release", "genre": ["Rock"], "style":
-        ["Black Metal"], "id": 2668599, "barcode": ["NC 160 A - 22040 - SST", "NC
-        160 B - 22040 - SST"], "master_id": 304045, "master_url": "https://api.discogs.com/masters/304045",
-        "uri": "/Inquisition-Ominous-Doctrines-Of-The-Perpetual-Mystical-Macrocosm/release/2668599",
+        "2010", "format": ["Vinyl", "LP", "Album"], "label": ["No Colours Records"],
+        "type": "release", "genre": ["Rock"], "style": ["Black Metal"], "id": 2668599,
+        "barcode": ["NC 160 A - 22040 - SST", "NC 160 B - 22040 - SST"], "master_id":
+        304045, "master_url": "https://api.discogs.com/masters/304045", "uri": "/Inquisition-Ominous-Doctrines-Of-The-Perpetual-Mystical-Macrocosm/release/2668599",
         "catno": "NC 160", "title": "Inquisition - Ominous Doctrines Of The Perpetual
         Mystical Macrocosm", "thumb": "https://img.discogs.com/ebsQ76vL3r4BOuRON3l4dK642ww=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2668599-1295908103.jpeg.jpg",
         "cover_image": "https://img.discogs.com/lVlDhW9d6BiCHS8xOUEguuyb1g8=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2668599-1295908103.jpeg.jpg",
@@ -484,7 +483,7 @@ http_interactions:
         66820", "title": "Muggs* - The Soul Assassins (Chapter 1)", "thumb": "https://img.discogs.com/T3DkohPYaD_1rCDOEYxMpobdUSg=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-635946-1312416877.jpeg.jpg",
         "cover_image": "https://img.discogs.com/utHiI360FTVHzfelCO5sVCNhaoc=/fit-in/600x599/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-635946-1312416877.jpeg.jpg",
         "resource_url": "https://api.discogs.com/releases/635946", "community": {"want":
-        78, "have": 440}, "format_quantity": 1, "formats": [{"name": "CD", "qty":
+        78, "have": 439}, "format_quantity": 1, "formats": [{"name": "CD", "qty":
         "1", "descriptions": ["Album"]}]}, {"country": "US", "year": "1993", "format":
         ["CD", "Album"], "label": ["Var\u00e8se Sarabande", "Sonic Images", "Var\u00e8se
         Sarabande Records, Inc.", "Sonic Images", "Var\u00e8se Sarabande Records,
@@ -498,7 +497,7 @@ http_interactions:
         "https://img.discogs.com/DBx72ekWbFwDP2K1nMlhfwVffOw=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-170286-1449913705-3306.png.jpg",
         "cover_image": "https://img.discogs.com/tOgOQcxZCsuel899EkZntqAELuU=/fit-in/600x589/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-170286-1449913705-3306.png.jpg",
         "resource_url": "https://api.discogs.com/masters/259096", "community": {"want":
-        28, "have": 119}}, {"country": "US", "year": "2018", "format": ["Vinyl", "LP",
+        28, "have": 120}}, {"country": "US", "year": "2018", "format": ["Vinyl", "LP",
         "Album"], "label": ["Walt Disney Records", "Walt Disney Records", "Walt Disney
         Records", "Lucasfilm Ltd.", "Lucasfilm Ltd.", "United Record Pressing", "Sony
         Studios, Culver City", "Bernie Grundman Mastering", "Utapau Music", "Bantha
@@ -560,7 +559,7 @@ http_interactions:
         "thumb": "https://img.discogs.com/EN5sBfR5EeNmJIRSPa__xgbi2UU=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2613426-1430632840-2302.jpeg.jpg",
         "cover_image": "https://img.discogs.com/mf_L-Cgm6D-0evdQ8UyR4UeMeaE=/fit-in/600x525/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2613426-1430632840-2302.jpeg.jpg",
         "resource_url": "https://api.discogs.com/releases/2613426", "community": {"want":
-        169, "have": 684}, "format_quantity": 2, "formats": [{"name": "CD", "qty":
+        169, "have": 685}, "format_quantity": 2, "formats": [{"name": "CD", "qty":
         "2", "text": "Slipcase, Holographic Discs", "descriptions": ["Album", "Limited
         Edition", "Reissue", "Remastered", "Special Edition"]}]}, {"country": "Germany",
         "genre": ["Rock"], "format": ["Vinyl", "LP", "Album", "Reissue", "Remastered"],
@@ -601,43 +600,26 @@ http_interactions:
         "cover_image": "https://img.discogs.com/GyXcHUEthxj7ZsTxVXSN5CsjG5w=/fit-in/600x602/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-5411099-1538042296-3015.jpeg.jpg",
         "resource_url": "https://api.discogs.com/releases/5411099", "community": {"want":
         42, "have": 70}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
-        "1", "descriptions": ["LP", "Album", "Mono"]}]}, {"country": "US", "year":
-        "1998", "format": ["CD", "Album"], "label": ["Curb Records", "Warner Sunset
-        Records", "Atlantic", "Atlantic Recording Corporation", "WEA International
-        Inc.", "Curb Records, Inc.", "Warner Bros.", "WEA Manufacturing Inc.", "WEA
-        Mfg. Olyphant", "Warner-Tamerlane Publishing Corp.", "Wb Music Corp.", "Rosewood
-        Studio", "Chartmaker Studios", "Record Plant, Los Angeles", "Ocean Way Recording",
-        "Paramount Recording Studios", "Newman Scoring Stage", "Todd-AO Scoring Stage",
-        "The Hit Factory", "Rosewood Studio", "Barking Doctor Recording", "Record
-        Plant, Los Angeles", "Signet Sound Studios", "Sony Music Studios, New York
-        City"], "type": "master", "genre": ["Electronic", "Rock", "Pop", "Folk, World,
-        & Country"], "style": ["Pop Rock", "Synth-pop", "Ballad"], "id": 467368, "barcode":
-        ["0 7567-83097-2 4", "wea mfg. OLYPHANT W3055 3 83097-2 02 \u2732M2 S1 ",
-        "IFPI L901", "1-887688-13-7"], "master_id": 467368, "master_url": "https://api.discogs.com/masters/467368",
-        "uri": "/Various-Quest-For-Camelot-Music-From-The-Motion-Picture/master/467368",
-        "catno": "83097-2", "title": "Various - Quest For Camelot (Music From The
-        Motion Picture)", "thumb": "https://img.discogs.com/GNCznzfsWv2ysELAEsRUqCV4LQE=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3840582-1346497144-2750.jpeg.jpg",
-        "cover_image": "https://img.discogs.com/ojwtaU7YisBtCLvMCdhm91Shc6c=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3840582-1346497144-2750.jpeg.jpg",
-        "resource_url": "https://api.discogs.com/masters/467368", "community": {"want":
-        35, "have": 202}}, {"country": "Europe", "year": "2017", "format": ["Vinyl",
-        "LP", "Album"], "label": ["Island Records", "Island Records", "Island Records",
-        "UMG Recordings", "Universal International Music B.V.", "Metropolis Mastering",
-        "The Mastering Palace", "11th Street Records", "The Garage", "Battle Born
-        Studios", "The Phantasy Sound", "Strongroom", "Assault & Battery 1", "Tracques,
-        Los Angeles", "Universal - Polygram International Publishing, Inc.", "Universal
-        Music Publishing Ltd.", "Besme Music", "Kobalt Music Group Limited", "Warner-Tamerlane
-        Publishing Corp.", "Old River Music", "Sony ATV Music Publishing Australia
-        Pty Ltd", "Write Me A Song Publishing", "Downtown Music Publishing LLC", "Blue
-        Mountain Music Ltd.", "Irish Town Songs", "Fifty-Six Hope Road Music Ltd.",
-        "Blackwell Fuller Music Publishing LLC", "Elodine Songs Ltd", "Warner Chappell
-        Music", "Opal Limited", "Bucks Music Group Ltd.", "Metropolis Mastering",
-        "Memphis Record Pressing", "GZ Media"], "type": "release", "genre": ["Rock",
-        "Pop"], "style": ["Alternative Rock", "Indie Rock", "Indie Pop", "New Wave"],
-        "id": 10889741, "barcode": ["602557771718", "6 02557 77171 8", "LC08427",
-        "MRP0905/B002704701-A 161955E1/A", "A1  JD", "MRP0905/B002704701-B 161955E2/A",
-        "B1"], "master_id": 1240209, "master_url": "https://api.discogs.com/masters/1240209",
-        "uri": "/The-Killers-Wonderful-Wonderful/release/10889741", "catno": "00602557771718",
-        "title": "The Killers - Wonderful Wonderful", "thumb": "https://img.discogs.com/M-59bCjuf98Hxhb-B-A5QE2cHYQ=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-10889741-1617897733-8435.jpeg.jpg",
+        "1", "descriptions": ["LP", "Album", "Mono"]}]}, {"country": "Europe", "year":
+        "2017", "format": ["Vinyl", "LP", "Album"], "label": ["Island Records", "Island
+        Records", "Island Records", "UMG Recordings", "Universal International Music
+        B.V.", "Metropolis Mastering", "The Mastering Palace", "11th Street Records",
+        "The Garage", "Battle Born Studios", "The Phantasy Sound", "Strongroom", "Assault
+        & Battery 1", "Tracques, Los Angeles", "Universal - Polygram International
+        Publishing, Inc.", "Universal Music Publishing Ltd.", "Besme Music", "Kobalt
+        Music Group Limited", "Warner-Tamerlane Publishing Corp.", "Old River Music",
+        "Sony ATV Music Publishing Australia Pty Ltd", "Write Me A Song Publishing",
+        "Downtown Music Publishing LLC", "Blue Mountain Music Ltd.", "Irish Town Songs",
+        "Fifty-Six Hope Road Music Ltd.", "Blackwell Fuller Music Publishing LLC",
+        "Elodine Songs Ltd", "Warner Chappell Music", "Opal Limited", "Bucks Music
+        Group Ltd.", "Metropolis Mastering", "Memphis Record Pressing", "GZ Media"],
+        "type": "release", "genre": ["Rock", "Pop"], "style": ["Alternative Rock",
+        "Indie Rock", "Indie Pop", "New Wave"], "id": 10889741, "barcode": ["602557771718",
+        "6 02557 77171 8", "LC08427", "MRP0905/B002704701-A 161955E1/A", "A1  JD",
+        "MRP0905/B002704701-B 161955E2/A", "B1"], "master_id": 1240209, "master_url":
+        "https://api.discogs.com/masters/1240209", "uri": "/The-Killers-Wonderful-Wonderful/release/10889741",
+        "catno": "00602557771718", "title": "The Killers - Wonderful Wonderful", "thumb":
+        "https://img.discogs.com/M-59bCjuf98Hxhb-B-A5QE2cHYQ=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-10889741-1617897733-8435.jpeg.jpg",
         "cover_image": "https://img.discogs.com/5UPh1wObzCHF3OQMJA2F4IsQYkg=/fit-in/600x608/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-10889741-1617897733-8435.jpeg.jpg",
         "resource_url": "https://api.discogs.com/releases/10889741", "community":
         {"want": 191, "have": 2265}, "format_quantity": 1, "formats": [{"name": "Vinyl",
@@ -659,12 +641,30 @@ http_interactions:
         "resource_url": "https://api.discogs.com/releases/11284222", "community":
         {"want": 33, "have": 224}, "format_quantity": 1, "formats": [{"name": "CD",
         "qty": "1", "text": "Digipak", "descriptions": ["Album", "Stereo"]}]}, {"country":
-        "UK", "year": "1996", "format": ["CD", "Album"], "label": ["Fontana"], "type":
-        "release", "genre": ["Rock"], "style": ["Alternative Rock", "Hard Rock"],
-        "id": 395345, "barcode": ["731453299924", "IFPI 0465", "IFPI L132", "MADE
-        IN U.K. BY PDO     5329992 10441351 02 %", "LC 0211", "PY 900"], "master_id":
-        177707, "master_url": "https://api.discogs.com/masters/177707", "uri": "/Kerbdog-On-The-Turn/release/395345",
-        "catno": "532 999-2", "title": "Kerbdog - On The Turn", "thumb": "https://img.discogs.com/Q9Q5_snqzGvlOiiUbc0B8u-bPvg=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-395345-1201046536.jpeg.jpg",
+        "US", "year": "1998", "format": ["CD", "Album"], "label": ["Curb Records",
+        "Warner Sunset Records", "Atlantic", "Atlantic Recording Corporation", "WEA
+        International Inc.", "Curb Records, Inc.", "Warner Bros.", "WEA Manufacturing
+        Inc.", "WEA Mfg. Olyphant", "Warner-Tamerlane Publishing Corp.", "Wb Music
+        Corp.", "Rosewood Studio", "Chartmaker Studios", "Record Plant, Los Angeles",
+        "Ocean Way Recording", "Paramount Recording Studios", "Newman Scoring Stage",
+        "Todd-AO Scoring Stage", "The Hit Factory", "Rosewood Studio", "Barking Doctor
+        Recording", "Record Plant, Los Angeles", "Signet Sound Studios", "Sony Music
+        Studios, New York City"], "type": "master", "genre": ["Electronic", "Rock",
+        "Pop", "Folk, World, & Country"], "style": ["Pop Rock", "Synth-pop", "Ballad"],
+        "id": 467368, "barcode": ["0 7567-83097-2 4", "wea mfg. OLYPHANT W3055 3 83097-2
+        02 \u2732M2 S1 ", "IFPI L901", "1-887688-13-7"], "master_id": 467368, "master_url":
+        "https://api.discogs.com/masters/467368", "uri": "/Various-Quest-For-Camelot-Music-From-The-Motion-Picture/master/467368",
+        "catno": "83097-2", "title": "Various - Quest For Camelot (Music From The
+        Motion Picture)", "thumb": "https://img.discogs.com/GNCznzfsWv2ysELAEsRUqCV4LQE=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3840582-1346497144-2750.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/ojwtaU7YisBtCLvMCdhm91Shc6c=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3840582-1346497144-2750.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/masters/467368", "community": {"want":
+        35, "have": 202}}, {"country": "UK", "year": "1996", "format": ["CD", "Album"],
+        "label": ["Fontana"], "type": "release", "genre": ["Rock"], "style": ["Alternative
+        Rock", "Hard Rock"], "id": 395345, "barcode": ["731453299924", "IFPI 0465",
+        "IFPI L132", "MADE IN U.K. BY PDO     5329992 10441351 02 %", "LC 0211", "PY
+        900"], "master_id": 177707, "master_url": "https://api.discogs.com/masters/177707",
+        "uri": "/Kerbdog-On-The-Turn/release/395345", "catno": "532 999-2", "title":
+        "Kerbdog - On The Turn", "thumb": "https://img.discogs.com/Q9Q5_snqzGvlOiiUbc0B8u-bPvg=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-395345-1201046536.jpeg.jpg",
         "cover_image": "https://img.discogs.com/v6GyxWEQyeWEh5uTVS9-L2P_Eq4=/fit-in/350x350/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-395345-1201046536.jpeg.jpg",
         "resource_url": "https://api.discogs.com/releases/395345", "community": {"want":
         22, "have": 158}, "format_quantity": 1, "formats": [{"name": "CD", "qty":
@@ -678,7 +678,7 @@ http_interactions:
         Of Their Company", "thumb": "https://img.discogs.com/gQdNlO6rcz_DX4l18-K2FJ2Hl3g=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3693230-1340619533-1137.jpeg.jpg",
         "cover_image": "https://img.discogs.com/t5lkIQ_JwS7mmyC7FMp26P6jQq0=/fit-in/600x588/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3693230-1340619533-1137.jpeg.jpg",
         "resource_url": "https://api.discogs.com/masters/451418", "community": {"want":
-        25, "have": 228}}, {"country": "US", "year": "2005", "format": ["CD", "Album",
+        25, "have": 229}}, {"country": "US", "year": "2005", "format": ["CD", "Album",
         "Enhanced", "DVD", "DVD-Video", "NTSC", "All Media", "Special Edition"], "label":
         ["Walt Disney Records", "Walt Disney Records", "Disney Enterprises, Inc.",
         "Walden Media, LLC", "Bernie Grundman Mastering", "Radius 60", "Add To The
@@ -697,7 +697,7 @@ http_interactions:
         "https://img.discogs.com/6RTYRTz4A7uXUIFdfCZ1U2syM0g=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-835875-1606400490-5986.jpeg.jpg",
         "cover_image": "https://img.discogs.com/b9_j1heVx9sQIAuVZ6yvJ4hkf9M=/fit-in/600x545/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-835875-1606400490-5986.jpeg.jpg",
         "resource_url": "https://api.discogs.com/masters/102595", "community": {"want":
-        117, "have": 511}}, {"country": "US", "year": "2014", "format": ["Cassette",
+        117, "have": 512}}, {"country": "US", "year": "2014", "format": ["Cassette",
         "Album", "Reissue"], "label": ["Hells Headbangers"], "type": "release", "genre":
         ["Rock"], "style": ["Black Metal"], "id": 5678136, "barcode": [], "master_id":
         304045, "master_url": "https://api.discogs.com/masters/304045", "uri": "/Inquisition-Ominous-Doctrines-Of-The-Perpetual-Mystical-Macrocosm/release/5678136",
@@ -706,29 +706,11 @@ http_interactions:
         "cover_image": "https://img.discogs.com/RWuJQv8DxEi33pyna8Fyg6IvBnY=/fit-in/600x631/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-5678136-1579443403-8054.jpeg.jpg",
         "resource_url": "https://api.discogs.com/releases/5678136", "community": {"want":
         71, "have": 141}, "format_quantity": 1, "formats": [{"name": "Cassette", "qty":
-        "1", "descriptions": ["Album", "Reissue"]}]}, {"country": "US", "year": "1971",
-        "format": ["Vinyl", "LP", "Album", "Stereo"], "label": ["Atlantic", "Superhype
-        Music, Inc.", "Monarch Record Mfg. Co.", "Headley Grange", "Island Studios",
-        "Sunset Sound", "Atlantic Studios"], "type": "release", "genre": ["Rock"],
-        "style": ["Classic Rock"], "id": 5715187, "barcode": ["ASCAP", "ST-A-712285",
-        "ST-A-712286", "ST-A-712285-EE AT/GP MR \u25b316345 (3) PR Porky", "ST-A-712286-EE
-        Pecko Duck AT/GP MR \u25b316345-X (4) PR ", "ST-A-712285-EE AT/GP MR \u25b316345
-        (3) PR PORKY", "ST-A-712286-FF PECKO DUCK AT/GP MR \u25b316345-X PR (8)",
-        "ST-A-712285 DD AT/GP MR \u25b316345 (2) PR PECKO", "ST-A-712286-CC MR \u25b316345-X
-        (s\u0337c\u0337r\u0337a\u0337t\u0337c\u0337h\u0337e\u0337d\u0337 \u0337o\u0337u\u0337t\u0337)(5)
-        PR PECKO DUCK", "ST-A-712285-CC AT/GP MR \u25b3\u033616345 (1) PR PORKY",
-        "ST-A-712286DD AT/GP MR \u25b3\u033616345-X (2) PR PECKO DUCK"], "master_id":
-        4300, "master_url": "https://api.discogs.com/masters/4300", "uri": "/Led-Zeppelin-Untitled/release/5715187",
-        "catno": "SD 7208", "title": "Led Zeppelin - Untitled", "thumb": "https://img.discogs.com/cLuEQSwm5ZxJZgq2uwbzTtQ-IoE=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-5715187-1413734401-6900.jpeg.jpg",
-        "cover_image": "https://img.discogs.com/O_YaH1_8ecHb9glTRHRZZFVOqKc=/fit-in/384x384/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-5715187-1413734401-6900.jpeg.jpg",
-        "resource_url": "https://api.discogs.com/releases/5715187", "community": {"want":
-        917, "have": 1412}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
-        "1", "text": "Monarch Pressing", "descriptions": ["LP", "Album", "Stereo"]}]},
-        {"country": "US", "year": "1991", "format": ["Vinyl", "LP", "Album", "Reissue",
-        "Remastered"], "label": ["Original Jazz Classics", "Contemporary Records"],
-        "type": "release", "genre": ["Jazz"], "style": ["Cool Jazz"], "id": 3279882,
-        "barcode": ["0 25218-6636-1 8"], "master_id": 392143, "master_url": "https://api.discogs.com/masters/392143",
-        "uri": "/Howard-Rumseys-Lighthouse-All-Stars-Music-For-Lighthousekeeping/release/3279882",
+        "1", "descriptions": ["Album", "Reissue"]}]}, {"country": "US", "year": "1991",
+        "format": ["Vinyl", "LP", "Album", "Reissue", "Remastered"], "label": ["Original
+        Jazz Classics", "Contemporary Records"], "type": "release", "genre": ["Jazz"],
+        "style": ["Cool Jazz"], "id": 3279882, "barcode": ["0 25218-6636-1 8"], "master_id":
+        392143, "master_url": "https://api.discogs.com/masters/392143", "uri": "/Howard-Rumseys-Lighthouse-All-Stars-Music-For-Lighthousekeeping/release/3279882",
         "catno": "OJC-636", "title": "Howard Rumsey''s Lighthouse All-Stars - Music
         For Lighthousekeeping", "thumb": "https://img.discogs.com/wyE2Z1Mkp2J42SLWtboXKVBURvs=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3279882-1323701447.jpeg.jpg",
         "cover_image": "https://img.discogs.com/DD1I8AknZTHOTW1ldcI7kFG23X4=/fit-in/225x225/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3279882-1323701447.jpeg.jpg",
@@ -772,9 +754,23 @@ http_interactions:
         "Led Zeppelin - Untitled", "thumb": "https://img.discogs.com/D-o7fWfzjMVtyJBwbVqe89KclLU=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-367125-1169910987.jpeg.jpg",
         "cover_image": "https://img.discogs.com/IO7KhnPtkNM0f2lfH_dD2HVlMx8=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-367125-1169910987.jpeg.jpg",
         "resource_url": "https://api.discogs.com/releases/367125", "community": {"want":
-        579, "have": 3432}, "format_quantity": 1, "formats": [{"name": "CD", "qty":
-        "1", "descriptions": ["Album", "Reissue", "Remastered"]}]}]}'
-  recorded_at: Sun, 23 May 2021 23:56:21 GMT
+        578, "have": 3433}, "format_quantity": 1, "formats": [{"name": "CD", "qty":
+        "1", "descriptions": ["Album", "Reissue", "Remastered"]}]}, {"country": "US",
+        "genre": ["Jazz"], "format": ["Vinyl", "LP", "Album", "Stereo"], "style":
+        ["Cool Jazz"], "id": 3396346, "label": ["Contemporary Records", "Contemporary
+        Records, Inc.", "Lighthouse Series", "Contemporary Records", "Contemporary''s
+        Studio", "Jocelyn Music Co.", "Bregman, Vocco & Conn, Inc.", "Criterion Music
+        Corp.", "West Coast Music Publ.", "Cosmopolitan Music Publishers"], "type":
+        "release", "barcode": ["+ SLM + LKS 15 \u25b2 984  LKS - 15 - D3", "+ SLM
+        + LKS 15 \u25b2 984-x  LKS - 16 - D3", "ASCAP", "BMI", "(39464)"], "master_id":
+        392143, "master_url": "https://api.discogs.com/masters/392143", "uri": "/Howard-Rumseys-Lighthouse-All-Stars-Music-For-Lighthousekeeping/release/3396346",
+        "catno": "S7528", "title": "Howard Rumsey''s Lighthouse All-Stars - Music
+        For Lighthousekeeping", "thumb": "https://img.discogs.com/0GjKXcD7CmjpAYELUuZiimMieD0=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3396346-1418995492-5019.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/Xq-KYkNWr9Bytetnhi3Ozm-I7LQ=/fit-in/600x605/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3396346-1418995492-5019.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/3396346", "community": {"want":
+        18, "have": 72}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        "1", "descriptions": ["LP", "Album", "Stereo"]}]}]}'
+  recorded_at: Mon, 24 May 2021 17:57:03 GMT
 - request:
     method: get
     uri: https://api.discogs.com/masters/7963
@@ -794,7 +790,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 23 May 2021 23:56:22 GMT
+      - Mon, 24 May 2021 17:57:03 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -806,9 +802,9 @@ http_interactions:
       X-Discogs-Ratelimit:
       - '25'
       X-Discogs-Ratelimit-Remaining:
-      - '10'
+      - '11'
       X-Discogs-Ratelimit-Used:
-      - '15'
+      - '14'
       Access-Control-Allow-Headers:
       - Content-Type, authorization, User-Agent, Private-Auth-Secret, Discogs-UID
       Access-Control-Allow-Methods:
@@ -833,10 +829,10 @@ http_interactions:
       - max-age=15724800
     body:
       encoding: ASCII-8BIT
-      string: '{"id": 7963, "main_release": 395120, "most_recent_release": 12579730,
+      string: '{"id": 7963, "main_release": 395120, "most_recent_release": 12574480,
         "resource_url": "https://api.discogs.com/masters/7963", "uri": "https://www.discogs.com/Rage-Against-The-Machine-The-Battle-Of-Los-Angeles/master/7963",
         "versions_url": "https://api.discogs.com/masters/7963/versions", "main_release_url":
-        "https://api.discogs.com/releases/395120", "most_recent_release_url": "https://api.discogs.com/releases/12579730",
+        "https://api.discogs.com/releases/395120", "most_recent_release_url": "https://api.discogs.com/releases/12574480",
         "num_for_sale": 668, "lowest_price": 0.61, "images": [{"type": "primary",
         "uri": "", "resource_url": "", "uri150": "", "width": 600, "height": 592},
         {"type": "secondary", "uri": "", "resource_url": "", "uri150": "", "width":
@@ -885,5 +881,5 @@ http_interactions:
         to RATM: https://rageatm.lnk.to/listenYD \nWatch more videos by Rage Against
         the Machine: https://rageatm.lnk.to/listenYD/youtube \n\nSubscribe to the
         official RATM YouTu", "duration": 234, "embed": true}]}'
-  recorded_at: Sun, 23 May 2021 23:56:22 GMT
+  recorded_at: Mon, 24 May 2021 17:57:03 GMT
 recorded_with: VCR 6.0.0

@@ -159,13 +159,13 @@ describe 'Discogs Service API' do
       expect(album[:artists][0][:name]).to eq('Rage Against The Machine')
     end
 
-    it '::get_artist_id' do
+    xit '::get_artist_id' do
       artist = DiscogsService.get_artist_id('Minus the Bear')
 
       expect(artist).to be_an(Integer)
     end
 
-    it '::get_album_resource' do
+    xit '::get_album_resource' do
       albums = DiscogsService.get_artist_albums('Minus the Bear')
 
       # expect(albums).to be_a(Hash)

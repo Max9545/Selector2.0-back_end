@@ -18,7 +18,6 @@ class DiscogsService
         end
       end
     end
-    # require "pry"; binding.pry
     parsed_interpolated = "#{ parsed_response[:title] }" + ' ' + "#{ parsed_response[:name] }" + ' ' + "#{ parsed_response[:artists][0][:name] }" + ' ' + "#{ parsed_response[:artists_sort] }"
     SpotifyService.spotify_album_id(parsed_interpolated)
   end
@@ -55,7 +54,20 @@ class DiscogsService
       f.params['key'] = ENV['discogs_key']
       f.params['secret'] = ENV['discogs_secret']
       f.params['q'] = album
-      f.params['format'] = "album"
+      f.params['format'] = 'album'
+    end
+    album_q = parse(response)
+    album_q
+  end
+
+  def self.get_album_with_year(album, artist, year)
+    # require "pry"; binding.pry
+    response = conn.get('/database/search') do |f|
+      f.params['key'] = ENV['discogs_key']
+      f.params['secret'] = ENV['discogs_secret']
+      f.params['release_title'] = album
+      f.params['artist'] = artist
+      f.params['year'] = year
     end
     album_q = parse(response)
     album_q
@@ -80,9 +92,8 @@ class DiscogsService
       f.params['format'] = "album"
     end
     artist_q = parse(response)
-    # require "pry"; binding.pry
     first_ten_albums = artist_q[:releases][0..9].each do |artist|
-                        image = get_album(artist[:title])
+                        image = get_album_with_year(artist[:title], artist[:artist], artist[:year])
                         if image[:results].empty? || image[:results].nil?
                           artist[:cover_image] = nil
                         else
@@ -90,7 +101,6 @@ class DiscogsService
                         end
                       end
     first_ten_albums
-    # require "pry"; binding.pry
   end
 
   def self.get_album_with_id(album_id)

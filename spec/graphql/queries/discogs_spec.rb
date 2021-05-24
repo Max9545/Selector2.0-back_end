@@ -73,7 +73,7 @@ RSpec.describe 'Discogs API request', type: :post do
     #   # random = DiscogsService.random_album
     #   # require "pry"; binding.pry
     # end
-    it 'Returns release data for 10 random albums' do
+    # it 'Returns release data for 10 random albums' do
 
       # def query
       #   <<~GQL
@@ -102,15 +102,16 @@ RSpec.describe 'Discogs API request', type: :post do
       # end
 
       # result = SelectorSchema.execute(query).as_json
-      # random = DiscogsService.random_album
+      # album = DiscogsService.get_album_with_year("weezer", "weezer", 1994)
       # random = DiscogsService.get_artist_id('minus the bear')
       # require "pry"; binding.pry
       # random = DiscogsService.get_artist_albums('minus the bear')
+      # require "pry"; binding.pry
       # random = SpotifyService.spotify_album_id('The Supremes in and out of love')
       # require "pry"; binding.pry
-    end
+    # end
 
-    it 'Returns artist and the first 10 of their albums' do
+    it 'Returns artist and the first 10 of their albums', :vcr do
 
       def query
         <<~GQL
@@ -138,7 +139,6 @@ RSpec.describe 'Discogs API request', type: :post do
       expect(result["data"]["artistAlbums"].length).to be <= 10
 
       result["data"]["artistAlbums"].each do |a|
-        # require "pry"; binding.pry
         expect(a.keys).to match_array(["artist", "title", "id", "coverImage", "format", "year", "label"])
         expect(a["artist"]).to be_a(String)
         expect(a["title"]).to be_a(String)

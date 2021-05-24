@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 23 May 2021 23:56:22 GMT
+      - Mon, 24 May 2021 17:57:41 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -31,9 +31,9 @@ http_interactions:
       X-Discogs-Ratelimit:
       - '60'
       X-Discogs-Ratelimit-Remaining:
-      - '44'
+      - '54'
       X-Discogs-Ratelimit-Used:
-      - '16'
+      - '6'
       Access-Control-Allow-Headers:
       - Content-Type, authorization, User-Agent, Private-Auth-Secret, Discogs-UID
       Access-Control-Allow-Methods:
@@ -60,5 +60,5 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '{"pagination": {"page": 1, "pages": 1, "per_page": 50, "items": 0,
         "urls": {}}, "results": []}'
-  recorded_at: Sun, 23 May 2021 23:56:22 GMT
+  recorded_at: Mon, 24 May 2021 17:57:41 GMT
 recorded_with: VCR 6.0.0
