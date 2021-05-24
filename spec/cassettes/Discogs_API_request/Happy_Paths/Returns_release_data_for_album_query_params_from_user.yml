@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 23 May 2021 21:35:41 GMT
+      - Sun, 23 May 2021 23:56:14 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -42,6 +42,10 @@ http_interactions:
       - Location
       Content-Language:
       - en
+      Link:
+      - <https://api.discogs.com/database/search?format=album&key=ENV[discogs_key]&q=The+Payback&secret=ENV[discogs_secret]&page=40&per_page=50>;
+        rel="last", <https://api.discogs.com/database/search?format=album&key=ENV[discogs_key]&q=The+Payback&secret=ENV[discogs_secret]&page=2&per_page=50>;
+        rel="next"
       X-Discogs-Media-Type:
       - discogs.v2
       Access-Control-Allow-Origin:
@@ -74,7 +78,7 @@ http_interactions:
         "James Brown - The Payback", "thumb": "https://img.discogs.com/f6CfVzmLodKt6YxX4Bfi5KVS6Q8=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-719877-1247870750.jpeg.jpg",
         "cover_image": "https://img.discogs.com/MUELn9ObTL-ZpxyUgF5M9D_Kumc=/fit-in/600x591/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-719877-1247870750.jpeg.jpg",
         "resource_url": "https://api.discogs.com/masters/33990", "community": {"want":
-        14192, "have": 8226}}, {"country": "US", "year": "1973", "format": ["Vinyl",
+        14193, "have": 8226}}, {"country": "US", "year": "1973", "format": ["Vinyl",
         "LP", "Album"], "label": ["Polydor", "Polydor", "Polydor Incorporated", "International
         Recording", "Advantage Sound", "Advantage Sound", "Dynatone Publishing Co.",
         "Belinda Music, Inc.", "Unichappell & Co.", "Polydor Incorporated", "Sterling
@@ -87,7 +91,7 @@ http_interactions:
         "James Brown - The Payback", "thumb": "https://img.discogs.com/f6CfVzmLodKt6YxX4Bfi5KVS6Q8=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-719877-1247870750.jpeg.jpg",
         "cover_image": "https://img.discogs.com/MUELn9ObTL-ZpxyUgF5M9D_Kumc=/fit-in/600x591/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-719877-1247870750.jpeg.jpg",
         "resource_url": "https://api.discogs.com/releases/719877", "community": {"want":
-        1670, "have": 1629}, "format_quantity": 2, "formats": [{"name": "Vinyl", "qty":
+        1671, "have": 1629}, "format_quantity": 2, "formats": [{"name": "Vinyl", "qty":
         "2", "descriptions": ["LP", "Album"]}]}, {"country": "US", "year": "1973",
         "format": ["Vinyl", "LP", "Album"], "label": ["Polydor"], "type": "release",
         "genre": ["Funk / Soul"], "style": ["Soul", "Funk"], "id": 3414903, "barcode":
@@ -116,21 +120,8 @@ http_interactions:
         "resource_url": "https://api.discogs.com/releases/4282599", "community": {"want":
         810, "have": 649}, "format_quantity": 2, "formats": [{"name": "Vinyl", "qty":
         "2", "text": "All Disc Press", "descriptions": ["LP", "Album", "Stereo"]}]},
-        {"country": "US", "genre": ["Funk / Soul"], "format": ["Vinyl", "LP", "Album",
-        "Reissue"], "style": ["Soul", "Funk"], "id": 1981916, "label": ["Polydor",
-        "Polydor", "Polydor Incorporated", "Polydor Incorporated", "Rainbo Records",
-        "Rainbo Records", "Rainbo Records", "Rainbo Records"], "type": "release",
-        "barcode": ["PD2 3007-A  S-34815", "PD2 3007-B  S-34816", "PD2 3007-C  S-34817",
-        "PD2 3007-D  S-34818", "PD 2-3007 A", "PD 2-3007 B", "PD 2-3007 C", "PD 2-3007
-        D"], "master_id": 33990, "master_url": "https://api.discogs.com/masters/33990",
-        "uri": "/James-Brown-The-Payback/release/1981916", "catno": "PD-2-3007", "title":
-        "James Brown - The Payback", "thumb": "https://img.discogs.com/oEqBfhk8tdjYXz6c6GSVBYCtvM0=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1981916-1403795748-5151.jpeg.jpg",
-        "cover_image": "https://img.discogs.com/zYGjmaRIoKWMbAYppq-lPL5RYQM=/fit-in/600x599/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1981916-1403795748-5151.jpeg.jpg",
-        "resource_url": "https://api.discogs.com/releases/1981916", "community": {"want":
-        552, "have": 1020}, "format_quantity": 2, "formats": [{"name": "Vinyl", "qty":
-        "2", "text": "Gatefold", "descriptions": ["LP", "Album", "Reissue"]}]}, {"country":
-        "US", "year": "2014", "format": ["Vinyl", "LP", "Album", "Reissue"], "label":
-        ["Polydor", "Universal Records Inc.", "Universal Records Inc.", "Universal
+        {"country": "US", "year": "2014", "format": ["Vinyl", "LP", "Album", "Reissue"],
+        "label": ["Polydor", "Universal Records Inc.", "Universal Records Inc.", "Universal
         Music Distribution", "Sterling Sound", "United Record Pressing"], "type":
         "release", "genre": ["Funk / Soul"], "style": ["Soul", "Funk"], "id": 6205299,
         "barcode": ["6 02537 97585 3", "0602537975853", "B0021512-01A RJ STERLING",
@@ -141,6 +132,19 @@ http_interactions:
         "cover_image": "https://img.discogs.com/ngmgxlPy5_crwH9PjUFyy7e1vv4=/fit-in/600x598/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6205299-1608008184-8664.jpeg.jpg",
         "resource_url": "https://api.discogs.com/releases/6205299", "community": {"want":
         556, "have": 738}, "format_quantity": 2, "formats": [{"name": "Vinyl", "qty":
+        "2", "text": "Gatefold", "descriptions": ["LP", "Album", "Reissue"]}]}, {"country":
+        "US", "genre": ["Funk / Soul"], "format": ["Vinyl", "LP", "Album", "Reissue"],
+        "style": ["Soul", "Funk"], "id": 1981916, "label": ["Polydor", "Polydor",
+        "Polydor Incorporated", "Polydor Incorporated", "Rainbo Records", "Rainbo
+        Records", "Rainbo Records", "Rainbo Records"], "type": "release", "barcode":
+        ["PD2 3007-A  S-34815", "PD2 3007-B  S-34816", "PD2 3007-C  S-34817", "PD2
+        3007-D  S-34818", "PD 2-3007 A", "PD 2-3007 B", "PD 2-3007 C", "PD 2-3007
+        D"], "master_id": 33990, "master_url": "https://api.discogs.com/masters/33990",
+        "uri": "/James-Brown-The-Payback/release/1981916", "catno": "PD-2-3007", "title":
+        "James Brown - The Payback", "thumb": "https://img.discogs.com/oEqBfhk8tdjYXz6c6GSVBYCtvM0=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1981916-1403795748-5151.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/zYGjmaRIoKWMbAYppq-lPL5RYQM=/fit-in/600x599/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1981916-1403795748-5151.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/1981916", "community": {"want":
+        552, "have": 1020}, "format_quantity": 2, "formats": [{"name": "Vinyl", "qty":
         "2", "text": "Gatefold", "descriptions": ["LP", "Album", "Reissue"]}]}, {"country":
         "Germany", "year": "1973", "format": ["Vinyl", "LP", "Album", "Stereo"], "label":
         ["Polydor", "Polydor Incorporated", "Phonodisc GmbH", "Gerhard Kaiser GmbH",
@@ -232,31 +236,32 @@ http_interactions:
         "resource_url": "https://api.discogs.com/releases/2374787", "community": {"want":
         400, "have": 60}, "format_quantity": 2, "formats": [{"name": "Vinyl", "qty":
         "2", "text": "Gatefold Sleeve", "descriptions": ["LP", "Album"]}]}, {"country":
-        "UK", "year": "1973", "format": ["Vinyl", "LP", "Album"], "label": ["Polydor",
-        "Polydor"], "type": "release", "genre": ["Funk / Soul"], "style": ["Soul",
-        "Funk"], "id": 4633993, "barcode": ["PD-2-3007-A-1A", "PD-2-3007-B-1B", "PD-2-3007-C-1B",
+        "Canada", "year": "1974", "format": ["Vinyl", "LP", "Album", "Stereo"], "label":
+        ["Polydor", "Polydor", "Polydor", "Polydor Ltd.", "Polydor Ltd.", "Polydor
+        Incorporated", "Dynatone Publishing Co.", "Belinda Music, Inc.", "Unichappell
+        & Co.", "International Recording", "Advantage Sound", "Advantage Sound", "RCA
+        Victor Studios, Montreal", "RCA Records Pressing Plant, Smiths Falls, Ontario"],
+        "type": "release", "genre": ["Funk / Soul"], "style": ["Soul", "Funk"], "id":
+        3446688, "barcode": ["BMI", "PD-2-3007-A", "PD-2-3007-B", "PD-2-3007-C", "PD-2-3007-D",
+        "PD-2-3007-A G M", "PD-2-3007-B G M", "PD-2-3007-C G M", "PD-2-3007-D G M"],
+        "master_id": 33990, "master_url": "https://api.discogs.com/masters/33990",
+        "uri": "/James-Brown-The-Payback/release/3446688", "catno": "PD 2-3007", "title":
+        "James Brown - The Payback", "thumb": "https://img.discogs.com/0u4-QuiFZ8emc3KEyMfn6W4F2sc=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3446688-1520632300-2512.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/jZ4Ub4qZg7o87JypbbWHemwqqlE=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3446688-1520632300-2512.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/3446688", "community": {"want":
+        447, "have": 155}, "format_quantity": 2, "formats": [{"name": "Vinyl", "qty":
+        "2", "descriptions": ["LP", "Album", "Stereo"]}]}, {"country": "UK", "year":
+        "1973", "format": ["Vinyl", "LP", "Album"], "label": ["Polydor", "Polydor"],
+        "type": "release", "genre": ["Funk / Soul"], "style": ["Soul", "Funk"], "id":
+        4633993, "barcode": ["PD-2-3007-A-1A", "PD-2-3007-B-1B", "PD-2-3007-C-1B",
         "PD-2-3007-D-1A"], "master_id": 33990, "master_url": "https://api.discogs.com/masters/33990",
         "uri": "/James-Brown-The-Payback/release/4633993", "catno": "PD-2-3007", "title":
         "James Brown - The Payback", "thumb": "https://img.discogs.com/PnIrrFXaTGk8j58-V9YytVHfLXc=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-4633993-1370587406-9305.jpeg.jpg",
         "cover_image": "https://img.discogs.com/G4OzZBTHnOUv5JnNF4GD33cCQbU=/fit-in/596x589/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-4633993-1370587406-9305.jpeg.jpg",
         "resource_url": "https://api.discogs.com/releases/4633993", "community": {"want":
         553, "have": 77}, "format_quantity": 2, "formats": [{"name": "Vinyl", "qty":
-        "2", "descriptions": ["LP", "Album"]}]}, {"country": "Canada", "year": "1974",
-        "format": ["Vinyl", "LP", "Album", "Stereo"], "label": ["Polydor", "Polydor",
-        "Polydor", "Polydor Ltd.", "Polydor Ltd.", "Polydor Incorporated", "Dynatone
-        Publishing Co.", "Belinda Music, Inc.", "Unichappell & Co.", "International
-        Recording", "Advantage Sound", "Advantage Sound", "RCA Victor Studios, Montreal",
-        "RCA Records Pressing Plant, Smiths Falls, Ontario"], "type": "release", "genre":
-        ["Funk / Soul"], "style": ["Soul", "Funk"], "id": 3446688, "barcode": ["BMI",
-        "PD-2-3007-A", "PD-2-3007-B", "PD-2-3007-C", "PD-2-3007-D", "PD-2-3007-A G
-        M", "PD-2-3007-B G M", "PD-2-3007-C G M", "PD-2-3007-D G M"], "master_id":
-        33990, "master_url": "https://api.discogs.com/masters/33990", "uri": "/James-Brown-The-Payback/release/3446688",
-        "catno": "PD 2-3007", "title": "James Brown - The Payback", "thumb": "https://img.discogs.com/0u4-QuiFZ8emc3KEyMfn6W4F2sc=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3446688-1520632300-2512.jpeg.jpg",
-        "cover_image": "https://img.discogs.com/jZ4Ub4qZg7o87JypbbWHemwqqlE=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3446688-1520632300-2512.jpeg.jpg",
-        "resource_url": "https://api.discogs.com/releases/3446688", "community": {"want":
-        447, "have": 155}, "format_quantity": 2, "formats": [{"name": "Vinyl", "qty":
-        "2", "descriptions": ["LP", "Album", "Stereo"]}]}, {"country": "UK & Europe",
-        "genre": ["Funk / Soul"], "format": ["Vinyl", "LP", "Album", "Reissue", "Mispress"],
+        "2", "descriptions": ["LP", "Album"]}]}, {"country": "UK & Europe", "genre":
+        ["Funk / Soul"], "format": ["Vinyl", "LP", "Album", "Reissue", "Mispress"],
         "style": ["Funk"], "id": 2338302, "label": ["Polydor", "International Recording",
         "Advantage Sound", "Advantage Sound", "Polydor Incorporated", "Polydor Incorporated"],
         "type": "release", "barcode": ["731451713712", "A33 517 137-1 S1 320", "A33
@@ -320,35 +325,37 @@ http_interactions:
         "cover_image": "https://img.discogs.com/d0TfOZZ0kYNTdGSO_N17rxxQeEo=/fit-in/600x589/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6907262-1453544951-4403.jpeg.jpg",
         "resource_url": "https://api.discogs.com/releases/6907262", "community": {"want":
         139, "have": 209}, "format_quantity": 1, "formats": [{"name": "CD", "qty":
-        "1", "descriptions": ["Album", "Reissue", "Remastered"]}]}, {"country": "South
-        Africa", "year": "1987", "format": ["Vinyl", "LP", "Album"], "label": ["Polydor",
-        "Teal Trutone Music", "Teal Trutone Music"], "type": "release", "genre": ["Funk
-        / Soul"], "style": ["Soul", "Funk"], "id": 2976293, "barcode": ["6001210010777",
-        "2679-025 A", "2679-025 B", "2679-025 C", "2679-025 D"], "master_id": 33990,
-        "master_url": "https://api.discogs.com/masters/33990", "uri": "/James-Brown-The-Payback/release/2976293",
-        "catno": "DGL 935/6", "title": "James Brown - The Payback", "thumb": "https://img.discogs.com/T27JKV8P4XU0tZapm3GO25Tou7I=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2976293-1369666780-1445.jpeg.jpg",
-        "cover_image": "https://img.discogs.com/Zmrwl3Jpft_-hSl0F7D4dUcjYuU=/fit-in/597x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2976293-1369666780-1445.jpeg.jpg",
-        "resource_url": "https://api.discogs.com/releases/2976293", "community": {"want":
-        335, "have": 10}, "format_quantity": 2, "formats": [{"name": "Vinyl", "qty":
-        "2", "descriptions": ["LP", "Album"]}]}, {"country": "US", "genre": ["Funk
-        / Soul"], "format": ["CD", "Album", "Reissue", "Remastered", "Repress"], "style":
-        ["Funk"], "id": 7037196, "label": ["Polydor", "Polygram Records, Inc.", "Polygram
-        Records, Inc.", "Polygram Records, Inc.", "Polygram Records, Inc.", "International
-        Recording", "Rodel Studios", "United Artists Recording Studio", "Advantage
-        Sound", "Advantage Sound", "PolyGram Studios"], "type": "release", "barcode":
-        ["7 314-517137-2 9", "DIDX-151483 2", "IFPI L327", "IFPI 50F4"], "master_id":
-        33990, "master_url": "https://api.discogs.com/masters/33990", "uri": "/James-Brown-The-Payback/release/7037196",
-        "catno": "314 517 137-2", "title": "James Brown - The Payback", "thumb": "https://img.discogs.com/-y7JhJmFVAZ4566QSdEE7TMBzyw=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-7037196-1432232926-3409.jpeg.jpg",
+        "1", "descriptions": ["Album", "Reissue", "Remastered"]}]}, {"country": "US",
+        "genre": ["Funk / Soul"], "format": ["CD", "Album", "Reissue", "Remastered",
+        "Repress"], "style": ["Funk"], "id": 7037196, "label": ["Polydor", "Polygram
+        Records, Inc.", "Polygram Records, Inc.", "Polygram Records, Inc.", "Polygram
+        Records, Inc.", "International Recording", "Rodel Studios", "United Artists
+        Recording Studio", "Advantage Sound", "Advantage Sound", "PolyGram Studios"],
+        "type": "release", "barcode": ["7 314-517137-2 9", "DIDX-151483 2", "IFPI
+        L327", "IFPI 50F4"], "master_id": 33990, "master_url": "https://api.discogs.com/masters/33990",
+        "uri": "/James-Brown-The-Payback/release/7037196", "catno": "314 517 137-2",
+        "title": "James Brown - The Payback", "thumb": "https://img.discogs.com/-y7JhJmFVAZ4566QSdEE7TMBzyw=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-7037196-1432232926-3409.jpeg.jpg",
         "cover_image": "https://img.discogs.com/XdUASB8V40j-2H7rLzlBs8KPQr8=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-7037196-1432232926-3409.jpeg.jpg",
         "resource_url": "https://api.discogs.com/releases/7037196", "community": {"want":
         139, "have": 182}, "format_quantity": 1, "formats": [{"name": "CD", "qty":
         "1", "descriptions": ["Album", "Reissue", "Remastered", "Repress"]}]}, {"country":
-        "Greece", "year": "1974", "format": ["Vinyl", "LP", "Album"], "label": ["International
-        Polydor Production", "Polydor", "Phonogram", "Polydor Incorporated", "Columbia,
-        Athens", "\u0391\u03b4\u03b5\u03bb\u03c6\u03bf\u03af \u039d. \u03a0\u03b9\u03c4\u03c3\u03b9\u03bb\u03bf\u03cd
-        \u039f.\u0395."], "type": "release", "genre": ["Funk / Soul"], "style": ["Funk",
-        "Soul"], "id": 7864612, "barcode": ["A/A 2143", "BIEM"], "master_id": 33990,
-        "master_url": "https://api.discogs.com/masters/33990", "uri": "/The-Godfather-Of-Soul-James-Brown-The-Payback/release/7864612",
+        "South Africa", "year": "1987", "format": ["Vinyl", "LP", "Album"], "label":
+        ["Polydor", "Teal Trutone Music", "Teal Trutone Music"], "type": "release",
+        "genre": ["Funk / Soul"], "style": ["Soul", "Funk"], "id": 2976293, "barcode":
+        ["6001210010777", "2679-025 A", "2679-025 B", "2679-025 C", "2679-025 D"],
+        "master_id": 33990, "master_url": "https://api.discogs.com/masters/33990",
+        "uri": "/James-Brown-The-Payback/release/2976293", "catno": "DGL 935/6", "title":
+        "James Brown - The Payback", "thumb": "https://img.discogs.com/T27JKV8P4XU0tZapm3GO25Tou7I=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2976293-1369666780-1445.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/Zmrwl3Jpft_-hSl0F7D4dUcjYuU=/fit-in/597x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2976293-1369666780-1445.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/2976293", "community": {"want":
+        335, "have": 10}, "format_quantity": 2, "formats": [{"name": "Vinyl", "qty":
+        "2", "descriptions": ["LP", "Album"]}]}, {"country": "Greece", "year": "1974",
+        "format": ["Vinyl", "LP", "Album"], "label": ["International Polydor Production",
+        "Polydor", "Phonogram", "Polydor Incorporated", "Columbia, Athens", "\u0391\u03b4\u03b5\u03bb\u03c6\u03bf\u03af
+        \u039d. \u03a0\u03b9\u03c4\u03c3\u03b9\u03bb\u03bf\u03cd \u039f.\u0395."],
+        "type": "release", "genre": ["Funk / Soul"], "style": ["Funk", "Soul"], "id":
+        7864612, "barcode": ["A/A 2143", "BIEM"], "master_id": 33990, "master_url":
+        "https://api.discogs.com/masters/33990", "uri": "/The-Godfather-Of-Soul-James-Brown-The-Payback/release/7864612",
         "catno": "2391 119", "title": "The Godfather Of Soul James Brown* - The Payback",
         "thumb": "https://img.discogs.com/ZbSJHGU983d-T1XWt5Cdn-iNL1k=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-7864612-1507034920-5326.jpeg.jpg",
         "cover_image": "https://img.discogs.com/Ra4-SugWvh_GArT_U7VfdE5S7kI=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-7864612-1507034920-5326.jpeg.jpg",
@@ -631,7 +638,7 @@ http_interactions:
         "resource_url": "https://api.discogs.com/releases/15004898", "community":
         {"want": 36, "have": 11}, "format_quantity": 1, "formats": [{"name": "CD",
         "qty": "1", "descriptions": ["Album", "Reissue", "Remastered", "Stereo", "Mono"]}]}]}'
-  recorded_at: Sun, 23 May 2021 21:35:41 GMT
+  recorded_at: Sun, 23 May 2021 23:56:14 GMT
 - request:
     method: get
     uri: https://api.discogs.com/masters/33990
@@ -651,7 +658,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 23 May 2021 21:35:41 GMT
+      - Sun, 23 May 2021 23:56:14 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -690,10 +697,10 @@ http_interactions:
       - max-age=15724800
     body:
       encoding: ASCII-8BIT
-      string: '{"id": 33990, "main_release": 719877, "most_recent_release": 6205299,
+      string: '{"id": 33990, "main_release": 719877, "most_recent_release": 8897170,
         "resource_url": "https://api.discogs.com/masters/33990", "uri": "https://www.discogs.com/James-Brown-The-Payback/master/33990",
         "versions_url": "https://api.discogs.com/masters/33990/versions", "main_release_url":
-        "https://api.discogs.com/releases/719877", "most_recent_release_url": "https://api.discogs.com/releases/6205299",
+        "https://api.discogs.com/releases/719877", "most_recent_release_url": "https://api.discogs.com/releases/8897170",
         "num_for_sale": 243, "lowest_price": 3.66, "images": [{"type": "primary",
         "uri": "", "resource_url": "", "uri150": "", "width": 600, "height": 591},
         {"type": "secondary", "uri": "", "resource_url": "", "uri150": "", "width":
@@ -771,5 +778,5 @@ http_interactions:
         Inc.\n\nReleased on: 1973-01-01\n\nProducer: James Brown\nComposer  Lyricist:
         Charles Fred A. Bobbit\nComposer  Lyricist: James Brown\nComposer  Lyrici",
         "duration": 726, "embed": true}]}'
-  recorded_at: Sun, 23 May 2021 21:35:41 GMT
+  recorded_at: Sun, 23 May 2021 23:56:14 GMT
 recorded_with: VCR 6.0.0

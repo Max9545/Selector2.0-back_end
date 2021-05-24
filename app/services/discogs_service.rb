@@ -80,8 +80,26 @@ class DiscogsService
       f.params['format'] = "album"
     end
     artist_q = parse(response)
-    artist_q[:releases][0..9]
+    # require "pry"; binding.pry
+    first_ten_albums = artist_q[:releases][0..9].each do |artist|
+                        image = get_album(artist[:title])
+                        if image[:results].empty? || image[:results].nil?
+                          artist[:cover_image] = nil
+                        else
+                          artist[:cover_image] = image[:results][0][:cover_image]
+                        end
+                      end
+    first_ten_albums
+    # require "pry"; binding.pry
   end
+
+  def self.get_album_with_id(album_id)
+    response = Faraday.get("https://api.discogs.com/masters/#{album_id}")
+    parsed_response = parse(response)
+    parsed_response[:cover_image] = album_resource[:results][0][:cover_image]
+    parsed_response
+  end
+
 
   def self.get_album_resource(album)
     album_resource = get_album(album)

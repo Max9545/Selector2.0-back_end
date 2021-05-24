@@ -119,6 +119,10 @@ RSpec.describe 'Discogs API request', type: :post do
           artist
           title
           id
+          coverImage
+          format
+          year
+          label
           }
         }
         GQL
@@ -134,7 +138,8 @@ RSpec.describe 'Discogs API request', type: :post do
       expect(result["data"]["artistAlbums"].length).to be <= 10
 
       result["data"]["artistAlbums"].each do |a|
-        expect(a.keys).to match_array(["artist", "title", "id"])
+        # require "pry"; binding.pry
+        expect(a.keys).to match_array(["artist", "title", "id", "coverImage", "format", "year", "label"])
         expect(a["artist"]).to be_a(String)
         expect(a["title"]).to be_a(String)
         expect(a["id"]).to be_an(Integer)
