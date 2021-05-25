@@ -33,5 +33,11 @@ module Types
     def artist_albums(artist)
       DiscogsService.get_artist_albums(artist[:artist])
     end
+
+    field :favorites, [Types::FavoriteType], null: true
+
+    def favorites
+      Favorite.all
+    end
   end
 end
