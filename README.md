@@ -5,7 +5,7 @@ This is the backend engine Selector, a web application that connects users with 
 
 ### Related Repos
 To explore the full web application, please visit the built out front end application that hooks into this engine and its endpoints.
- - [Yardsourcing - frontend](https://github.com/Yardsourcing/yardsourcing-frontend#readme).
+ - [Selector - Frontend](https://github.com/selector-turing/front_end#readme).
 
 ### Created by:
 - [Megan Gonzales](https://github.com/MGonzales26) | [LinkedIn](https://www.linkedin.com/in/megan-e-gonzales/)
