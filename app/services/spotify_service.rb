@@ -36,7 +36,19 @@ class SpotifyService
 
     { id: album_q }
   end
-end
 
-  # def self.
-  # end
+  def self.random_spotify_album_id(album_name)
+    token = get_token[:access_token]
+    response = conn_2.get('/v1/search') do |f|
+      f.params['q'] = album_name
+      f.params['type'] = 'album,artist,track'
+      f.headers['Authorization'] = 'Bearer ' + "#{token}"
+    end
+    if !parse(response)[:albums][:items].nil? && !parse(response)[:albums][:items].empty? && !parse(response)[:albums][:items].blank?
+      album_q = parse(response)[:albums][:items][0][:id]
+      { id: album_q }
+    else
+      DiscogsService.random_album
+    end
+  end
+end

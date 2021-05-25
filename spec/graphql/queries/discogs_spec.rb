@@ -56,23 +56,23 @@ RSpec.describe 'Discogs API request', type: :post do
       expect(result["data"]["album"]["tracklist"][0]["title"]).to be_a(String)
       expect(result["data"]["album"]["tracklist"][0]["duration"]).to be_a(String)
     end
-    # it 'Returns release data for a random album', :vcr do
-    #
-    #   def query
-    #     <<~GQL
-    #     {
-    #       randomAlbum {
-    #         randomAlbumUri
-    #       }
-    #     }
-    #     GQL
-    #   end
-    #
-    #   result = SelectorSchema.execute(query).as_json
-    #   require "pry"; binding.pry
-    #   # random = DiscogsService.random_album
-    #   # require "pry"; binding.pry
-    # end
+    it 'Returns release data for a random album', :vcr do
+
+      # def query
+      #   <<~GQL
+      #   {
+      #     randomAlbum {
+      #       id
+      #     }
+      #   }
+      #   GQL
+      # end
+      #
+      # # result = SelectorSchema.execute(query).as_json
+      # random = SpotifyService.random_spotify_album_id('sdafaiwudfgh')
+      # require "pry"; binding.pry
+      # random = DiscogsService.random_album
+    end
     # it 'Returns release data for 10 random albums' do
 
       # def query
