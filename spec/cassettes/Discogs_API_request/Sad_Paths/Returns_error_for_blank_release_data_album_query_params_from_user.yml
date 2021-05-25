@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 25 May 2021 17:16:28 GMT
+      - Tue, 25 May 2021 22:29:47 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -31,9 +31,9 @@ http_interactions:
       X-Discogs-Ratelimit:
       - '60'
       X-Discogs-Ratelimit-Remaining:
-      - '46'
+      - '44'
       X-Discogs-Ratelimit-Used:
-      - '14'
+      - '16'
       Access-Control-Allow-Headers:
       - Content-Type, authorization, User-Agent, Private-Auth-Secret, Discogs-UID
       Access-Control-Allow-Methods:
@@ -42,10 +42,6 @@ http_interactions:
       - Location
       Content-Language:
       - en
-      Link:
-      - <https://api.discogs.com/database/search?format=album&key=ENV[discogs_key]&q=The+Battle+for+Los+Angeles&secret=ENV[discogs_secret]&page=9&per_page=50>;
-        rel="last", <https://api.discogs.com/database/search?format=album&key=ENV[discogs_key]&q=The+Battle+for+Los+Angeles&secret=ENV[discogs_secret]&page=2&per_page=50>;
-        rel="next"
       X-Discogs-Media-Type:
       - discogs.v2
       Access-Control-Allow-Origin:
@@ -82,7 +78,7 @@ http_interactions:
         Angeles", "thumb": "https://img.discogs.com/2l4E-MvZMnGrPMT0KOXkK6iPWZ8=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2179533-1281621005.jpeg.jpg",
         "cover_image": "https://img.discogs.com/yUc-raUcHhL8nV03oiFxe0y6JH0=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2179533-1281621005.jpeg.jpg",
         "resource_url": "https://api.discogs.com/releases/2179533", "community": {"want":
-        1292, "have": 4284}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        1293, "have": 4286}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
         "1", "text": "180 Gram", "descriptions": ["LP", "Album", "Reissue", "Repress"]}]},
         {"country": "Europe", "year": "2012", "format": ["Vinyl", "LP", "Album", "Limited
         Edition", "Numbered", "Reissue", "Repress"], "label": ["Epic", "Music On Vinyl",
@@ -99,7 +95,7 @@ http_interactions:
         Los Angeles", "thumb": "https://img.discogs.com/oeOevLbk9V4RyaB7A86bUK0klIE=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3684444-1340273814-2003.jpeg.jpg",
         "cover_image": "https://img.discogs.com/WEm3XrQZs23Frf43EehTgkeuS6U=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3684444-1340273814-2003.jpeg.jpg",
         "resource_url": "https://api.discogs.com/releases/3684444", "community": {"want":
-        1071, "have": 534}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        1072, "have": 534}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
         "1", "text": "Blue Viagra, 180 gr.", "descriptions": ["LP", "Album", "Limited
         Edition", "Numbered", "Reissue", "Repress"]}]}, {"country": "Japan", "year":
         "1999", "format": ["CD", "Album"], "label": ["SME Records", "Sony Music Entertainment
@@ -148,7 +144,7 @@ http_interactions:
         Angeles", "thumb": "https://img.discogs.com/GpnbLjeM8HHalDw0mm4DuDW3rU8=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-13019860-1546595982-5003.jpeg.jpg",
         "cover_image": "https://img.discogs.com/Ngp8J0CaOa7om9kRIiPeJXe3zVk=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-13019860-1546595982-5003.jpeg.jpg",
         "resource_url": "https://api.discogs.com/releases/13019860", "community":
-        {"want": 136, "have": 63}, "format_quantity": 1, "formats": [{"name": "Vinyl",
+        {"want": 137, "have": 63}, "format_quantity": 1, "formats": [{"name": "Vinyl",
         "qty": "1", "text": "180 Gram", "descriptions": ["LP", "Album", "Misprint",
         "Reissue", "Repress"]}]}, {"country": "Russia", "year": "1999", "format":
         ["CD", "Album"], "label": ["Sony BMG Music Entertainment"], "type": "release",
@@ -180,7 +176,7 @@ http_interactions:
         LK15 1121-CD-0006"], "master_id": 7963, "master_url": "https://api.discogs.com/masters/7963",
         "uri": "/Rage-Against-The-Machine-The-Battle-Of-Los-Angeles/release/2718225",
         "catno": "none", "title": "Rage Against The Machine - The Battle Of Los Angeles",
-        "thumb": "", "cover_image": "https://img.discogs.com/ff591de98745b0dc6f6345d2314025182ac8bed7/images/spacer.gif",
+        "thumb": "", "cover_image": "https://img.discogs.com/81d87fb8fd444fe71bd785bf7ee6c4381bd17b07/images/spacer.gif",
         "resource_url": "https://api.discogs.com/releases/2718225", "community": {"want":
         109, "have": 10}, "format_quantity": 1, "formats": [{"name": "CD", "qty":
         "1", "descriptions": ["Album", "Promo"]}]}, {"country": "Russia", "year":
@@ -315,7 +311,7 @@ http_interactions:
         Mystical Macrocosm", "thumb": "https://img.discogs.com/BaWHZxu4dRc6MCg6OJQHxVt29a8=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2681751-1589091146-3645.jpeg.jpg",
         "cover_image": "https://img.discogs.com/rvcCEaZtZgjDIYJ-DGU5Jdb58b4=/fit-in/600x588/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2681751-1589091146-3645.jpeg.jpg",
         "resource_url": "https://api.discogs.com/releases/2681751", "community": {"want":
-        70, "have": 476}, "format_quantity": 1, "formats": [{"name": "CD", "qty":
+        70, "have": 477}, "format_quantity": 1, "formats": [{"name": "CD", "qty":
         "1", "descriptions": ["Album"]}]}, {"country": "Australia", "year": "1996",
         "format": ["CD", "Album"], "label": ["Blueprint", "Blueprint Australia", "Blueprint
         Australia", "Record Plant, Los Angeles", "Rumbo Recorders", "Image Recording
@@ -421,7 +417,7 @@ http_interactions:
         "catno": "9362-45700-1", "title": "Prince - Come", "thumb": "https://img.discogs.com/wC8WZUyfjh_s7oRnZePi2w_T6SE=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-984693-1411457339-5401.jpeg.jpg",
         "cover_image": "https://img.discogs.com/y10AVv3OdjcD11vopAv00pW3SiI=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-984693-1411457339-5401.jpeg.jpg",
         "resource_url": "https://api.discogs.com/masters/22440", "community": {"want":
-        3533, "have": 5936}}, {"country": "Germany", "year": "2010", "format": ["CD",
+        3535, "have": 5936}}, {"country": "Germany", "year": "2010", "format": ["CD",
         "Album", "Limited Edition"], "label": ["No Colours Records", "The Dungeon
         Studios, Los Angeles", "A.C. Studios"], "type": "release", "genre": ["Rock"],
         "style": ["Black Metal"], "id": 2658945, "barcode": ["03581AA3"], "master_id":
@@ -443,7 +439,7 @@ http_interactions:
         Of Skywalker (Original Motion Picture Soundtrack)", "thumb": "https://img.discogs.com/j30I4_X2seZvhpxW8TrzQ7AtMio=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-14998310-1585362993-3272.jpeg.jpg",
         "cover_image": "https://img.discogs.com/0ez4ATsRa1L7O7O8CA8rY3JSfFA=/fit-in/600x594/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-14998310-1585362993-3272.jpeg.jpg",
         "resource_url": "https://api.discogs.com/releases/14998310", "community":
-        {"want": 91, "have": 386}, "format_quantity": 2, "formats": [{"name": "Vinyl",
+        {"want": 91, "have": 387}, "format_quantity": 2, "formats": [{"name": "Vinyl",
         "qty": "2", "descriptions": ["LP", "Album"]}]}, {"country": "Germany", "year":
         "2010", "format": ["Vinyl", "LP", "Album"], "label": ["No Colours Records"],
         "type": "release", "genre": ["Rock"], "style": ["Black Metal"], "id": 2668599,
@@ -547,7 +543,7 @@ http_interactions:
         - Come", "thumb": "https://img.discogs.com/wC8WZUyfjh_s7oRnZePi2w_T6SE=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-984693-1411457339-5401.jpeg.jpg",
         "cover_image": "https://img.discogs.com/y10AVv3OdjcD11vopAv00pW3SiI=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-984693-1411457339-5401.jpeg.jpg",
         "resource_url": "https://api.discogs.com/releases/984693", "community": {"want":
-        862, "have": 682}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
+        863, "have": 682}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
         "1", "descriptions": ["LP", "Album"]}]}, {"country": "US", "year": "1997",
         "format": ["CD", "Album", "Limited Edition", "Reissue", "Remastered", "Special
         Edition"], "label": ["RCA Victor", "BMG Classics", "The Star Wars Trilogy
@@ -626,7 +622,7 @@ http_interactions:
         "https://img.discogs.com/M-59bCjuf98Hxhb-B-A5QE2cHYQ=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-10889741-1617897733-8435.jpeg.jpg",
         "cover_image": "https://img.discogs.com/5UPh1wObzCHF3OQMJA2F4IsQYkg=/fit-in/600x608/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-10889741-1617897733-8435.jpeg.jpg",
         "resource_url": "https://api.discogs.com/releases/10889741", "community":
-        {"want": 191, "have": 2265}, "format_quantity": 1, "formats": [{"name": "Vinyl",
+        {"want": 190, "have": 2266}, "format_quantity": 1, "formats": [{"name": "Vinyl",
         "qty": "1", "descriptions": ["LP", "Album"]}]}, {"country": "US", "year":
         "1998", "format": ["CD", "Album"], "label": ["Curb Records", "Warner Sunset
         Records", "Atlantic", "Atlantic Recording Corporation", "WEA International
@@ -701,7 +697,7 @@ http_interactions:
         "https://img.discogs.com/6RTYRTz4A7uXUIFdfCZ1U2syM0g=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-835875-1606400490-5986.jpeg.jpg",
         "cover_image": "https://img.discogs.com/b9_j1heVx9sQIAuVZ6yvJ4hkf9M=/fit-in/600x545/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-835875-1606400490-5986.jpeg.jpg",
         "resource_url": "https://api.discogs.com/masters/102595", "community": {"want":
-        117, "have": 512}}, {"country": "US", "year": "2014", "format": ["Cassette",
+        117, "have": 513}}, {"country": "US", "year": "2014", "format": ["Cassette",
         "Album", "Reissue"], "label": ["Hells Headbangers"], "type": "release", "genre":
         ["Rock"], "style": ["Black Metal"], "id": 5678136, "barcode": [], "master_id":
         304045, "master_url": "https://api.discogs.com/masters/304045", "uri": "/Inquisition-Ominous-Doctrines-Of-The-Perpetual-Mystical-Macrocosm/release/5678136",
@@ -734,47 +730,47 @@ http_interactions:
         "cover_image": "https://img.discogs.com/tOgOQcxZCsuel899EkZntqAELuU=/fit-in/600x589/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-170286-1449913705-3306.png.jpg",
         "resource_url": "https://api.discogs.com/releases/170286", "community": {"want":
         11, "have": 55}, "format_quantity": 1, "formats": [{"name": "CD", "qty": "1",
-        "descriptions": ["Album"]}]}, {"country": "Europe", "year": "1994", "format":
-        ["CD", "Album", "Reissue", "Remastered"], "label": ["Atlantic", "Atlantic
-        Recording Corporation", "WEA International Inc.", "Atlantic Recording Corporation",
-        "WEA International Inc.", "Warner Music Manufacturing Europe", "Superhype
-        Music, Inc.", "WB Music Corp.", "Island Studios", "Headley Grange", "Island
-        Studios", "Olympic Studios", "Sunset Sound", "Sterling Sound"], "type": "release",
-        "genre": ["Rock"], "style": ["Blues Rock", "Hard Rock", "Classic Rock"], "id":
-        367125, "barcode": ["0 7567-82638-2 8", "075678263828", "LC 0121", "CA 851",
-        "ASCAP", "GEMA/BIEM", "756782638-2 WME", "IFPI L011", "IFPI 05E1", "756782638-2
-        WME", "IFPI L011", "IFPI 0514", "756782638-2 WME", "IFPI L011", "IFPI 05A5",
-        "756782638-2 WME", "IFPI L011", "IFPI 0602", "756782638-2 WME", "IFPI L011",
-        "IFPI 05B2", "756782638-2 WME", "IFPI L011", "IFPI 05F4", "756782638-2 WME",
-        "IFPI L011", "IFPI 0577", "756782638-2 WME", "IFPI L011", "IFPI 0621", "756782638-2
-        WME", "IFPI L011", "IFPI 05D4", "756782638-2 WME", "IFPI L011", "IFPI 0606",
-        "756782638-2 WME", "IFPI L011", "IFPI 0567", "756782638-2 WME", "26", "IFPI
-        L011", "IFPI 05D2", "756782638-2 WME", "IFPI L011", "IFPI 05N5", "756782638-2
-        WME", "IFPI L011", "IFPI 0586", "756782638-2 WME", "6", "IFPI L011", "IFPI
-        0603", "756782638-2 WME", "7", "IFPI L011", "IFPI 060C", "756782638-2 WME",
-        "IFPI L011", "IFPI 0570", "756782638-2 WME", "6", "IFPI L011", "IFPI 0604"],
-        "master_id": 4300, "master_url": "https://api.discogs.com/masters/4300", "uri":
-        "/Led-Zeppelin-Untitled/release/367125", "catno": "7567-82638-2", "title":
-        "Led Zeppelin - Untitled", "thumb": "https://img.discogs.com/D-o7fWfzjMVtyJBwbVqe89KclLU=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-367125-1169910987.jpeg.jpg",
-        "cover_image": "https://img.discogs.com/IO7KhnPtkNM0f2lfH_dD2HVlMx8=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-367125-1169910987.jpeg.jpg",
-        "resource_url": "https://api.discogs.com/releases/367125", "community": {"want":
-        579, "have": 3435}, "format_quantity": 1, "formats": [{"name": "CD", "qty":
-        "1", "descriptions": ["Album", "Reissue", "Remastered"]}]}, {"country": "US",
-        "genre": ["Jazz"], "format": ["Vinyl", "LP", "Album", "Stereo"], "style":
-        ["Cool Jazz"], "id": 3396346, "label": ["Contemporary Records", "Contemporary
-        Records, Inc.", "Lighthouse Series", "Contemporary Records", "Contemporary''s
-        Studio", "Jocelyn Music Co.", "Bregman, Vocco & Conn, Inc.", "Criterion Music
-        Corp.", "West Coast Music Publ.", "Cosmopolitan Music Publishers"], "type":
-        "release", "barcode": ["+ SLM + LKS 15 \u25b2 984  LKS - 15 - D3", "+ SLM
-        + LKS 15 \u25b2 984-x  LKS - 16 - D3", "ASCAP", "BMI", "(39464)"], "master_id":
-        392143, "master_url": "https://api.discogs.com/masters/392143", "uri": "/Howard-Rumseys-Lighthouse-All-Stars-Music-For-Lighthousekeeping/release/3396346",
+        "descriptions": ["Album"]}]}, {"country": "US", "genre": ["Jazz"], "format":
+        ["Vinyl", "LP", "Album", "Stereo"], "style": ["Cool Jazz"], "id": 3396346,
+        "label": ["Contemporary Records", "Contemporary Records, Inc.", "Lighthouse
+        Series", "Contemporary Records", "Contemporary''s Studio", "Jocelyn Music
+        Co.", "Bregman, Vocco & Conn, Inc.", "Criterion Music Corp.", "West Coast
+        Music Publ.", "Cosmopolitan Music Publishers"], "type": "release", "barcode":
+        ["+ SLM + LKS 15 \u25b2 984  LKS - 15 - D3", "+ SLM + LKS 15 \u25b2 984-x  LKS
+        - 16 - D3", "ASCAP", "BMI", "(39464)"], "master_id": 392143, "master_url":
+        "https://api.discogs.com/masters/392143", "uri": "/Howard-Rumseys-Lighthouse-All-Stars-Music-For-Lighthousekeeping/release/3396346",
         "catno": "S7528", "title": "Howard Rumsey''s Lighthouse All-Stars - Music
         For Lighthousekeeping", "thumb": "https://img.discogs.com/0GjKXcD7CmjpAYELUuZiimMieD0=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3396346-1418995492-5019.jpeg.jpg",
         "cover_image": "https://img.discogs.com/Xq-KYkNWr9Bytetnhi3Ozm-I7LQ=/fit-in/600x605/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3396346-1418995492-5019.jpeg.jpg",
         "resource_url": "https://api.discogs.com/releases/3396346", "community": {"want":
         18, "have": 72}, "format_quantity": 1, "formats": [{"name": "Vinyl", "qty":
-        "1", "descriptions": ["LP", "Album", "Stereo"]}]}]}'
-  recorded_at: Tue, 25 May 2021 17:16:28 GMT
+        "1", "descriptions": ["LP", "Album", "Stereo"]}]}, {"country": "Europe", "year":
+        "1994", "format": ["CD", "Album", "Reissue", "Remastered"], "label": ["Atlantic",
+        "Atlantic Recording Corporation", "WEA International Inc.", "Atlantic Recording
+        Corporation", "WEA International Inc.", "Warner Music Manufacturing Europe",
+        "Superhype Music, Inc.", "WB Music Corp.", "Island Studios", "Headley Grange",
+        "Island Studios", "Olympic Studios", "Sunset Sound", "Sterling Sound"], "type":
+        "release", "genre": ["Rock"], "style": ["Blues Rock", "Hard Rock", "Classic
+        Rock"], "id": 367125, "barcode": ["0 7567-82638-2 8", "075678263828", "LC
+        0121", "CA 851", "ASCAP", "GEMA/BIEM", "756782638-2 WME", "IFPI L011", "IFPI
+        05E1", "756782638-2 WME", "IFPI L011", "IFPI 0514", "756782638-2 WME", "IFPI
+        L011", "IFPI 05A5", "756782638-2 WME", "IFPI L011", "IFPI 0602", "756782638-2
+        WME", "IFPI L011", "IFPI 05B2", "756782638-2 WME", "IFPI L011", "IFPI 05F4",
+        "756782638-2 WME", "IFPI L011", "IFPI 0577", "756782638-2 WME", "IFPI L011",
+        "IFPI 0621", "756782638-2 WME", "IFPI L011", "IFPI 05D4", "756782638-2 WME",
+        "IFPI L011", "IFPI 0606", "756782638-2 WME", "IFPI L011", "IFPI 0567", "756782638-2
+        WME", "26", "IFPI L011", "IFPI 05D2", "756782638-2 WME", "IFPI L011", "IFPI
+        05N5", "756782638-2 WME", "IFPI L011", "IFPI 0586", "756782638-2 WME", "6",
+        "IFPI L011", "IFPI 0603", "756782638-2 WME", "7", "IFPI L011", "IFPI 060C",
+        "756782638-2 WME", "IFPI L011", "IFPI 0570", "756782638-2 WME", "6", "IFPI
+        L011", "IFPI 0604"], "master_id": 4300, "master_url": "https://api.discogs.com/masters/4300",
+        "uri": "/Led-Zeppelin-Untitled/release/367125", "catno": "7567-82638-2", "title":
+        "Led Zeppelin - Untitled", "thumb": "https://img.discogs.com/D-o7fWfzjMVtyJBwbVqe89KclLU=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-367125-1169910987.jpeg.jpg",
+        "cover_image": "https://img.discogs.com/IO7KhnPtkNM0f2lfH_dD2HVlMx8=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-367125-1169910987.jpeg.jpg",
+        "resource_url": "https://api.discogs.com/releases/367125", "community": {"want":
+        579, "have": 3436}, "format_quantity": 1, "formats": [{"name": "CD", "qty":
+        "1", "descriptions": ["Album", "Reissue", "Remastered"]}]}]}'
+  recorded_at: Tue, 25 May 2021 22:29:47 GMT
 - request:
     method: get
     uri: https://api.discogs.com/masters/7963
@@ -794,7 +790,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 25 May 2021 17:16:28 GMT
+      - Tue, 25 May 2021 22:29:47 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -806,9 +802,9 @@ http_interactions:
       X-Discogs-Ratelimit:
       - '25'
       X-Discogs-Ratelimit-Remaining:
-      - '10'
+      - '8'
       X-Discogs-Ratelimit-Used:
-      - '15'
+      - '17'
       Access-Control-Allow-Headers:
       - Content-Type, authorization, User-Agent, Private-Auth-Secret, Discogs-UID
       Access-Control-Allow-Methods:
@@ -833,11 +829,11 @@ http_interactions:
       - max-age=15724800
     body:
       encoding: ASCII-8BIT
-      string: '{"id": 7963, "main_release": 395120, "most_recent_release": 12574480,
+      string: '{"id": 7963, "main_release": 395120, "most_recent_release": 12579730,
         "resource_url": "https://api.discogs.com/masters/7963", "uri": "https://www.discogs.com/Rage-Against-The-Machine-The-Battle-Of-Los-Angeles/master/7963",
         "versions_url": "https://api.discogs.com/masters/7963/versions", "main_release_url":
-        "https://api.discogs.com/releases/395120", "most_recent_release_url": "https://api.discogs.com/releases/12574480",
-        "num_for_sale": 664, "lowest_price": 0.61, "images": [{"type": "primary",
+        "https://api.discogs.com/releases/395120", "most_recent_release_url": "https://api.discogs.com/releases/12579730",
+        "num_for_sale": 665, "lowest_price": 0.61, "images": [{"type": "primary",
         "uri": "", "resource_url": "", "uri150": "", "width": 600, "height": 592},
         {"type": "secondary", "uri": "", "resource_url": "", "uri150": "", "width":
         600, "height": 590}, {"type": "secondary", "uri": "", "resource_url": "",
@@ -890,5 +886,5 @@ http_interactions:
         to RATM: https://rageatm.lnk.to/listenYD \nWatch more videos by Rage Against
         the Machine: https://rageatm.lnk.to/listenYD/youtube \n\nSubscribe to the
         official RATM YouTu", "duration": 234, "embed": true}]}'
-  recorded_at: Tue, 25 May 2021 17:16:28 GMT
+  recorded_at: Tue, 25 May 2021 22:29:47 GMT
 recorded_with: VCR 6.0.0

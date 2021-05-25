@@ -44,9 +44,13 @@ class SpotifyService
       f.params['type'] = 'album,artist,track'
       f.headers['Authorization'] = 'Bearer ' + "#{token}"
     end
+    # require "pry"; binding.pry
     if !parse(response)[:albums][:items].nil? && !parse(response)[:albums][:items].empty? && !parse(response)[:albums][:items].blank?
       album_q = parse(response)[:albums][:items][0][:id]
-      { id: album_q }
+      image = parse(response)[:albums][:items][0][:images][0][:url]
+      # require "pry"; binding.pry
+      # album_q[:image] = image
+      { id: album_q, cover_image: image }
     else
       DiscogsService.random_album
     end

@@ -20,10 +20,10 @@ module Types
       SpotifyService.spotify_album_id(title[:title])
     end
 
-    field :random_album, [Types::AlbumType], null: false
+    field :random_album, Types::RandomAlbumType, null: false
 
     def random_album
-      DiscogsService.random_ten_albums
+      DiscogsService.random_album
     end
 
     field :artist_albums, [Types::ArtistAlbumsType], null: false do
