@@ -11,6 +11,6 @@ module Types
     field :year, Integer, null: true
     field :tracklist, [Types::TracklistType], null: true
     field :uri, String, null: true
-    field :random_album, String, null: true
+    field :random_album_spotify_id, String, null: true
   end
 end

@@ -56,60 +56,59 @@ RSpec.describe 'Discogs API request', type: :post do
       expect(result["data"]["album"]["tracklist"][0]["title"]).to be_a(String)
       expect(result["data"]["album"]["tracklist"][0]["duration"]).to be_a(String)
     end
-    it 'Returns release data for a random album', :vcr do
+    it 'Returns release data for a random album' do 
 
-      # def query
-      #   <<~GQL
-      #   {
-      #     randomAlbum {
-      #       id
-      #     }
-      #   }
-      #   GQL
-      # end
-      #
-      # # result = SelectorSchema.execute(query).as_json
-      # random = SpotifyService.random_spotify_album_id('sdafaiwudfgh')
-      # require "pry"; binding.pry
-      # random = DiscogsService.random_album
+      def query
+        <<~GQL
+        {
+          randomAlbum {
+            id
+            title
+            artists {
+              name
+            }
+            year
+            genres
+            coverImage
+            resourceUrl
+            styles
+            year
+            tracklist {
+              position
+              title
+              duration
+            }
+            uri
+            randomAlbumSpotifyId
+          }
+        }
+        GQL
+      end
+
+      result = SelectorSchema.execute(query).as_json
+
+      expect(result["data"].count).to eq(1)
+      expect(result["data"]).to be_a(Hash)
+      expect(result["data"]).to have_key("randomAlbum")
+      expect(result["data"]["randomAlbum"].count).to eq(11)
+      expect(result["data"]["randomAlbum"]).to be_a(Hash)
+      expect(result["data"]["randomAlbum"].keys).to match_array(["id", "title", "artists", "year", "genres", "coverImage", "resourceUrl", "styles", "tracklist", "uri", "randomAlbumSpotifyId"])
+      expect(result["data"]["randomAlbum"]["id"]).to be_a(String)
+      expect(result["data"]["randomAlbum"]["title"]).to be_a(String)
+      expect(result["data"]["randomAlbum"]["artists"]).to be_an(Array)
+      expect(result["data"]["randomAlbum"]["artists"][0]["name"]).to be_a(String)
+      expect(result["data"]["randomAlbum"]["year"]).to be_an(Integer)
+      expect(result["data"]["randomAlbum"]["genres"]).to be_an(Array)
+      expect(result["data"]["randomAlbum"]["genres"][0]).to be_a(String)
+      expect(result["data"]["randomAlbum"]["coverImage"]).to be_a(String)
+      expect(result["data"]["randomAlbum"]["resourceUrl"]).to be_a(String)
+      expect(result["data"]["randomAlbum"]["tracklist"]).to be_an(Array)
+      expect(result["data"]["randomAlbum"]["tracklist"][0].keys).to match_array(["position", "title", "duration"])
+      expect(result["data"]["randomAlbum"]["tracklist"][0]["position"]).to be_a(String)
+      expect(result["data"]["randomAlbum"]["tracklist"][0]["title"]).to be_a(String)
+      expect(result["data"]["randomAlbum"]["tracklist"][0]["duration"]).to be_a(String)
+      expect(result["data"]["randomAlbum"]["randomAlbumSpotifyId"]).to be_a(String)
     end
-    # it 'Returns release data for 10 random albums' do
-
-      # def query
-      #   <<~GQL
-      #   {
-      #     randomAlbum {
-      #       id
-      #       title
-      #       artists {
-      #         name
-      #        }
-      #       year
-      #       genres
-      #       coverImage
-      #       resourceUrl
-      #       styles
-      #       year
-      #       tracklist {
-      #         position
-      #         title
-      #         duration
-      #        }
-      #       uri
-      #       }
-      #     }
-      #   GQL
-      # end
-
-      # result = SelectorSchema.execute(query).as_json
-      # album = DiscogsService.get_album_with_year("weezer", "weezer", 1994)
-      # random = DiscogsService.get_artist_id('minus the bear')
-      # require "pry"; binding.pry
-      # random = DiscogsService.get_artist_albums('minus the bear')
-      # require "pry"; binding.pry
-      # random = SpotifyService.spotify_album_id('The Supremes in and out of love')
-      # require "pry"; binding.pry
-    # end
 
     it 'Returns artist and the first 10 of their albums', :vcr do
 

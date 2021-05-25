@@ -23,14 +23,14 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 25 May 2021 17:16:29 GMT
+      - Tue, 25 May 2021 22:29:48 GMT
       Content-Type:
       - application/json
       Set-Cookie:
-      - __HOST-sp_fid=3f1628dc-93f0-4e1f-94c6-7c37934f9fa9;Version=1;Path=/;Secure;HttpOnly;SameSite=Lax
-      - __Host-device_id=AQAPkFVMj_G1Qa8ezAzRm2zMmEsPaGg1wKj2Ddv2SjG79_n2SBhTc0jeiWScSbt3oBE7ATAWvY9t0U6NHrYy-_jpDpHeZpbC-wE;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly;SameSite=Lax
+      - __HOST-sp_fid=1a5af970-95fa-4632-b7b7-8e55a29f8a81;Version=1;Path=/;Secure;HttpOnly;SameSite=Lax
+      - __Host-device_id=AQAcI_vNrJIUPxB07zzgy7NpZALXfOba8AymodKb8zp1cIzTE5dztho09p29POBqQJaUju5DDlEgCkZOiB7Y1x-5iFZLDK9ZDII;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly;SameSite=Lax
       Sp-Trace-Id:
-      - 696ec631527a3cd4
+      - 010e393f74b0df5a
       Strict-Transport-Security:
       - max-age=31536000
       X-Content-Type-Options:
@@ -47,8 +47,8 @@ http_interactions:
       - chunked
     body:
       encoding: ASCII-8BIT
-      string: '{"access_token":"BQA1S5RGfmIbRHZSOOafmWzY6bY39jGhY_kE5aK1Jyoqib822TPIYuVhFyceYx4fB2sU-olVfgaZ0Yo4l5g","token_type":"Bearer","expires_in":3600}'
-  recorded_at: Tue, 25 May 2021 17:16:29 GMT
+      string: '{"access_token":"BQB3AZCWzpeOCQf3gvnmQ-TAmU-8J8N9m_6firECI1kGYRbsinCHzPjl7la6rFXeLC6FuD_930jTJtvgD7g","token_type":"Bearer","expires_in":3600}'
+  recorded_at: Tue, 25 May 2021 22:29:48 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/search?q=fasdfasdfsfgdsfghsdfgas&type=album,artist,track
@@ -59,7 +59,7 @@ http_interactions:
       User-Agent:
       - Faraday v1.4.1
       Authorization:
-      - Bearer BQA1S5RGfmIbRHZSOOafmWzY6bY39jGhY_kE5aK1Jyoqib822TPIYuVhFyceYx4fB2sU-olVfgaZ0Yo4l5g
+      - Bearer BQB3AZCWzpeOCQf3gvnmQ-TAmU-8J8N9m_6firECI1kGYRbsinCHzPjl7la6rFXeLC6FuD_930jTJtvgD7g
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -91,7 +91,7 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Tue, 25 May 2021 17:16:29 GMT
+      - Tue, 25 May 2021 22:29:48 GMT
       Server:
       - envoy
       Via:
@@ -132,5 +132,5 @@ http_interactions:
             "total" : 0
           }
         }
-  recorded_at: Tue, 25 May 2021 17:16:29 GMT
+  recorded_at: Tue, 25 May 2021 22:29:48 GMT
 recorded_with: VCR 6.0.0
