@@ -38,7 +38,6 @@ This project was tested with:
 - [How to Contribute](#how-to-contribute)
 - [Roadmap](#roadmap)
 - [Contributors](#contributors)
-- [Acknowledgments](#acknowledgments)
 
 ### Getting Started
 
