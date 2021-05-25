@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_24_202256) do
+ActiveRecord::Schema.define(version: 2021_05_25_141932) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 2021_05_24_202256) do
     t.string "artists"
     t.integer "year"
     t.string "genres"
-    t.string "coverImage"
+    t.string "cover_image"
     t.string "tracklist"
     t.string "uri"
     t.datetime "created_at", null: false

@@ -1,0 +1,136 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://accounts.spotify.com/api/token
+    body:
+      encoding: UTF-8
+      string: grant_type=client_credentials
+    headers:
+      User-Agent:
+      - Faraday v1.4.1
+      Authorization:
+      - Basic Y2Q3ZmE1MDczMjQ0NDI0ODkzMmQ2OWMzNTM5NGNlYzI6NmNmNmJhZDRiMjRjNDlkYzliZjg2N2FkMzA0N2UxMDY=
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 25 May 2021 17:16:29 GMT
+      Content-Type:
+      - application/json
+      Set-Cookie:
+      - __HOST-sp_fid=26a2d66f-2fde-4256-ae13-0476a4082504;Version=1;Path=/;Secure;HttpOnly;SameSite=Lax
+      - __Host-device_id=AQAITW3FQ3RKR9zYS468Pk4G2l4FAAI3os7lGX9yaBT1F4Vvqvt_g4ajJ5SrvuVetP6lnF0J6AQg6M6kWRcIalxeZgIOb-F9iGs;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly;SameSite=Lax
+      Sp-Trace-Id:
+      - 76d2054d03a9cc0a
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Accept-Encoding
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"access_token":"BQCDwsOkhz83KxewtG016cChSzlnTjCi-rLizK3W5JwEunpV_4uwDRVpSPHMwpzwiLZ12Xb7o40TJ9A_03Y","token_type":"Bearer","expires_in":3600}'
+  recorded_at: Tue, 25 May 2021 17:16:29 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/search?q=%20&type=album,artist,track
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.1
+      Authorization:
+      - Bearer BQCDwsOkhz83KxewtG016cChSzlnTjCi-rLizK3W5JwEunpV_4uwDRVpSPHMwpzwiLZ12Xb7o40TJ9A_03Y
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=7200
+      X-Robots-Tag:
+      - noindex, nofollow
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context, client-token, content-access-token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Tue, 25 May 2021 17:16:29 GMT
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "albums" : {
+            "href" : "https://api.spotify.com/v1/search?query=+&type=album&offset=0&limit=20",
+            "items" : [ ],
+            "limit" : 20,
+            "next" : null,
+            "offset" : 0,
+            "previous" : null,
+            "total" : 0
+          },
+          "artists" : {
+            "href" : "https://api.spotify.com/v1/search?query=+&type=artist&offset=0&limit=20",
+            "items" : [ ],
+            "limit" : 20,
+            "next" : null,
+            "offset" : 0,
+            "previous" : null,
+            "total" : 0
+          },
+          "tracks" : {
+            "href" : "https://api.spotify.com/v1/search?query=+&type=track&offset=0&limit=20",
+            "items" : [ ],
+            "limit" : 20,
+            "next" : null,
+            "offset" : 0,
+            "previous" : null,
+            "total" : 0
+          }
+        }
+  recorded_at: Tue, 25 May 2021 17:16:29 GMT
+recorded_with: VCR 6.0.0
