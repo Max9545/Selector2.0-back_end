@@ -18,15 +18,15 @@ https://turing-selector.herokuapp.com/
 To explore the full web application, please visit the built out front end application that hooks into this engine and its endpoints.
  - [Selector - Frontend](https://github.com/selector-turing/front_end#readme).
 
-## Continous Integration 
+### Continous Integration 
 
 * [Travis](https://travis-ci.com/) 
 
-## Deployed with
+### Deployed with
 
 * [Heroku](www.heroku.com) 
 
-#### Built With
+### Built With
 * [Ruby on Rails](https://rubyonrails.org)
 * [HTML](https://html.com)
 * [GraphQL](https://graphql.org/)
@@ -38,7 +38,7 @@ This project was tested with:
 * [VCR] https://github.com/vcr/vcr
 
 
-## Contents
+### Contents
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installing](#installing)
@@ -70,8 +70,6 @@ These instructions will get you a copy of the project up and running on your loc
 
 * __Postgres database__
   - Visit the [postgresapp](https://postgresapp.com/downloads.html) homepage and follow their instructions to download the latest version of Postgres app.
-
-#### Frontend dependancies
 
 
 #### Installing
