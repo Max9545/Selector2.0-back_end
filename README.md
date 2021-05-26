@@ -1,3 +1,4 @@
+
 # Selector Back End
 
 This is the backend engine Selector, a web application that connects users with Spotify and Discogs, for a seamless, music browsing (and eventually "purchasing") experience. The application is built with service oriented architecture. The backend communicates with the frontend using our choice of "stretch technology" for this project, as a single GraphQL endpoint, which supplies data from multiple other endpoints the Back End is interacting with. The database currently stores "Favorites", but there are plans for much more, starting with users.
@@ -238,6 +239,7 @@ Required fields: `albumId`, `title`, `artists`, and `year`.
 
 ### Project Architecture
 
+![Screen Shot 2021-05-26 at 4 47 47 PM](https://user-images.githubusercontent.com/62969459/119741068-36b6ca00-be42-11eb-8119-e85c620095a1.png)
 
 ### Database Schema
 
