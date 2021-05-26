@@ -21,7 +21,7 @@ To explore the full web application, please visit the built out front end applic
 
 ### Continous Integration 
 
-* [Travis](https://travis-ci.com/) 
+* [Travis CI](https://travis-ci.com/) 
 
 ### Deployed with
 
