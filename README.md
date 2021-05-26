@@ -240,9 +240,9 @@ Required fields: `albumId`, `title`, `artists`, and `year`.
 
 ### Database Schema
 
-In addition to favorites, the team has plans to add users, merchants and registration/login with authorization. 
-
 ![download](https://user-images.githubusercontent.com/69491049/119738698-54823000-be3e-11eb-94b5-1a24a4b10eb2.png)
+
+In addition to favorites, the team has plans to add users, merchants and registration/login with authorization. 
 
 ### Testing
 
