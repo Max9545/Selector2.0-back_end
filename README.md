@@ -96,6 +96,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 All endpoints use a `POST` method. 
 
+![Screen Shot 2021-05-26 at 4 21 32 PM](https://user-images.githubusercontent.com/68141454/119738764-72e82b80-be3e-11eb-8dbc-30bdea129a5a.png)
+
 #### API Contract
 
 All endpoints rely on GraphQL to perform queries and mutations of data.  
