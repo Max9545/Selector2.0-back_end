@@ -97,7 +97,10 @@ All endpoints use a `POST` method.
 
 #### API Contract
 
-All endpoints rely on GraphQL to perform queries and mutations of data.  The following queries rely on the third-party APIs from Discogs and Spotify: [album](#album), [randomAlbum](#randomAlbum), [artistAlbums](#artistAlbums), and [spotifyAlbumID](#spotifyAlbumID). 
+All endpoints rely on GraphQL to perform queries and mutations of data.  
+
+1. The following queries rely on the third-party APIs from Discogs and Spotify: [album](#album), [randomAlbum](#randomAlbum), [artistAlbums](#artistAlbums), and [spotifyAlbumID](#spotifyAlbumID). 
+2. The follwoing queries and mutation rely on the the internal database of the app: [favorites](#favorites) and [createFavorite](#createFavorite]. 
 
 ##### GraphQL Queries 
 ###### album 
