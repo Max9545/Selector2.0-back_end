@@ -237,7 +237,7 @@ Required fields: `albumId`, `title`, `artists`, and `year`.
 
 ### Database Schema
 
-<img width="238" alt="Screen Shot 2021-05-26 at 4 13 41 PM" src="https://user-images.githubusercontent.com/68141454/119738081-58618280-be3d-11eb-94e4-4bca35d5f0a2.png">
+![download](https://user-images.githubusercontent.com/69491049/119738698-54823000-be3e-11eb-94b5-1a24a4b10eb2.png)
 
 ### Testing
 
