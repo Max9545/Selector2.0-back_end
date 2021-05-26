@@ -18,6 +18,13 @@ https://turing-selector.herokuapp.com/
 To explore the full web application, please visit the built out front end application that hooks into this engine and its endpoints.
  - [Selector - Frontend](https://github.com/selector-turing/front_end#readme).
 
+## Continous Integration 
+
+* [Travis](https://travis-ci.com/) 
+
+## Deployed with
+
+* [Heroku](www.heroku.com) 
 
 #### Built With
 * [Ruby on Rails](https://rubyonrails.org)
