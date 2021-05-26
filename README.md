@@ -92,6 +92,94 @@ These instructions will get you a copy of the project up and running on your loc
 
 Please see the [API Documentation] for detailed information about the data accessible from the endpoint above.
 
+##### GraphQL Queries 
+###### album 
+
+    {
+      album(title: "The Payback"){
+        id
+        title
+        artists {
+          name
+         }
+        year
+        genres
+        coverImage
+        resourceUrl
+        styles
+        year
+        tracklist {
+          position
+          title
+          duration
+         }
+        uri
+      }
+    }
+
+###### randomAlbum 
+
+    {
+      randomAlbum {
+        id
+        title
+        artists {
+          name
+        }
+        year
+        genres
+        coverImage
+        resourceUrl
+        styles
+        year
+        tracklist {
+          position
+          title
+          duration
+        }
+        uri
+        randomAlbumSpotifyId
+      }
+    }
+
+###### artistAlbums
+
+    {
+      artistAlbums(artist: "James Brown"){
+      artist
+      title
+      id
+      coverImage
+      format
+      year
+      label
+      }
+    }
+
+###### favorites 
+
+    query {
+      favorites {
+        id
+        albumId
+        title
+        artists
+        year
+        genres
+        coverImage
+        tracklist
+        uri
+      }
+    }
+
+###### spotifyAlbumID
+
+    {
+      spotifyAlbumId(title: "The Payback"){
+        id
+      }
+    }
+
 ##### GraphQL Mutations
 ###### createFavorite
 
