@@ -3,20 +3,16 @@
 
 This is the backend engine Selector, a web application that connects users with Spotify and Discogs, for a seamless, music browsing (and eventually "purchasing") experience. The application is built with service oriented architecture. The backend communicates with the frontend using our choice of "stretch technology" for this project, as a single GraphQL endpoint, which supplies data from multiple other endpoints the Back End is interacting with. The database currently stores "Favorites", but there are plans for much more, starting with users.
 
-### Site Link
-https://turing-selector.herokuapp.com/
 
-### Selector App Created by:
-- [Reggie Thompson](https://github.com/rdtho2525) | [LinkedIn](https://www.linkedin.com/in/reggie-thompson-136979137/)
-- [Max Bregman](https://github.com/Max9545) | [LinkedIn](https://www.linkedin.com/in/max-bregman-216063203/)
-- [Marika Shanahan](https://github.com/monshan) | [LinkedIn](https://www.linkedin.com/in/marika-shanahan/)
+### Created by:
 - [Megan Gonzales](https://github.com/MGonzales26) | [LinkedIn](https://www.linkedin.com/in/megan-e-gonzales/)
 - [Adam J. Bowers](https://github.com/Pragmaticpraxis37) | [LinkedIn](https://www.linkedin.com/in/adam-bowers-06a871209/)
 - [Jordan Beck](https://github.com/jordanfbeck0528) | [LinkedIn](https://www.linkedin.com/in/jordan-f-beck/)
 
-### Selector Front End ReadMe
 
-https://github.com/selector-turing/front_end#readme
+### Site Link
+https://turing-selector.herokuapp.com/
+
 
 ### Related Repos
 To explore the full web application, please visit the built out front end application that hooks into this engine and its endpoints.
@@ -41,6 +37,7 @@ This project was tested with:
 * [pry] https://github.com/pry/pry
 * [VCR] https://github.com/vcr/vcr
 
+
 ### Contents
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
@@ -54,6 +51,7 @@ This project was tested with:
 - [How to Contribute](#how-to-contribute)
 - [Roadmap](#roadmap)
 - [Contributors](#contributors)
+
 
 ### Getting Started
 
@@ -99,7 +97,10 @@ All endpoints use a `POST` method.
 
 #### API Contract
 
-All endpoints rely on GraphQL to perform queries and mutations of data.  The following queries rely on the third-party APIs from Discogs and Spotify: [album](#album)
+All endpoints rely on GraphQL to perform queries and mutations of data.  
+
+1. The following queries rely on the third-party APIs from Discogs and Spotify: [album](#album), [randomAlbum](#randomAlbum), [artistAlbums](#artistAlbums), and [spotifyAlbumID](#spotifyAlbumID). 
+2. The follwoing queries and mutation rely on the the internal database of the app: [favorites](#favorites) and [createFavorite](#createFavorite). 
 
 ##### GraphQL Queries 
 ###### album 
@@ -125,6 +126,8 @@ All endpoints rely on GraphQL to perform queries and mutations of data.  The fol
         uri
       }
     }
+
+Required arguments: `title`.  
 
 ###### randomAlbum 
 
@@ -165,6 +168,8 @@ All endpoints rely on GraphQL to perform queries and mutations of data.  The fol
       }
     }
 
+Required arguments: `artist`.  
+
 ###### favorites 
 
     query {
@@ -181,6 +186,8 @@ All endpoints rely on GraphQL to perform queries and mutations of data.  The fol
       }
     }
 
+Required returned fields: `id`, `title`, `artists`, `year`, and `genres`.  
+
 ###### spotifyAlbumID
 
     {
@@ -188,6 +195,8 @@ All endpoints rely on GraphQL to perform queries and mutations of data.  The fol
         id
       }
     }
+
+Required arguments: `title`.  
 
 ##### GraphQL Mutations
 ###### createFavorite
@@ -215,6 +224,8 @@ All endpoints rely on GraphQL to perform queries and mutations of data.  The fol
         errors
       }
     }
+
+Required fields: `albumId`, `title`, `artists`, and `year`. 
 
 #### Postman
 - To run an example postman endpoint, start the Selector Back End engine in locally then in post man run (GET https://api.discogs.com/masters/33990)
