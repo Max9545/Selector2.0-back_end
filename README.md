@@ -234,7 +234,7 @@ Required fields: `albumId`, `title`, `artists`, and `year`.
 #### Postman
 - To run an example postman endpoint, start the Selector Back End engine in locally then in post man run (GET https://api.discogs.com/masters/33990)
 
-![Screen Shot 2021-05-26 at 4 35 22 PM](https://user-images.githubusercontent.com/68141454/119740016-61078800-be40-11eb-873d-ac879fb1ff6d.png)
+![Screen Shot 2021-05-26 at 4 36 54 PM](https://user-images.githubusercontent.com/68141454/119740137-97dd9e00-be40-11eb-91da-39dbd108f489.png)
 
 ### Project Architecture
 
