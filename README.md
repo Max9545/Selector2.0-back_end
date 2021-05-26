@@ -93,9 +93,11 @@ These instructions will get you a copy of the project up and running on your loc
 
 | /graphql |
 
+All endpoints use a `POST` method. 
+
 #### API Contract
 
-Please see the [API Documentation] for detailed information about the data accessible from the endpoint above.
+All endpoints rely on GraphQL to perform queries and mutations of data.  The following queries rely on the third-party APIs from Discogs and Spotify: [album](#album)
 
 ##### GraphQL Queries 
 ###### album 
