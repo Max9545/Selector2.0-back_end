@@ -240,9 +240,13 @@ Required fields: `albumId`, `title`, `artists`, and `year`.
 
 ### Database Schema
 
+#### In addition to favorites, we have plans to add users, merchants and registration/login with authorization. 
+
 ![download](https://user-images.githubusercontent.com/69491049/119738698-54823000-be3e-11eb-94b5-1a24a4b10eb2.png)
 
 ### Testing
+
+#### Some examples of things we are testing. 
 
 ![Screen Shot 2021-05-26 at 4 19 21 PM](https://user-images.githubusercontent.com/68141454/119738585-24d32800-be3e-11eb-888c-ba06866e90a9.png)
 
