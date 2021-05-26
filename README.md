@@ -92,6 +92,30 @@ These instructions will get you a copy of the project up and running on your loc
 
 Please see the [API Documentation] for detailed information about the data accessible from the endpoint above.
 
+              mutation {
+                createFavorite(input: {
+                  albumId: 33990,
+                  title: "The Payback",
+                  artists: "James Brown",
+                  year: 1973,
+                  genres: "Funk / Soul",
+                  coverImage: "https://img.discogs.com/MUELn9ObTL-ZpxyUgF5M9D_Kumc=/fit-in/600x591/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-719877-1247870750.jpeg.jpg",
+                  tracklist: "tracklist",
+                  uri: "uri"
+                }) {
+                  favorite {
+                    albumId
+                    title
+                    artists
+                    year
+                    genres
+                    tracklist
+                    uri
+                  }
+                  errors
+                }
+              }
+
 #### Postman
 - To run an example postman endpoint, start the Selector Back End engine in locally then in post man run (GET https://api.discogs.com/masters/33990)
 
